@@ -1,0 +1,5 @@
+output
+.svn
+.idea/*
+*.iml
+.DS_Store
