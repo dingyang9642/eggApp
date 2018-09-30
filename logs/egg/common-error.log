@@ -32,3 +32,12 @@ res: {"status":-2,"statusCode":-2,"headers":{},"size":0,"aborted":false,"rt":502
 pid: 7579
 hostname: BDSHYF00088052
 
+2018-09-25 18:21:34,457 ERROR 7578 nodejs.ClusterClientNoResponseError: client no response in 1775172ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout.Leader._heartbeatTimer.setInterval [as _onTimeout] (/Users/dingyang/Documents/dingyang/github/eggApp/node_modules/cluster-client/lib/leader.js:74:23)
+    at ontimeout (timers.js:475:11)
+    at tryOnTimeout (timers.js:310:5)
+    at Timer.listOnTimeout (timers.js:270:5)
+name: "ClusterClientNoResponseError"
+pid: 7578
+hostname: BDSHYF00088052
+

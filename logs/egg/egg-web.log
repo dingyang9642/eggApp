@@ -1877,3 +1877,4 @@
 2018-09-25 17:11:18,676 INFO 8227 [egg-watcher:application] watcher start success
 2018-09-25 17:11:18,682 INFO 8227 [egg:core] dump config after ready, 3ms
 2018-09-25 17:14:27,210 INFO 8227 [egg-view-nunjucks] loading templates from ["/Users/dingyang/Documents/dingyang/github/eggApp/app/view"]
+2018-09-25 18:21:34,455 WARN 8227 [ClusterClient:Watcher] follower closed, and try to init it again
