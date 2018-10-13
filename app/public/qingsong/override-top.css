@@ -1,0 +1,9 @@
+.main {
+    width: 684px;
+}
+
+.main .service-detail .detail-con-catalog a:hover,
+.main .service-detail .detail-con-catalog a:link:hover {
+    cursor: default;
+    text-decoration: none;
+}

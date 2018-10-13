@@ -1909,3 +1909,1357 @@
 2018-09-30 10:44:23,848 INFO 997 [egg-watcher:application] watcher start success
 2018-09-30 10:44:23,853 INFO 997 [egg:core] dump config after ready, 3ms
 2018-09-30 10:45:52,516 INFO 997 [egg-view-nunjucks] loading templates from ["/Users/dingyang/Documents/dingyang/github/eggApp/app/view"]
+2018-10-08 19:00:40,639 INFO 9886 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:00:40,673 INFO 9886 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:00:40,673 INFO 9886 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:00:40,746 INFO 9886 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:00:40,749 INFO 9886 [egg-security] use csrf middleware
+2018-10-08 19:00:40,750 INFO 9886 [egg-security] use methodnoallow middleware
+2018-10-08 19:00:40,751 INFO 9886 [egg-security] use noopen middleware
+2018-10-08 19:00:40,752 INFO 9886 [egg-security] use nosniff middleware
+2018-10-08 19:00:40,753 INFO 9886 [egg-security] use xssProtection middleware
+2018-10-08 19:00:40,753 INFO 9886 [egg-security] use xframe middleware
+2018-10-08 19:00:40,754 INFO 9886 [egg-security] use dta middleware
+2018-10-08 19:00:40,754 INFO 9886 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:00:40,764 INFO 9886 [egg:core] dump config after load, 5ms
+2018-10-08 19:00:40,778 INFO 9886 [egg-watcher:application] watcher start success
+2018-10-08 19:00:40,784 INFO 9886 [egg:core] dump config after ready, 4ms
+2018-10-08 19:03:00,171 INFO 9992 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:03:00,213 INFO 9992 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:03:00,213 INFO 9992 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:03:00,283 INFO 9992 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:03:00,295 INFO 9992 [egg-security] use csrf middleware
+2018-10-08 19:03:00,296 INFO 9992 [egg-security] use methodnoallow middleware
+2018-10-08 19:03:00,297 INFO 9992 [egg-security] use noopen middleware
+2018-10-08 19:03:00,299 INFO 9992 [egg-security] use nosniff middleware
+2018-10-08 19:03:00,299 INFO 9992 [egg-security] use xssProtection middleware
+2018-10-08 19:03:00,300 INFO 9992 [egg-security] use xframe middleware
+2018-10-08 19:03:00,301 INFO 9992 [egg-security] use dta middleware
+2018-10-08 19:03:00,301 INFO 9992 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:03:00,341 INFO 9992 [egg:core] dump config after load, 15ms
+2018-10-08 19:03:00,365 INFO 9992 [egg-watcher:application] watcher start success
+2018-10-08 19:03:00,377 INFO 9992 [egg:core] dump config after ready, 8ms
+2018-10-08 19:03:22,577 INFO 10013 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:03:22,636 INFO 10013 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:03:22,636 INFO 10013 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:03:22,693 INFO 10013 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:03:22,700 INFO 10013 [egg-security] use csrf middleware
+2018-10-08 19:03:22,702 INFO 10013 [egg-security] use methodnoallow middleware
+2018-10-08 19:03:22,702 INFO 10013 [egg-security] use noopen middleware
+2018-10-08 19:03:22,703 INFO 10013 [egg-security] use nosniff middleware
+2018-10-08 19:03:22,703 INFO 10013 [egg-security] use xssProtection middleware
+2018-10-08 19:03:22,703 INFO 10013 [egg-security] use xframe middleware
+2018-10-08 19:03:22,704 INFO 10013 [egg-security] use dta middleware
+2018-10-08 19:03:22,704 INFO 10013 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:03:22,716 INFO 10013 [egg:core] dump config after load, 6ms
+2018-10-08 19:03:22,728 INFO 10013 [egg-watcher:application] watcher start success
+2018-10-08 19:03:22,736 INFO 10013 [egg:core] dump config after ready, 5ms
+2018-10-08 19:04:20,313 INFO 10039 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:04:20,354 INFO 10039 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:04:20,354 INFO 10039 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:04:20,401 INFO 10039 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:04:20,404 INFO 10039 [egg-security] use csrf middleware
+2018-10-08 19:04:20,406 INFO 10039 [egg-security] use methodnoallow middleware
+2018-10-08 19:04:20,406 INFO 10039 [egg-security] use noopen middleware
+2018-10-08 19:04:20,407 INFO 10039 [egg-security] use nosniff middleware
+2018-10-08 19:04:20,407 INFO 10039 [egg-security] use xssProtection middleware
+2018-10-08 19:04:20,408 INFO 10039 [egg-security] use xframe middleware
+2018-10-08 19:04:20,409 INFO 10039 [egg-security] use dta middleware
+2018-10-08 19:04:20,409 INFO 10039 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:04:20,432 INFO 10039 [egg:core] dump config after load, 12ms
+2018-10-08 19:04:20,459 INFO 10039 [egg-watcher:application] watcher start success
+2018-10-08 19:04:20,472 INFO 10039 [egg:core] dump config after ready, 9ms
+2018-10-08 19:04:21,336 INFO 10040 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:04:21,397 INFO 10040 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:04:21,397 INFO 10040 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:04:21,486 INFO 10040 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:04:21,491 INFO 10040 [egg-security] use csrf middleware
+2018-10-08 19:04:21,493 INFO 10040 [egg-security] use methodnoallow middleware
+2018-10-08 19:04:21,493 INFO 10040 [egg-security] use noopen middleware
+2018-10-08 19:04:21,494 INFO 10040 [egg-security] use nosniff middleware
+2018-10-08 19:04:21,495 INFO 10040 [egg-security] use xssProtection middleware
+2018-10-08 19:04:21,495 INFO 10040 [egg-security] use xframe middleware
+2018-10-08 19:04:21,495 INFO 10040 [egg-security] use dta middleware
+2018-10-08 19:04:21,495 INFO 10040 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:04:21,507 INFO 10040 [egg:core] dump config after load, 6ms
+2018-10-08 19:04:21,520 INFO 10040 [egg-watcher:application] watcher start success
+2018-10-08 19:04:21,527 INFO 10040 [egg:core] dump config after ready, 3ms
+2018-10-08 19:04:22,573 INFO 10041 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:04:22,626 INFO 10041 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:04:22,626 INFO 10041 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:04:22,683 INFO 10041 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:04:22,686 INFO 10041 [egg-security] use csrf middleware
+2018-10-08 19:04:22,687 INFO 10041 [egg-security] use methodnoallow middleware
+2018-10-08 19:04:22,687 INFO 10041 [egg-security] use noopen middleware
+2018-10-08 19:04:22,688 INFO 10041 [egg-security] use nosniff middleware
+2018-10-08 19:04:22,688 INFO 10041 [egg-security] use xssProtection middleware
+2018-10-08 19:04:22,689 INFO 10041 [egg-security] use xframe middleware
+2018-10-08 19:04:22,689 INFO 10041 [egg-security] use dta middleware
+2018-10-08 19:04:22,689 INFO 10041 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:04:22,702 INFO 10041 [egg:core] dump config after load, 5ms
+2018-10-08 19:04:22,721 INFO 10041 [egg-watcher:application] watcher start success
+2018-10-08 19:04:24,142 INFO 10050 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:04:24,206 INFO 10050 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:04:24,206 INFO 10050 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:04:24,306 INFO 10050 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:04:24,309 INFO 10050 [egg-security] use csrf middleware
+2018-10-08 19:04:24,311 INFO 10050 [egg-security] use methodnoallow middleware
+2018-10-08 19:04:24,312 INFO 10050 [egg-security] use noopen middleware
+2018-10-08 19:04:24,313 INFO 10050 [egg-security] use nosniff middleware
+2018-10-08 19:04:24,314 INFO 10050 [egg-security] use xssProtection middleware
+2018-10-08 19:04:24,314 INFO 10050 [egg-security] use xframe middleware
+2018-10-08 19:04:24,315 INFO 10050 [egg-security] use dta middleware
+2018-10-08 19:04:24,315 INFO 10050 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:04:24,339 INFO 10050 [egg:core] dump config after load, 16ms
+2018-10-08 19:04:24,366 INFO 10050 [egg-watcher:application] watcher start success
+2018-10-08 19:04:23,415 INFO 10049 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:04:23,488 INFO 10049 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:04:23,488 INFO 10049 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:04:23,592 INFO 10049 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:04:23,598 INFO 10049 [egg-security] use csrf middleware
+2018-10-08 19:04:23,600 INFO 10049 [egg-security] use methodnoallow middleware
+2018-10-08 19:04:23,600 INFO 10049 [egg-security] use noopen middleware
+2018-10-08 19:04:23,603 INFO 10049 [egg-security] use nosniff middleware
+2018-10-08 19:04:23,603 INFO 10049 [egg-security] use xssProtection middleware
+2018-10-08 19:04:23,604 INFO 10049 [egg-security] use xframe middleware
+2018-10-08 19:04:23,604 INFO 10049 [egg-security] use dta middleware
+2018-10-08 19:04:23,604 INFO 10049 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:04:23,630 INFO 10049 [egg:core] dump config after load, 11ms
+2018-10-08 19:04:23,652 INFO 10049 [egg-watcher:application] watcher start success
+2018-10-08 19:04:23,661 INFO 10049 [egg:core] dump config after ready, 6ms
+2018-10-08 19:04:24,305 INFO 10051 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:04:24,386 INFO 10051 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:04:24,386 INFO 10051 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:04:24,481 INFO 10051 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:04:24,488 INFO 10051 [egg-security] use csrf middleware
+2018-10-08 19:04:24,489 INFO 10051 [egg-security] use methodnoallow middleware
+2018-10-08 19:04:24,489 INFO 10051 [egg-security] use noopen middleware
+2018-10-08 19:04:24,490 INFO 10051 [egg-security] use nosniff middleware
+2018-10-08 19:04:24,490 INFO 10051 [egg-security] use xssProtection middleware
+2018-10-08 19:04:24,491 INFO 10051 [egg-security] use xframe middleware
+2018-10-08 19:04:24,491 INFO 10051 [egg-security] use dta middleware
+2018-10-08 19:04:24,491 INFO 10051 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:04:24,520 INFO 10051 [egg:core] dump config after load, 12ms
+2018-10-08 19:04:24,553 INFO 10051 [egg-watcher:application] watcher start success
+2018-10-08 19:04:24,884 INFO 10052 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:04:24,926 INFO 10052 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:04:24,926 INFO 10052 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:04:24,983 INFO 10052 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:04:24,986 INFO 10052 [egg-security] use csrf middleware
+2018-10-08 19:04:24,987 INFO 10052 [egg-security] use methodnoallow middleware
+2018-10-08 19:04:24,988 INFO 10052 [egg-security] use noopen middleware
+2018-10-08 19:04:24,988 INFO 10052 [egg-security] use nosniff middleware
+2018-10-08 19:04:24,989 INFO 10052 [egg-security] use xssProtection middleware
+2018-10-08 19:04:24,989 INFO 10052 [egg-security] use xframe middleware
+2018-10-08 19:04:24,990 INFO 10052 [egg-security] use dta middleware
+2018-10-08 19:04:24,990 INFO 10052 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:04:25,010 INFO 10052 [egg:core] dump config after load, 9ms
+2018-10-08 19:04:25,028 INFO 10052 [egg-watcher:application] watcher start success
+2018-10-08 19:04:25,034 INFO 10052 [egg:core] dump config after ready, 3ms
+2018-10-08 19:04:25,345 INFO 10053 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:04:25,383 INFO 10053 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:04:25,383 INFO 10053 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:04:25,464 INFO 10053 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:04:25,466 INFO 10053 [egg-security] use csrf middleware
+2018-10-08 19:04:25,467 INFO 10053 [egg-security] use methodnoallow middleware
+2018-10-08 19:04:25,469 INFO 10053 [egg-security] use noopen middleware
+2018-10-08 19:04:25,470 INFO 10053 [egg-security] use nosniff middleware
+2018-10-08 19:04:25,471 INFO 10053 [egg-security] use xssProtection middleware
+2018-10-08 19:04:25,472 INFO 10053 [egg-security] use xframe middleware
+2018-10-08 19:04:25,472 INFO 10053 [egg-security] use dta middleware
+2018-10-08 19:04:25,472 INFO 10053 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:04:25,483 INFO 10053 [egg:core] dump config after load, 5ms
+2018-10-08 19:04:25,498 INFO 10053 [egg-watcher:application] watcher start success
+2018-10-08 19:04:25,510 INFO 10053 [egg:core] dump config after ready, 10ms
+2018-10-08 19:04:29,816 INFO 10061 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:04:29,855 INFO 10061 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:04:29,855 INFO 10061 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:04:29,907 INFO 10061 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:04:29,911 INFO 10061 [egg-security] use csrf middleware
+2018-10-08 19:04:29,911 INFO 10061 [egg-security] use methodnoallow middleware
+2018-10-08 19:04:29,912 INFO 10061 [egg-security] use noopen middleware
+2018-10-08 19:04:29,912 INFO 10061 [egg-security] use nosniff middleware
+2018-10-08 19:04:29,912 INFO 10061 [egg-security] use xssProtection middleware
+2018-10-08 19:04:29,913 INFO 10061 [egg-security] use xframe middleware
+2018-10-08 19:04:29,913 INFO 10061 [egg-security] use dta middleware
+2018-10-08 19:04:29,913 INFO 10061 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:04:29,923 INFO 10061 [egg:core] dump config after load, 6ms
+2018-10-08 19:04:29,938 INFO 10061 [egg-watcher:application] watcher start success
+2018-10-08 19:04:29,948 INFO 10061 [egg:core] dump config after ready, 7ms
+2018-10-08 19:04:32,198 INFO 10063 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:04:32,238 INFO 10063 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:04:32,238 INFO 10063 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:04:32,292 INFO 10063 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:04:32,297 INFO 10063 [egg-security] use csrf middleware
+2018-10-08 19:04:32,298 INFO 10063 [egg-security] use methodnoallow middleware
+2018-10-08 19:04:32,298 INFO 10063 [egg-security] use noopen middleware
+2018-10-08 19:04:32,299 INFO 10063 [egg-security] use nosniff middleware
+2018-10-08 19:04:32,299 INFO 10063 [egg-security] use xssProtection middleware
+2018-10-08 19:04:32,299 INFO 10063 [egg-security] use xframe middleware
+2018-10-08 19:04:32,300 INFO 10063 [egg-security] use dta middleware
+2018-10-08 19:04:32,300 INFO 10063 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:04:32,312 INFO 10063 [egg:core] dump config after load, 6ms
+2018-10-08 19:04:32,327 INFO 10063 [egg-watcher:application] watcher start success
+2018-10-08 19:04:32,341 INFO 10063 [egg:core] dump config after ready, 5ms
+2018-10-08 19:05:27,749 INFO 10089 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:05:27,789 INFO 10089 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:05:27,789 INFO 10089 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:05:27,834 INFO 10089 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:05:27,837 INFO 10089 [egg-security] use csrf middleware
+2018-10-08 19:05:27,839 INFO 10089 [egg-security] use methodnoallow middleware
+2018-10-08 19:05:27,840 INFO 10089 [egg-security] use noopen middleware
+2018-10-08 19:05:27,841 INFO 10089 [egg-security] use nosniff middleware
+2018-10-08 19:05:27,841 INFO 10089 [egg-security] use xssProtection middleware
+2018-10-08 19:05:27,842 INFO 10089 [egg-security] use xframe middleware
+2018-10-08 19:05:27,842 INFO 10089 [egg-security] use dta middleware
+2018-10-08 19:05:27,842 INFO 10089 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:05:27,860 INFO 10089 [egg:core] dump config after load, 8ms
+2018-10-08 19:05:27,877 INFO 10089 [egg-watcher:application] watcher start success
+2018-10-08 19:05:27,883 INFO 10089 [egg:core] dump config after ready, 4ms
+2018-10-08 19:05:39,015 INFO 10099 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:05:39,052 INFO 10099 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:05:39,052 INFO 10099 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:05:39,101 INFO 10099 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:05:39,104 INFO 10099 [egg-security] use csrf middleware
+2018-10-08 19:05:39,104 INFO 10099 [egg-security] use methodnoallow middleware
+2018-10-08 19:05:39,105 INFO 10099 [egg-security] use noopen middleware
+2018-10-08 19:05:39,105 INFO 10099 [egg-security] use nosniff middleware
+2018-10-08 19:05:39,105 INFO 10099 [egg-security] use xssProtection middleware
+2018-10-08 19:05:39,106 INFO 10099 [egg-security] use xframe middleware
+2018-10-08 19:05:39,106 INFO 10099 [egg-security] use dta middleware
+2018-10-08 19:05:39,106 INFO 10099 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:05:39,116 INFO 10099 [egg:core] dump config after load, 4ms
+2018-10-08 19:05:39,129 INFO 10099 [egg-watcher:application] watcher start success
+2018-10-08 19:05:39,140 INFO 10099 [egg:core] dump config after ready, 9ms
+2018-10-08 19:05:55,535 INFO 10173 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:05:55,569 INFO 10173 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:05:55,569 INFO 10173 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:05:55,612 INFO 10173 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:05:55,616 INFO 10173 [egg-security] use csrf middleware
+2018-10-08 19:05:55,616 INFO 10173 [egg-security] use methodnoallow middleware
+2018-10-08 19:05:55,617 INFO 10173 [egg-security] use noopen middleware
+2018-10-08 19:05:55,617 INFO 10173 [egg-security] use nosniff middleware
+2018-10-08 19:05:55,618 INFO 10173 [egg-security] use xssProtection middleware
+2018-10-08 19:05:55,618 INFO 10173 [egg-security] use xframe middleware
+2018-10-08 19:05:55,618 INFO 10173 [egg-security] use dta middleware
+2018-10-08 19:05:55,618 INFO 10173 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:05:55,633 INFO 10173 [egg:core] dump config after load, 10ms
+2018-10-08 19:05:55,644 INFO 10173 [egg-watcher:application] watcher start success
+2018-10-08 19:05:55,652 INFO 10173 [egg:core] dump config after ready, 5ms
+2018-10-08 19:05:56,345 INFO 10176 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:05:56,386 INFO 10176 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:05:56,386 INFO 10176 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:05:56,428 INFO 10176 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:05:56,431 INFO 10176 [egg-security] use csrf middleware
+2018-10-08 19:05:56,431 INFO 10176 [egg-security] use methodnoallow middleware
+2018-10-08 19:05:56,432 INFO 10176 [egg-security] use noopen middleware
+2018-10-08 19:05:56,433 INFO 10176 [egg-security] use nosniff middleware
+2018-10-08 19:05:56,433 INFO 10176 [egg-security] use xssProtection middleware
+2018-10-08 19:05:56,434 INFO 10176 [egg-security] use xframe middleware
+2018-10-08 19:05:56,434 INFO 10176 [egg-security] use dta middleware
+2018-10-08 19:05:56,434 INFO 10176 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:05:56,443 INFO 10176 [egg:core] dump config after load, 4ms
+2018-10-08 19:05:56,457 INFO 10176 [egg-watcher:application] watcher start success
+2018-10-08 19:05:56,462 INFO 10176 [egg:core] dump config after ready, 3ms
+2018-10-08 19:05:59,012 INFO 10184 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:05:59,054 INFO 10184 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:05:59,054 INFO 10184 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:05:59,105 INFO 10184 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:05:59,107 INFO 10184 [egg-security] use csrf middleware
+2018-10-08 19:05:59,107 INFO 10184 [egg-security] use methodnoallow middleware
+2018-10-08 19:05:59,108 INFO 10184 [egg-security] use noopen middleware
+2018-10-08 19:05:59,108 INFO 10184 [egg-security] use nosniff middleware
+2018-10-08 19:05:59,108 INFO 10184 [egg-security] use xssProtection middleware
+2018-10-08 19:05:59,109 INFO 10184 [egg-security] use xframe middleware
+2018-10-08 19:05:59,109 INFO 10184 [egg-security] use dta middleware
+2018-10-08 19:05:59,109 INFO 10184 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:05:59,123 INFO 10184 [egg:core] dump config after load, 10ms
+2018-10-08 19:05:59,135 INFO 10184 [egg-watcher:application] watcher start success
+2018-10-08 19:05:59,140 INFO 10184 [egg:core] dump config after ready, 3ms
+2018-10-08 19:06:04,494 INFO 10196 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:06:04,535 INFO 10196 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:06:04,535 INFO 10196 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:06:04,575 INFO 10196 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:06:04,578 INFO 10196 [egg-security] use csrf middleware
+2018-10-08 19:06:04,579 INFO 10196 [egg-security] use methodnoallow middleware
+2018-10-08 19:06:04,580 INFO 10196 [egg-security] use noopen middleware
+2018-10-08 19:06:04,580 INFO 10196 [egg-security] use nosniff middleware
+2018-10-08 19:06:04,580 INFO 10196 [egg-security] use xssProtection middleware
+2018-10-08 19:06:04,581 INFO 10196 [egg-security] use xframe middleware
+2018-10-08 19:06:04,581 INFO 10196 [egg-security] use dta middleware
+2018-10-08 19:06:04,581 INFO 10196 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:06:04,590 INFO 10196 [egg:core] dump config after load, 5ms
+2018-10-08 19:06:04,603 INFO 10196 [egg-watcher:application] watcher start success
+2018-10-08 19:06:04,610 INFO 10196 [egg:core] dump config after ready, 4ms
+2018-10-08 19:06:05,433 INFO 10197 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:06:05,470 INFO 10197 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:06:05,470 INFO 10197 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:06:05,521 INFO 10197 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:06:05,526 INFO 10197 [egg-security] use csrf middleware
+2018-10-08 19:06:05,526 INFO 10197 [egg-security] use methodnoallow middleware
+2018-10-08 19:06:05,527 INFO 10197 [egg-security] use noopen middleware
+2018-10-08 19:06:05,528 INFO 10197 [egg-security] use nosniff middleware
+2018-10-08 19:06:05,528 INFO 10197 [egg-security] use xssProtection middleware
+2018-10-08 19:06:05,529 INFO 10197 [egg-security] use xframe middleware
+2018-10-08 19:06:05,529 INFO 10197 [egg-security] use dta middleware
+2018-10-08 19:06:05,529 INFO 10197 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:06:05,543 INFO 10197 [egg:core] dump config after load, 9ms
+2018-10-08 19:06:05,558 INFO 10197 [egg-watcher:application] watcher start success
+2018-10-08 19:06:05,564 INFO 10197 [egg:core] dump config after ready, 3ms
+2018-10-08 19:06:06,572 INFO 10198 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:06:06,636 INFO 10198 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:06:06,636 INFO 10198 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:06:06,728 INFO 10198 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:06:06,734 INFO 10198 [egg-security] use csrf middleware
+2018-10-08 19:06:06,735 INFO 10198 [egg-security] use methodnoallow middleware
+2018-10-08 19:06:06,736 INFO 10198 [egg-security] use noopen middleware
+2018-10-08 19:06:06,738 INFO 10198 [egg-security] use nosniff middleware
+2018-10-08 19:06:06,739 INFO 10198 [egg-security] use xssProtection middleware
+2018-10-08 19:06:06,739 INFO 10198 [egg-security] use xframe middleware
+2018-10-08 19:06:06,740 INFO 10198 [egg-security] use dta middleware
+2018-10-08 19:06:06,740 INFO 10198 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:06:06,763 INFO 10198 [egg:core] dump config after load, 5ms
+2018-10-08 19:06:06,784 INFO 10198 [egg-watcher:application] watcher start success
+2018-10-08 19:06:06,797 INFO 10198 [egg:core] dump config after ready, 9ms
+2018-10-08 19:06:42,997 INFO 10220 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:06:43,056 INFO 10220 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:06:43,056 INFO 10220 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:06:43,102 INFO 10220 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:06:43,105 INFO 10220 [egg-security] use csrf middleware
+2018-10-08 19:06:43,106 INFO 10220 [egg-security] use methodnoallow middleware
+2018-10-08 19:06:43,106 INFO 10220 [egg-security] use noopen middleware
+2018-10-08 19:06:43,106 INFO 10220 [egg-security] use nosniff middleware
+2018-10-08 19:06:43,107 INFO 10220 [egg-security] use xssProtection middleware
+2018-10-08 19:06:43,107 INFO 10220 [egg-security] use xframe middleware
+2018-10-08 19:06:43,108 INFO 10220 [egg-security] use dta middleware
+2018-10-08 19:06:43,108 INFO 10220 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:06:43,118 INFO 10220 [egg:core] dump config after load, 6ms
+2018-10-08 19:06:43,132 INFO 10220 [egg-watcher:application] watcher start success
+2018-10-08 19:06:42,165 INFO 10218 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:06:42,198 INFO 10218 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:06:42,198 INFO 10218 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:06:42,241 INFO 10218 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:06:42,244 INFO 10218 [egg-security] use csrf middleware
+2018-10-08 19:06:42,244 INFO 10218 [egg-security] use methodnoallow middleware
+2018-10-08 19:06:42,245 INFO 10218 [egg-security] use noopen middleware
+2018-10-08 19:06:42,245 INFO 10218 [egg-security] use nosniff middleware
+2018-10-08 19:06:42,245 INFO 10218 [egg-security] use xssProtection middleware
+2018-10-08 19:06:42,246 INFO 10218 [egg-security] use xframe middleware
+2018-10-08 19:06:42,246 INFO 10218 [egg-security] use dta middleware
+2018-10-08 19:06:42,246 INFO 10218 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:06:42,261 INFO 10218 [egg:core] dump config after load, 11ms
+2018-10-08 19:06:42,273 INFO 10218 [egg-watcher:application] watcher start success
+2018-10-08 19:06:42,278 INFO 10218 [egg:core] dump config after ready, 3ms
+2018-10-08 19:06:44,010 INFO 10222 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:06:44,055 INFO 10222 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:06:44,055 INFO 10222 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:06:44,108 INFO 10222 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:06:44,110 INFO 10222 [egg-security] use csrf middleware
+2018-10-08 19:06:44,111 INFO 10222 [egg-security] use methodnoallow middleware
+2018-10-08 19:06:44,111 INFO 10222 [egg-security] use noopen middleware
+2018-10-08 19:06:44,112 INFO 10222 [egg-security] use nosniff middleware
+2018-10-08 19:06:44,112 INFO 10222 [egg-security] use xssProtection middleware
+2018-10-08 19:06:44,113 INFO 10222 [egg-security] use xframe middleware
+2018-10-08 19:06:44,113 INFO 10222 [egg-security] use dta middleware
+2018-10-08 19:06:44,113 INFO 10222 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:06:44,133 INFO 10222 [egg:core] dump config after load, 13ms
+2018-10-08 19:06:44,147 INFO 10222 [egg-watcher:application] watcher start success
+2018-10-08 19:06:43,418 INFO 10221 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:06:43,472 INFO 10221 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:06:43,472 INFO 10221 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:06:43,526 INFO 10221 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:06:43,528 INFO 10221 [egg-security] use csrf middleware
+2018-10-08 19:06:43,530 INFO 10221 [egg-security] use methodnoallow middleware
+2018-10-08 19:06:43,531 INFO 10221 [egg-security] use noopen middleware
+2018-10-08 19:06:43,532 INFO 10221 [egg-security] use nosniff middleware
+2018-10-08 19:06:43,532 INFO 10221 [egg-security] use xssProtection middleware
+2018-10-08 19:06:43,533 INFO 10221 [egg-security] use xframe middleware
+2018-10-08 19:06:43,533 INFO 10221 [egg-security] use dta middleware
+2018-10-08 19:06:43,533 INFO 10221 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:06:43,543 INFO 10221 [egg:core] dump config after load, 6ms
+2018-10-08 19:06:43,556 INFO 10221 [egg-watcher:application] watcher start success
+2018-10-08 19:06:43,562 INFO 10221 [egg:core] dump config after ready, 4ms
+2018-10-08 19:06:44,572 INFO 10223 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:06:44,612 INFO 10223 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:06:44,612 INFO 10223 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:06:44,664 INFO 10223 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:06:44,668 INFO 10223 [egg-security] use csrf middleware
+2018-10-08 19:06:44,670 INFO 10223 [egg-security] use methodnoallow middleware
+2018-10-08 19:06:44,670 INFO 10223 [egg-security] use noopen middleware
+2018-10-08 19:06:44,671 INFO 10223 [egg-security] use nosniff middleware
+2018-10-08 19:06:44,671 INFO 10223 [egg-security] use xssProtection middleware
+2018-10-08 19:06:44,671 INFO 10223 [egg-security] use xframe middleware
+2018-10-08 19:06:44,672 INFO 10223 [egg-security] use dta middleware
+2018-10-08 19:06:44,672 INFO 10223 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:06:44,683 INFO 10223 [egg:core] dump config after load, 6ms
+2018-10-08 19:06:44,696 INFO 10223 [egg-watcher:application] watcher start success
+2018-10-08 19:06:44,704 INFO 10223 [egg:core] dump config after ready, 4ms
+2018-10-08 19:06:45,036 INFO 10224 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:06:45,073 INFO 10224 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:06:45,073 INFO 10224 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:06:45,127 INFO 10224 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:06:45,131 INFO 10224 [egg-security] use csrf middleware
+2018-10-08 19:06:45,133 INFO 10224 [egg-security] use methodnoallow middleware
+2018-10-08 19:06:45,133 INFO 10224 [egg-security] use noopen middleware
+2018-10-08 19:06:45,134 INFO 10224 [egg-security] use nosniff middleware
+2018-10-08 19:06:45,135 INFO 10224 [egg-security] use xssProtection middleware
+2018-10-08 19:06:45,136 INFO 10224 [egg-security] use xframe middleware
+2018-10-08 19:06:45,136 INFO 10224 [egg-security] use dta middleware
+2018-10-08 19:06:45,136 INFO 10224 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:06:45,150 INFO 10224 [egg:core] dump config after load, 5ms
+2018-10-08 19:06:45,166 INFO 10224 [egg-watcher:application] watcher start success
+2018-10-08 19:06:45,175 INFO 10224 [egg:core] dump config after ready, 7ms
+2018-10-08 19:06:47,040 INFO 10227 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:06:47,077 INFO 10227 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:06:47,077 INFO 10227 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:06:47,126 INFO 10227 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:06:47,128 INFO 10227 [egg-security] use csrf middleware
+2018-10-08 19:06:47,129 INFO 10227 [egg-security] use methodnoallow middleware
+2018-10-08 19:06:47,129 INFO 10227 [egg-security] use noopen middleware
+2018-10-08 19:06:47,130 INFO 10227 [egg-security] use nosniff middleware
+2018-10-08 19:06:47,130 INFO 10227 [egg-security] use xssProtection middleware
+2018-10-08 19:06:47,130 INFO 10227 [egg-security] use xframe middleware
+2018-10-08 19:06:47,131 INFO 10227 [egg-security] use dta middleware
+2018-10-08 19:06:47,131 INFO 10227 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:06:47,143 INFO 10227 [egg:core] dump config after load, 5ms
+2018-10-08 19:06:47,157 INFO 10227 [egg-watcher:application] watcher start success
+2018-10-08 19:06:47,163 INFO 10227 [egg:core] dump config after ready, 3ms
+2018-10-08 19:06:47,929 INFO 10228 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:06:47,978 INFO 10228 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:06:47,978 INFO 10228 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:06:48,018 INFO 10228 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:06:48,020 INFO 10228 [egg-security] use csrf middleware
+2018-10-08 19:06:48,021 INFO 10228 [egg-security] use methodnoallow middleware
+2018-10-08 19:06:48,021 INFO 10228 [egg-security] use noopen middleware
+2018-10-08 19:06:48,022 INFO 10228 [egg-security] use nosniff middleware
+2018-10-08 19:06:48,022 INFO 10228 [egg-security] use xssProtection middleware
+2018-10-08 19:06:48,022 INFO 10228 [egg-security] use xframe middleware
+2018-10-08 19:06:48,023 INFO 10228 [egg-security] use dta middleware
+2018-10-08 19:06:48,023 INFO 10228 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:06:48,031 INFO 10228 [egg:core] dump config after load, 5ms
+2018-10-08 19:06:48,044 INFO 10228 [egg-watcher:application] watcher start success
+2018-10-08 19:06:48,049 INFO 10228 [egg:core] dump config after ready, 3ms
+2018-10-08 19:08:46,984 INFO 10305 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:08:47,022 INFO 10305 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:08:47,022 INFO 10305 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:08:47,095 INFO 10305 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:08:47,099 INFO 10305 [egg-security] use csrf middleware
+2018-10-08 19:08:47,100 INFO 10305 [egg-security] use methodnoallow middleware
+2018-10-08 19:08:47,100 INFO 10305 [egg-security] use noopen middleware
+2018-10-08 19:08:47,101 INFO 10305 [egg-security] use nosniff middleware
+2018-10-08 19:08:47,102 INFO 10305 [egg-security] use xssProtection middleware
+2018-10-08 19:08:47,103 INFO 10305 [egg-security] use xframe middleware
+2018-10-08 19:08:47,103 INFO 10305 [egg-security] use dta middleware
+2018-10-08 19:08:47,103 INFO 10305 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:08:47,115 INFO 10305 [egg:core] dump config after load, 5ms
+2018-10-08 19:08:47,125 INFO 10305 [egg-watcher:application] watcher start success
+2018-10-08 19:08:47,132 INFO 10305 [egg:core] dump config after ready, 5ms
+2018-10-08 19:09:09,111 INFO 10329 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:09:09,164 INFO 10329 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:09:09,164 INFO 10329 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:09:09,221 INFO 10329 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:09:09,223 INFO 10329 [egg-security] use csrf middleware
+2018-10-08 19:09:09,224 INFO 10329 [egg-security] use methodnoallow middleware
+2018-10-08 19:09:09,225 INFO 10329 [egg-security] use noopen middleware
+2018-10-08 19:09:09,226 INFO 10329 [egg-security] use nosniff middleware
+2018-10-08 19:09:09,226 INFO 10329 [egg-security] use xssProtection middleware
+2018-10-08 19:09:09,227 INFO 10329 [egg-security] use xframe middleware
+2018-10-08 19:09:09,227 INFO 10329 [egg-security] use dta middleware
+2018-10-08 19:09:09,227 INFO 10329 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:09:09,240 INFO 10329 [egg:core] dump config after load, 7ms
+2018-10-08 19:09:09,256 INFO 10329 [egg-watcher:application] watcher start success
+2018-10-08 19:09:09,264 INFO 10329 [egg:core] dump config after ready, 3ms
+2018-10-08 19:09:36,082 INFO 10346 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:09:36,125 INFO 10346 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:09:36,125 INFO 10346 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:09:36,182 INFO 10346 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:09:36,187 INFO 10346 [egg-security] use csrf middleware
+2018-10-08 19:09:36,187 INFO 10346 [egg-security] use methodnoallow middleware
+2018-10-08 19:09:36,188 INFO 10346 [egg-security] use noopen middleware
+2018-10-08 19:09:36,188 INFO 10346 [egg-security] use nosniff middleware
+2018-10-08 19:09:36,189 INFO 10346 [egg-security] use xssProtection middleware
+2018-10-08 19:09:36,189 INFO 10346 [egg-security] use xframe middleware
+2018-10-08 19:09:36,189 INFO 10346 [egg-security] use dta middleware
+2018-10-08 19:09:36,189 INFO 10346 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:09:36,202 INFO 10346 [egg:core] dump config after load, 5ms
+2018-10-08 19:09:36,214 INFO 10346 [egg-watcher:application] watcher start success
+2018-10-08 19:09:36,220 INFO 10346 [egg:core] dump config after ready, 4ms
+2018-10-08 19:09:36,924 INFO 10347 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:09:36,962 INFO 10347 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:09:36,962 INFO 10347 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:09:37,009 INFO 10347 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:09:37,012 INFO 10347 [egg-security] use csrf middleware
+2018-10-08 19:09:37,012 INFO 10347 [egg-security] use methodnoallow middleware
+2018-10-08 19:09:37,012 INFO 10347 [egg-security] use noopen middleware
+2018-10-08 19:09:37,013 INFO 10347 [egg-security] use nosniff middleware
+2018-10-08 19:09:37,013 INFO 10347 [egg-security] use xssProtection middleware
+2018-10-08 19:09:37,013 INFO 10347 [egg-security] use xframe middleware
+2018-10-08 19:09:37,014 INFO 10347 [egg-security] use dta middleware
+2018-10-08 19:09:37,014 INFO 10347 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:09:37,023 INFO 10347 [egg:core] dump config after load, 5ms
+2018-10-08 19:09:37,034 INFO 10347 [egg-watcher:application] watcher start success
+2018-10-08 19:09:37,044 INFO 10347 [egg:core] dump config after ready, 8ms
+2018-10-08 19:09:45,095 INFO 10355 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:09:45,141 INFO 10355 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:09:45,141 INFO 10355 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:09:45,187 INFO 10355 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:09:45,190 INFO 10355 [egg-security] use csrf middleware
+2018-10-08 19:09:45,190 INFO 10355 [egg-security] use methodnoallow middleware
+2018-10-08 19:09:45,191 INFO 10355 [egg-security] use noopen middleware
+2018-10-08 19:09:45,191 INFO 10355 [egg-security] use nosniff middleware
+2018-10-08 19:09:45,191 INFO 10355 [egg-security] use xssProtection middleware
+2018-10-08 19:09:45,192 INFO 10355 [egg-security] use xframe middleware
+2018-10-08 19:09:45,192 INFO 10355 [egg-security] use dta middleware
+2018-10-08 19:09:45,192 INFO 10355 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:09:45,201 INFO 10355 [egg:core] dump config after load, 4ms
+2018-10-08 19:09:45,212 INFO 10355 [egg-watcher:application] watcher start success
+2018-10-08 19:09:45,217 INFO 10355 [egg:core] dump config after ready, 3ms
+2018-10-08 19:09:45,897 INFO 10356 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:09:45,936 INFO 10356 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:09:45,937 INFO 10356 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:09:45,973 INFO 10356 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:09:45,976 INFO 10356 [egg-security] use csrf middleware
+2018-10-08 19:09:45,976 INFO 10356 [egg-security] use methodnoallow middleware
+2018-10-08 19:09:45,977 INFO 10356 [egg-security] use noopen middleware
+2018-10-08 19:09:45,977 INFO 10356 [egg-security] use nosniff middleware
+2018-10-08 19:09:45,978 INFO 10356 [egg-security] use xssProtection middleware
+2018-10-08 19:09:45,978 INFO 10356 [egg-security] use xframe middleware
+2018-10-08 19:09:45,978 INFO 10356 [egg-security] use dta middleware
+2018-10-08 19:09:45,978 INFO 10356 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:09:45,986 INFO 10356 [egg:core] dump config after load, 4ms
+2018-10-08 19:09:45,997 INFO 10356 [egg-watcher:application] watcher start success
+2018-10-08 19:09:46,002 INFO 10356 [egg:core] dump config after ready, 3ms
+2018-10-08 19:09:48,392 INFO 10364 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:09:48,435 INFO 10364 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:09:48,435 INFO 10364 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:09:48,494 INFO 10364 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:09:48,496 INFO 10364 [egg-security] use csrf middleware
+2018-10-08 19:09:48,498 INFO 10364 [egg-security] use methodnoallow middleware
+2018-10-08 19:09:48,498 INFO 10364 [egg-security] use noopen middleware
+2018-10-08 19:09:48,499 INFO 10364 [egg-security] use nosniff middleware
+2018-10-08 19:09:48,499 INFO 10364 [egg-security] use xssProtection middleware
+2018-10-08 19:09:48,500 INFO 10364 [egg-security] use xframe middleware
+2018-10-08 19:09:48,500 INFO 10364 [egg-security] use dta middleware
+2018-10-08 19:09:48,500 INFO 10364 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:09:48,513 INFO 10364 [egg:core] dump config after load, 6ms
+2018-10-08 19:09:48,526 INFO 10364 [egg-watcher:application] watcher start success
+2018-10-08 19:09:48,532 INFO 10364 [egg:core] dump config after ready, 4ms
+2018-10-08 19:09:49,269 INFO 10365 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:09:49,310 INFO 10365 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:09:49,310 INFO 10365 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:09:49,391 INFO 10365 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:09:49,397 INFO 10365 [egg-security] use csrf middleware
+2018-10-08 19:09:49,398 INFO 10365 [egg-security] use methodnoallow middleware
+2018-10-08 19:09:49,401 INFO 10365 [egg-security] use noopen middleware
+2018-10-08 19:09:49,403 INFO 10365 [egg-security] use nosniff middleware
+2018-10-08 19:09:49,404 INFO 10365 [egg-security] use xssProtection middleware
+2018-10-08 19:09:49,405 INFO 10365 [egg-security] use xframe middleware
+2018-10-08 19:09:49,405 INFO 10365 [egg-security] use dta middleware
+2018-10-08 19:09:49,405 INFO 10365 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:09:49,417 INFO 10365 [egg:core] dump config after load, 7ms
+2018-10-08 19:09:49,438 INFO 10365 [egg-watcher:application] watcher start success
+2018-10-08 19:09:49,509 INFO 10366 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:09:49,539 INFO 10366 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:09:49,539 INFO 10366 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:09:49,576 INFO 10366 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:09:49,578 INFO 10366 [egg-security] use csrf middleware
+2018-10-08 19:09:49,579 INFO 10366 [egg-security] use methodnoallow middleware
+2018-10-08 19:09:49,579 INFO 10366 [egg-security] use noopen middleware
+2018-10-08 19:09:49,580 INFO 10366 [egg-security] use nosniff middleware
+2018-10-08 19:09:49,580 INFO 10366 [egg-security] use xssProtection middleware
+2018-10-08 19:09:49,581 INFO 10366 [egg-security] use xframe middleware
+2018-10-08 19:09:49,581 INFO 10366 [egg-security] use dta middleware
+2018-10-08 19:09:49,581 INFO 10366 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:09:49,589 INFO 10366 [egg:core] dump config after load, 4ms
+2018-10-08 19:09:49,601 INFO 10366 [egg-watcher:application] watcher start success
+2018-10-08 19:09:49,606 INFO 10366 [egg:core] dump config after ready, 3ms
+2018-10-08 19:10:32,518 INFO 10380 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:10:32,559 INFO 10380 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:10:32,560 INFO 10380 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:10:32,613 INFO 10380 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:10:32,618 INFO 10380 [egg-security] use csrf middleware
+2018-10-08 19:10:32,619 INFO 10380 [egg-security] use methodnoallow middleware
+2018-10-08 19:10:32,619 INFO 10380 [egg-security] use noopen middleware
+2018-10-08 19:10:32,620 INFO 10380 [egg-security] use nosniff middleware
+2018-10-08 19:10:32,620 INFO 10380 [egg-security] use xssProtection middleware
+2018-10-08 19:10:32,620 INFO 10380 [egg-security] use xframe middleware
+2018-10-08 19:10:32,621 INFO 10380 [egg-security] use dta middleware
+2018-10-08 19:10:32,621 INFO 10380 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:10:32,638 INFO 10380 [egg:core] dump config after load, 9ms
+2018-10-08 19:10:32,653 INFO 10380 [egg-watcher:application] watcher start success
+2018-10-08 19:10:32,661 INFO 10380 [egg:core] dump config after ready, 5ms
+2018-10-08 19:10:33,346 INFO 10381 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:10:33,385 INFO 10381 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:10:33,385 INFO 10381 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:10:33,437 INFO 10381 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:10:33,441 INFO 10381 [egg-security] use csrf middleware
+2018-10-08 19:10:33,441 INFO 10381 [egg-security] use methodnoallow middleware
+2018-10-08 19:10:33,441 INFO 10381 [egg-security] use noopen middleware
+2018-10-08 19:10:33,442 INFO 10381 [egg-security] use nosniff middleware
+2018-10-08 19:10:33,442 INFO 10381 [egg-security] use xssProtection middleware
+2018-10-08 19:10:33,442 INFO 10381 [egg-security] use xframe middleware
+2018-10-08 19:10:33,443 INFO 10381 [egg-security] use dta middleware
+2018-10-08 19:10:33,443 INFO 10381 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:10:33,452 INFO 10381 [egg:core] dump config after load, 4ms
+2018-10-08 19:10:33,463 INFO 10381 [egg-watcher:application] watcher start success
+2018-10-08 19:10:33,468 INFO 10381 [egg:core] dump config after ready, 3ms
+2018-10-08 19:10:45,531 INFO 10389 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:10:45,571 INFO 10389 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:10:45,571 INFO 10389 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:10:45,625 INFO 10389 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:10:45,628 INFO 10389 [egg-security] use csrf middleware
+2018-10-08 19:10:45,628 INFO 10389 [egg-security] use methodnoallow middleware
+2018-10-08 19:10:45,628 INFO 10389 [egg-security] use noopen middleware
+2018-10-08 19:10:45,629 INFO 10389 [egg-security] use nosniff middleware
+2018-10-08 19:10:45,629 INFO 10389 [egg-security] use xssProtection middleware
+2018-10-08 19:10:45,629 INFO 10389 [egg-security] use xframe middleware
+2018-10-08 19:10:45,630 INFO 10389 [egg-security] use dta middleware
+2018-10-08 19:10:45,630 INFO 10389 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:10:45,641 INFO 10389 [egg:core] dump config after load, 7ms
+2018-10-08 19:10:45,653 INFO 10389 [egg-watcher:application] watcher start success
+2018-10-08 19:10:45,660 INFO 10389 [egg:core] dump config after ready, 5ms
+2018-10-08 19:10:46,338 INFO 10390 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:10:46,379 INFO 10390 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:10:46,380 INFO 10390 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:10:46,422 INFO 10390 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:10:46,425 INFO 10390 [egg-security] use csrf middleware
+2018-10-08 19:10:46,425 INFO 10390 [egg-security] use methodnoallow middleware
+2018-10-08 19:10:46,426 INFO 10390 [egg-security] use noopen middleware
+2018-10-08 19:10:46,426 INFO 10390 [egg-security] use nosniff middleware
+2018-10-08 19:10:46,426 INFO 10390 [egg-security] use xssProtection middleware
+2018-10-08 19:10:46,427 INFO 10390 [egg-security] use xframe middleware
+2018-10-08 19:10:46,427 INFO 10390 [egg-security] use dta middleware
+2018-10-08 19:10:46,427 INFO 10390 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:10:46,435 INFO 10390 [egg:core] dump config after load, 4ms
+2018-10-08 19:10:46,447 INFO 10390 [egg-watcher:application] watcher start success
+2018-10-08 19:10:46,455 INFO 10390 [egg:core] dump config after ready, 5ms
+2018-10-08 19:10:52,128 INFO 10398 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:10:52,176 INFO 10398 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:10:52,176 INFO 10398 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:10:52,221 INFO 10398 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:10:52,225 INFO 10398 [egg-security] use csrf middleware
+2018-10-08 19:10:52,225 INFO 10398 [egg-security] use methodnoallow middleware
+2018-10-08 19:10:52,226 INFO 10398 [egg-security] use noopen middleware
+2018-10-08 19:10:52,226 INFO 10398 [egg-security] use nosniff middleware
+2018-10-08 19:10:52,226 INFO 10398 [egg-security] use xssProtection middleware
+2018-10-08 19:10:52,227 INFO 10398 [egg-security] use xframe middleware
+2018-10-08 19:10:52,227 INFO 10398 [egg-security] use dta middleware
+2018-10-08 19:10:52,227 INFO 10398 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:10:52,237 INFO 10398 [egg:core] dump config after load, 4ms
+2018-10-08 19:10:52,250 INFO 10398 [egg-watcher:application] watcher start success
+2018-10-08 19:10:52,256 INFO 10398 [egg:core] dump config after ready, 5ms
+2018-10-08 19:10:59,023 INFO 10417 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:10:59,090 INFO 10417 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:10:59,090 INFO 10417 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:10:59,142 INFO 10417 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:10:59,145 INFO 10417 [egg-security] use csrf middleware
+2018-10-08 19:10:59,146 INFO 10417 [egg-security] use methodnoallow middleware
+2018-10-08 19:10:59,146 INFO 10417 [egg-security] use noopen middleware
+2018-10-08 19:10:59,146 INFO 10417 [egg-security] use nosniff middleware
+2018-10-08 19:10:59,147 INFO 10417 [egg-security] use xssProtection middleware
+2018-10-08 19:10:59,147 INFO 10417 [egg-security] use xframe middleware
+2018-10-08 19:10:59,147 INFO 10417 [egg-security] use dta middleware
+2018-10-08 19:10:59,147 INFO 10417 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:10:59,158 INFO 10417 [egg:core] dump config after load, 5ms
+2018-10-08 19:10:59,171 INFO 10417 [egg-watcher:application] watcher start success
+2018-10-08 19:10:59,177 INFO 10417 [egg:core] dump config after ready, 4ms
+2018-10-08 19:11:01,419 INFO 10420 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:11:01,472 INFO 10420 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:11:01,472 INFO 10420 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:11:01,532 INFO 10420 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:11:01,538 INFO 10420 [egg-security] use csrf middleware
+2018-10-08 19:11:01,539 INFO 10420 [egg-security] use methodnoallow middleware
+2018-10-08 19:11:01,539 INFO 10420 [egg-security] use noopen middleware
+2018-10-08 19:11:01,540 INFO 10420 [egg-security] use nosniff middleware
+2018-10-08 19:11:01,540 INFO 10420 [egg-security] use xssProtection middleware
+2018-10-08 19:11:01,540 INFO 10420 [egg-security] use xframe middleware
+2018-10-08 19:11:01,541 INFO 10420 [egg-security] use dta middleware
+2018-10-08 19:11:01,541 INFO 10420 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:11:01,551 INFO 10420 [egg:core] dump config after load, 5ms
+2018-10-08 19:11:01,564 INFO 10420 [egg-watcher:application] watcher start success
+2018-10-08 19:11:01,571 INFO 10420 [egg:core] dump config after ready, 5ms
+2018-10-08 19:11:02,589 INFO 10421 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:11:02,634 INFO 10421 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:11:02,634 INFO 10421 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:11:02,692 INFO 10421 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:11:02,694 INFO 10421 [egg-security] use csrf middleware
+2018-10-08 19:11:02,695 INFO 10421 [egg-security] use methodnoallow middleware
+2018-10-08 19:11:02,695 INFO 10421 [egg-security] use noopen middleware
+2018-10-08 19:11:02,696 INFO 10421 [egg-security] use nosniff middleware
+2018-10-08 19:11:02,697 INFO 10421 [egg-security] use xssProtection middleware
+2018-10-08 19:11:02,697 INFO 10421 [egg-security] use xframe middleware
+2018-10-08 19:11:02,698 INFO 10421 [egg-security] use dta middleware
+2018-10-08 19:11:02,698 INFO 10421 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:11:02,715 INFO 10421 [egg:core] dump config after load, 8ms
+2018-10-08 19:11:02,740 INFO 10421 [egg-watcher:application] watcher start success
+2018-10-08 19:11:02,614 INFO 10422 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:11:02,656 INFO 10422 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:11:02,656 INFO 10422 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:11:02,719 INFO 10422 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:11:02,723 INFO 10422 [egg-security] use csrf middleware
+2018-10-08 19:11:02,724 INFO 10422 [egg-security] use methodnoallow middleware
+2018-10-08 19:11:02,725 INFO 10422 [egg-security] use noopen middleware
+2018-10-08 19:11:02,726 INFO 10422 [egg-security] use nosniff middleware
+2018-10-08 19:11:02,726 INFO 10422 [egg-security] use xssProtection middleware
+2018-10-08 19:11:02,727 INFO 10422 [egg-security] use xframe middleware
+2018-10-08 19:11:02,727 INFO 10422 [egg-security] use dta middleware
+2018-10-08 19:11:02,727 INFO 10422 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:11:02,745 INFO 10422 [egg:core] dump config after load, 7ms
+2018-10-08 19:11:02,763 INFO 10422 [egg-watcher:application] watcher start success
+2018-10-08 19:11:02,770 INFO 10422 [egg:core] dump config after ready, 5ms
+2018-10-08 19:11:07,628 INFO 10432 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:11:07,661 INFO 10432 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:11:07,661 INFO 10432 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:11:07,702 INFO 10432 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:11:07,705 INFO 10432 [egg-security] use csrf middleware
+2018-10-08 19:11:07,705 INFO 10432 [egg-security] use methodnoallow middleware
+2018-10-08 19:11:07,705 INFO 10432 [egg-security] use noopen middleware
+2018-10-08 19:11:07,706 INFO 10432 [egg-security] use nosniff middleware
+2018-10-08 19:11:07,706 INFO 10432 [egg-security] use xssProtection middleware
+2018-10-08 19:11:07,707 INFO 10432 [egg-security] use xframe middleware
+2018-10-08 19:11:07,707 INFO 10432 [egg-security] use dta middleware
+2018-10-08 19:11:07,707 INFO 10432 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:11:07,721 INFO 10432 [egg:core] dump config after load, 9ms
+2018-10-08 19:11:07,736 INFO 10432 [egg-watcher:application] watcher start success
+2018-10-08 19:11:07,743 INFO 10432 [egg:core] dump config after ready, 5ms
+2018-10-08 19:11:08,542 INFO 10435 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:11:08,608 INFO 10435 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:11:08,608 INFO 10435 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:11:08,662 INFO 10435 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:11:08,665 INFO 10435 [egg-security] use csrf middleware
+2018-10-08 19:11:08,666 INFO 10435 [egg-security] use methodnoallow middleware
+2018-10-08 19:11:08,666 INFO 10435 [egg-security] use noopen middleware
+2018-10-08 19:11:08,667 INFO 10435 [egg-security] use nosniff middleware
+2018-10-08 19:11:08,667 INFO 10435 [egg-security] use xssProtection middleware
+2018-10-08 19:11:08,668 INFO 10435 [egg-security] use xframe middleware
+2018-10-08 19:11:08,668 INFO 10435 [egg-security] use dta middleware
+2018-10-08 19:11:08,668 INFO 10435 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:11:08,680 INFO 10435 [egg:core] dump config after load, 6ms
+2018-10-08 19:11:08,697 INFO 10435 [egg-watcher:application] watcher start success
+2018-10-08 19:11:08,704 INFO 10435 [egg:core] dump config after ready, 5ms
+2018-10-08 19:11:20,106 INFO 10453 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:11:20,142 INFO 10453 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:11:20,142 INFO 10453 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:11:20,187 INFO 10453 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:11:20,189 INFO 10453 [egg-security] use csrf middleware
+2018-10-08 19:11:20,190 INFO 10453 [egg-security] use methodnoallow middleware
+2018-10-08 19:11:20,190 INFO 10453 [egg-security] use noopen middleware
+2018-10-08 19:11:20,190 INFO 10453 [egg-security] use nosniff middleware
+2018-10-08 19:11:20,191 INFO 10453 [egg-security] use xssProtection middleware
+2018-10-08 19:11:20,191 INFO 10453 [egg-security] use xframe middleware
+2018-10-08 19:11:20,191 INFO 10453 [egg-security] use dta middleware
+2018-10-08 19:11:20,191 INFO 10453 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:11:20,201 INFO 10453 [egg:core] dump config after load, 5ms
+2018-10-08 19:11:20,212 INFO 10453 [egg-watcher:application] watcher start success
+2018-10-08 19:11:20,219 INFO 10453 [egg:core] dump config after ready, 4ms
+2018-10-08 19:11:21,011 INFO 10454 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:11:21,046 INFO 10454 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:11:21,046 INFO 10454 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:11:21,093 INFO 10454 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:11:21,095 INFO 10454 [egg-security] use csrf middleware
+2018-10-08 19:11:21,096 INFO 10454 [egg-security] use methodnoallow middleware
+2018-10-08 19:11:21,096 INFO 10454 [egg-security] use noopen middleware
+2018-10-08 19:11:21,096 INFO 10454 [egg-security] use nosniff middleware
+2018-10-08 19:11:21,098 INFO 10454 [egg-security] use xssProtection middleware
+2018-10-08 19:11:21,098 INFO 10454 [egg-security] use xframe middleware
+2018-10-08 19:11:21,099 INFO 10454 [egg-security] use dta middleware
+2018-10-08 19:11:21,099 INFO 10454 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:11:21,108 INFO 10454 [egg:core] dump config after load, 5ms
+2018-10-08 19:11:21,133 INFO 10454 [egg-watcher:application] watcher start success
+2018-10-08 19:11:21,141 INFO 10454 [egg:core] dump config after ready, 6ms
+2018-10-08 19:11:46,124 INFO 10522 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:11:46,163 INFO 10522 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:11:46,163 INFO 10522 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:11:46,215 INFO 10522 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:11:46,218 INFO 10522 [egg-security] use csrf middleware
+2018-10-08 19:11:46,219 INFO 10522 [egg-security] use methodnoallow middleware
+2018-10-08 19:11:46,219 INFO 10522 [egg-security] use noopen middleware
+2018-10-08 19:11:46,220 INFO 10522 [egg-security] use nosniff middleware
+2018-10-08 19:11:46,221 INFO 10522 [egg-security] use xssProtection middleware
+2018-10-08 19:11:46,221 INFO 10522 [egg-security] use xframe middleware
+2018-10-08 19:11:46,221 INFO 10522 [egg-security] use dta middleware
+2018-10-08 19:11:46,221 INFO 10522 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:11:46,231 INFO 10522 [egg:core] dump config after load, 4ms
+2018-10-08 19:11:46,244 INFO 10522 [egg-watcher:application] watcher start success
+2018-10-08 19:11:46,249 INFO 10522 [egg:core] dump config after ready, 3ms
+2018-10-08 19:11:49,213 INFO 10534 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:11:49,251 INFO 10534 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:11:49,251 INFO 10534 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:11:49,306 INFO 10534 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:11:49,309 INFO 10534 [egg-security] use csrf middleware
+2018-10-08 19:11:49,310 INFO 10534 [egg-security] use methodnoallow middleware
+2018-10-08 19:11:49,311 INFO 10534 [egg-security] use noopen middleware
+2018-10-08 19:11:49,312 INFO 10534 [egg-security] use nosniff middleware
+2018-10-08 19:11:49,312 INFO 10534 [egg-security] use xssProtection middleware
+2018-10-08 19:11:49,313 INFO 10534 [egg-security] use xframe middleware
+2018-10-08 19:11:49,313 INFO 10534 [egg-security] use dta middleware
+2018-10-08 19:11:49,313 INFO 10534 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:11:49,323 INFO 10534 [egg:core] dump config after load, 6ms
+2018-10-08 19:11:49,335 INFO 10534 [egg-watcher:application] watcher start success
+2018-10-08 19:11:49,342 INFO 10534 [egg:core] dump config after ready, 5ms
+2018-10-08 19:11:50,083 INFO 10537 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:11:50,121 INFO 10537 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:11:50,121 INFO 10537 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:11:50,160 INFO 10537 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:11:50,162 INFO 10537 [egg-security] use csrf middleware
+2018-10-08 19:11:50,163 INFO 10537 [egg-security] use methodnoallow middleware
+2018-10-08 19:11:50,163 INFO 10537 [egg-security] use noopen middleware
+2018-10-08 19:11:50,163 INFO 10537 [egg-security] use nosniff middleware
+2018-10-08 19:11:50,164 INFO 10537 [egg-security] use xssProtection middleware
+2018-10-08 19:11:50,164 INFO 10537 [egg-security] use xframe middleware
+2018-10-08 19:11:50,164 INFO 10537 [egg-security] use dta middleware
+2018-10-08 19:11:50,164 INFO 10537 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:11:50,173 INFO 10537 [egg:core] dump config after load, 4ms
+2018-10-08 19:11:50,183 INFO 10537 [egg-watcher:application] watcher start success
+2018-10-08 19:11:50,189 INFO 10537 [egg:core] dump config after ready, 4ms
+2018-10-08 19:12:03,872 INFO 10551 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:12:03,913 INFO 10551 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:12:03,913 INFO 10551 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:12:03,968 INFO 10551 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:12:03,974 INFO 10551 [egg-security] use csrf middleware
+2018-10-08 19:12:03,976 INFO 10551 [egg-security] use methodnoallow middleware
+2018-10-08 19:12:03,976 INFO 10551 [egg-security] use noopen middleware
+2018-10-08 19:12:03,978 INFO 10551 [egg-security] use nosniff middleware
+2018-10-08 19:12:03,981 INFO 10551 [egg-security] use xssProtection middleware
+2018-10-08 19:12:03,983 INFO 10551 [egg-security] use xframe middleware
+2018-10-08 19:12:03,984 INFO 10551 [egg-security] use dta middleware
+2018-10-08 19:12:03,984 INFO 10551 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:12:04,007 INFO 10551 [egg:core] dump config after load, 11ms
+2018-10-08 19:12:04,024 INFO 10551 [egg-watcher:application] watcher start success
+2018-10-08 19:12:04,030 INFO 10551 [egg:core] dump config after ready, 4ms
+2018-10-08 19:12:08,404 INFO 10559 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:12:08,439 INFO 10559 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:12:08,439 INFO 10559 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:12:08,486 INFO 10559 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:12:08,488 INFO 10559 [egg-security] use csrf middleware
+2018-10-08 19:12:08,489 INFO 10559 [egg-security] use methodnoallow middleware
+2018-10-08 19:12:08,489 INFO 10559 [egg-security] use noopen middleware
+2018-10-08 19:12:08,490 INFO 10559 [egg-security] use nosniff middleware
+2018-10-08 19:12:08,490 INFO 10559 [egg-security] use xssProtection middleware
+2018-10-08 19:12:08,491 INFO 10559 [egg-security] use xframe middleware
+2018-10-08 19:12:08,491 INFO 10559 [egg-security] use dta middleware
+2018-10-08 19:12:08,491 INFO 10559 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:12:08,503 INFO 10559 [egg:core] dump config after load, 6ms
+2018-10-08 19:12:08,520 INFO 10559 [egg-watcher:application] watcher start success
+2018-10-08 19:12:08,528 INFO 10559 [egg:core] dump config after ready, 6ms
+2018-10-08 19:12:12,514 INFO 10570 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:12:12,557 INFO 10570 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:12:12,558 INFO 10570 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:12:12,608 INFO 10570 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:12:12,612 INFO 10570 [egg-security] use csrf middleware
+2018-10-08 19:12:12,613 INFO 10570 [egg-security] use methodnoallow middleware
+2018-10-08 19:12:12,613 INFO 10570 [egg-security] use noopen middleware
+2018-10-08 19:12:12,614 INFO 10570 [egg-security] use nosniff middleware
+2018-10-08 19:12:12,614 INFO 10570 [egg-security] use xssProtection middleware
+2018-10-08 19:12:12,614 INFO 10570 [egg-security] use xframe middleware
+2018-10-08 19:12:12,614 INFO 10570 [egg-security] use dta middleware
+2018-10-08 19:12:12,614 INFO 10570 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:12:12,623 INFO 10570 [egg:core] dump config after load, 5ms
+2018-10-08 19:12:12,633 INFO 10570 [egg-watcher:application] watcher start success
+2018-10-08 19:12:12,638 INFO 10570 [egg:core] dump config after ready, 3ms
+2018-10-08 19:12:14,139 INFO 10571 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:12:14,254 INFO 10571 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:12:14,255 INFO 10571 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:12:14,416 INFO 10571 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:12:14,418 INFO 10571 [egg-security] use csrf middleware
+2018-10-08 19:12:14,419 INFO 10571 [egg-security] use methodnoallow middleware
+2018-10-08 19:12:14,419 INFO 10571 [egg-security] use noopen middleware
+2018-10-08 19:12:14,420 INFO 10571 [egg-security] use nosniff middleware
+2018-10-08 19:12:14,420 INFO 10571 [egg-security] use xssProtection middleware
+2018-10-08 19:12:14,421 INFO 10571 [egg-security] use xframe middleware
+2018-10-08 19:12:14,421 INFO 10571 [egg-security] use dta middleware
+2018-10-08 19:12:14,421 INFO 10571 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:12:14,430 INFO 10571 [egg:core] dump config after load, 5ms
+2018-10-08 19:12:14,441 INFO 10571 [egg-watcher:application] watcher start success
+2018-10-08 19:12:14,446 INFO 10571 [egg:core] dump config after ready, 3ms
+2018-10-08 19:12:22,697 INFO 10584 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:12:22,732 INFO 10584 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:12:22,732 INFO 10584 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:12:22,779 INFO 10584 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:12:22,781 INFO 10584 [egg-security] use csrf middleware
+2018-10-08 19:12:22,782 INFO 10584 [egg-security] use methodnoallow middleware
+2018-10-08 19:12:22,782 INFO 10584 [egg-security] use noopen middleware
+2018-10-08 19:12:22,783 INFO 10584 [egg-security] use nosniff middleware
+2018-10-08 19:12:22,783 INFO 10584 [egg-security] use xssProtection middleware
+2018-10-08 19:12:22,784 INFO 10584 [egg-security] use xframe middleware
+2018-10-08 19:12:22,784 INFO 10584 [egg-security] use dta middleware
+2018-10-08 19:12:22,784 INFO 10584 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:12:22,794 INFO 10584 [egg:core] dump config after load, 6ms
+2018-10-08 19:12:22,805 INFO 10584 [egg-watcher:application] watcher start success
+2018-10-08 19:12:22,817 INFO 10584 [egg:core] dump config after ready, 9ms
+2018-10-08 19:12:23,643 INFO 10592 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:12:23,680 INFO 10592 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:12:23,680 INFO 10592 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:12:23,727 INFO 10592 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:12:23,729 INFO 10592 [egg-security] use csrf middleware
+2018-10-08 19:12:23,730 INFO 10592 [egg-security] use methodnoallow middleware
+2018-10-08 19:12:23,730 INFO 10592 [egg-security] use noopen middleware
+2018-10-08 19:12:23,731 INFO 10592 [egg-security] use nosniff middleware
+2018-10-08 19:12:23,731 INFO 10592 [egg-security] use xssProtection middleware
+2018-10-08 19:12:23,731 INFO 10592 [egg-security] use xframe middleware
+2018-10-08 19:12:23,731 INFO 10592 [egg-security] use dta middleware
+2018-10-08 19:12:23,731 INFO 10592 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:12:23,744 INFO 10592 [egg:core] dump config after load, 7ms
+2018-10-08 19:12:23,764 INFO 10592 [egg-watcher:application] watcher start success
+2018-10-08 19:12:23,771 INFO 10592 [egg:core] dump config after ready, 4ms
+2018-10-08 19:12:25,851 INFO 10596 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:12:25,882 INFO 10596 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:12:25,883 INFO 10596 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:12:25,925 INFO 10596 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:12:25,928 INFO 10596 [egg-security] use csrf middleware
+2018-10-08 19:12:25,928 INFO 10596 [egg-security] use methodnoallow middleware
+2018-10-08 19:12:25,929 INFO 10596 [egg-security] use noopen middleware
+2018-10-08 19:12:25,930 INFO 10596 [egg-security] use nosniff middleware
+2018-10-08 19:12:25,930 INFO 10596 [egg-security] use xssProtection middleware
+2018-10-08 19:12:25,931 INFO 10596 [egg-security] use xframe middleware
+2018-10-08 19:12:25,931 INFO 10596 [egg-security] use dta middleware
+2018-10-08 19:12:25,931 INFO 10596 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:12:25,942 INFO 10596 [egg:core] dump config after load, 5ms
+2018-10-08 19:12:25,954 INFO 10596 [egg-watcher:application] watcher start success
+2018-10-08 19:12:25,959 INFO 10596 [egg:core] dump config after ready, 3ms
+2018-10-08 19:13:28,226 INFO 10606 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:13:28,277 INFO 10606 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:13:28,277 INFO 10606 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:13:28,328 INFO 10606 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:13:28,330 INFO 10606 [egg-security] use csrf middleware
+2018-10-08 19:13:28,330 INFO 10606 [egg-security] use methodnoallow middleware
+2018-10-08 19:13:28,331 INFO 10606 [egg-security] use noopen middleware
+2018-10-08 19:13:28,331 INFO 10606 [egg-security] use nosniff middleware
+2018-10-08 19:13:28,332 INFO 10606 [egg-security] use xssProtection middleware
+2018-10-08 19:13:28,332 INFO 10606 [egg-security] use xframe middleware
+2018-10-08 19:13:28,333 INFO 10606 [egg-security] use dta middleware
+2018-10-08 19:13:28,333 INFO 10606 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:13:28,344 INFO 10606 [egg:core] dump config after load, 7ms
+2018-10-08 19:13:28,360 INFO 10606 [egg-watcher:application] watcher start success
+2018-10-08 19:13:27,364 INFO 10605 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:13:27,400 INFO 10605 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:13:27,400 INFO 10605 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:13:27,451 INFO 10605 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:13:27,454 INFO 10605 [egg-security] use csrf middleware
+2018-10-08 19:13:27,455 INFO 10605 [egg-security] use methodnoallow middleware
+2018-10-08 19:13:27,455 INFO 10605 [egg-security] use noopen middleware
+2018-10-08 19:13:27,456 INFO 10605 [egg-security] use nosniff middleware
+2018-10-08 19:13:27,456 INFO 10605 [egg-security] use xssProtection middleware
+2018-10-08 19:13:27,457 INFO 10605 [egg-security] use xframe middleware
+2018-10-08 19:13:27,457 INFO 10605 [egg-security] use dta middleware
+2018-10-08 19:13:27,457 INFO 10605 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:13:27,467 INFO 10605 [egg:core] dump config after load, 5ms
+2018-10-08 19:13:27,480 INFO 10605 [egg-watcher:application] watcher start success
+2018-10-08 19:13:27,487 INFO 10605 [egg:core] dump config after ready, 4ms
+2018-10-08 19:13:28,295 INFO 10607 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:13:28,338 INFO 10607 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:13:28,338 INFO 10607 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:13:28,393 INFO 10607 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:13:28,396 INFO 10607 [egg-security] use csrf middleware
+2018-10-08 19:13:28,397 INFO 10607 [egg-security] use methodnoallow middleware
+2018-10-08 19:13:28,397 INFO 10607 [egg-security] use noopen middleware
+2018-10-08 19:13:28,397 INFO 10607 [egg-security] use nosniff middleware
+2018-10-08 19:13:28,398 INFO 10607 [egg-security] use xssProtection middleware
+2018-10-08 19:13:28,398 INFO 10607 [egg-security] use xframe middleware
+2018-10-08 19:13:28,398 INFO 10607 [egg-security] use dta middleware
+2018-10-08 19:13:28,398 INFO 10607 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:13:28,407 INFO 10607 [egg:core] dump config after load, 5ms
+2018-10-08 19:13:28,418 INFO 10607 [egg-watcher:application] watcher start success
+2018-10-08 19:13:28,426 INFO 10607 [egg:core] dump config after ready, 3ms
+2018-10-08 19:13:29,039 INFO 10608 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:13:29,073 INFO 10608 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:13:29,074 INFO 10608 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:13:29,117 INFO 10608 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:13:29,120 INFO 10608 [egg-security] use csrf middleware
+2018-10-08 19:13:29,120 INFO 10608 [egg-security] use methodnoallow middleware
+2018-10-08 19:13:29,120 INFO 10608 [egg-security] use noopen middleware
+2018-10-08 19:13:29,121 INFO 10608 [egg-security] use nosniff middleware
+2018-10-08 19:13:29,121 INFO 10608 [egg-security] use xssProtection middleware
+2018-10-08 19:13:29,121 INFO 10608 [egg-security] use xframe middleware
+2018-10-08 19:13:29,122 INFO 10608 [egg-security] use dta middleware
+2018-10-08 19:13:29,122 INFO 10608 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:13:29,130 INFO 10608 [egg:core] dump config after load, 4ms
+2018-10-08 19:13:29,141 INFO 10608 [egg-watcher:application] watcher start success
+2018-10-08 19:13:29,149 INFO 10608 [egg:core] dump config after ready, 5ms
+2018-10-08 19:13:36,735 INFO 10616 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:13:36,780 INFO 10616 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:13:36,780 INFO 10616 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:13:36,835 INFO 10616 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:13:36,838 INFO 10616 [egg-security] use csrf middleware
+2018-10-08 19:13:36,839 INFO 10616 [egg-security] use methodnoallow middleware
+2018-10-08 19:13:36,839 INFO 10616 [egg-security] use noopen middleware
+2018-10-08 19:13:36,839 INFO 10616 [egg-security] use nosniff middleware
+2018-10-08 19:13:36,840 INFO 10616 [egg-security] use xssProtection middleware
+2018-10-08 19:13:36,840 INFO 10616 [egg-security] use xframe middleware
+2018-10-08 19:13:36,840 INFO 10616 [egg-security] use dta middleware
+2018-10-08 19:13:36,840 INFO 10616 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:13:36,851 INFO 10616 [egg:core] dump config after load, 5ms
+2018-10-08 19:13:36,861 INFO 10616 [egg-watcher:application] watcher start success
+2018-10-08 19:13:36,867 INFO 10616 [egg:core] dump config after ready, 4ms
+2018-10-08 19:13:37,478 INFO 10617 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:13:37,511 INFO 10617 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:13:37,511 INFO 10617 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:13:37,563 INFO 10617 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:13:37,568 INFO 10617 [egg-security] use csrf middleware
+2018-10-08 19:13:37,569 INFO 10617 [egg-security] use methodnoallow middleware
+2018-10-08 19:13:37,570 INFO 10617 [egg-security] use noopen middleware
+2018-10-08 19:13:37,572 INFO 10617 [egg-security] use nosniff middleware
+2018-10-08 19:13:37,573 INFO 10617 [egg-security] use xssProtection middleware
+2018-10-08 19:13:37,573 INFO 10617 [egg-security] use xframe middleware
+2018-10-08 19:13:37,574 INFO 10617 [egg-security] use dta middleware
+2018-10-08 19:13:37,575 INFO 10617 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:13:37,600 INFO 10617 [egg:core] dump config after load, 15ms
+2018-10-08 19:13:37,637 INFO 10617 [egg-watcher:application] watcher start success
+2018-10-08 19:13:37,642 INFO 10617 [egg:core] dump config after ready, 3ms
+2018-10-08 19:40:45,922 INFO 11345 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:40:45,964 INFO 11345 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:40:45,964 INFO 11345 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:40:46,045 INFO 11345 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:40:46,048 INFO 11345 [egg-security] use csrf middleware
+2018-10-08 19:40:46,048 INFO 11345 [egg-security] use methodnoallow middleware
+2018-10-08 19:40:46,049 INFO 11345 [egg-security] use noopen middleware
+2018-10-08 19:40:46,050 INFO 11345 [egg-security] use nosniff middleware
+2018-10-08 19:40:46,050 INFO 11345 [egg-security] use xssProtection middleware
+2018-10-08 19:40:46,051 INFO 11345 [egg-security] use xframe middleware
+2018-10-08 19:40:46,051 INFO 11345 [egg-security] use dta middleware
+2018-10-08 19:40:46,051 INFO 11345 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:40:46,067 INFO 11345 [egg:core] dump config after load, 5ms
+2018-10-08 19:40:46,082 INFO 11345 [egg-watcher:application] watcher start success
+2018-10-08 19:40:46,087 INFO 11345 [egg:core] dump config after ready, 3ms
+2018-10-08 19:40:50,280 INFO 11353 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:40:50,315 INFO 11353 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:40:50,315 INFO 11353 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:40:50,357 INFO 11353 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:40:50,360 INFO 11353 [egg-security] use csrf middleware
+2018-10-08 19:40:50,360 INFO 11353 [egg-security] use methodnoallow middleware
+2018-10-08 19:40:50,360 INFO 11353 [egg-security] use noopen middleware
+2018-10-08 19:40:50,361 INFO 11353 [egg-security] use nosniff middleware
+2018-10-08 19:40:50,361 INFO 11353 [egg-security] use xssProtection middleware
+2018-10-08 19:40:50,361 INFO 11353 [egg-security] use xframe middleware
+2018-10-08 19:40:50,362 INFO 11353 [egg-security] use dta middleware
+2018-10-08 19:40:50,362 INFO 11353 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:40:50,370 INFO 11353 [egg:core] dump config after load, 4ms
+2018-10-08 19:40:50,379 INFO 11353 [egg-watcher:application] watcher start success
+2018-10-08 19:40:50,385 INFO 11353 [egg:core] dump config after ready, 4ms
+2018-10-08 19:40:55,422 INFO 11361 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:40:55,487 INFO 11361 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:40:55,487 INFO 11361 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:40:55,541 INFO 11361 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:40:55,544 INFO 11361 [egg-security] use csrf middleware
+2018-10-08 19:40:55,544 INFO 11361 [egg-security] use methodnoallow middleware
+2018-10-08 19:40:55,544 INFO 11361 [egg-security] use noopen middleware
+2018-10-08 19:40:55,545 INFO 11361 [egg-security] use nosniff middleware
+2018-10-08 19:40:55,545 INFO 11361 [egg-security] use xssProtection middleware
+2018-10-08 19:40:55,545 INFO 11361 [egg-security] use xframe middleware
+2018-10-08 19:40:55,546 INFO 11361 [egg-security] use dta middleware
+2018-10-08 19:40:55,546 INFO 11361 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:40:55,557 INFO 11361 [egg:core] dump config after load, 6ms
+2018-10-08 19:40:55,568 INFO 11361 [egg-watcher:application] watcher start success
+2018-10-08 19:40:55,576 INFO 11361 [egg:core] dump config after ready, 6ms
+2018-10-08 19:40:56,300 INFO 11362 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 19:40:56,334 INFO 11362 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 19:40:56,334 INFO 11362 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 19:40:56,378 INFO 11362 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 19:40:56,381 INFO 11362 [egg-security] use csrf middleware
+2018-10-08 19:40:56,382 INFO 11362 [egg-security] use methodnoallow middleware
+2018-10-08 19:40:56,382 INFO 11362 [egg-security] use noopen middleware
+2018-10-08 19:40:56,383 INFO 11362 [egg-security] use nosniff middleware
+2018-10-08 19:40:56,383 INFO 11362 [egg-security] use xssProtection middleware
+2018-10-08 19:40:56,383 INFO 11362 [egg-security] use xframe middleware
+2018-10-08 19:40:56,384 INFO 11362 [egg-security] use dta middleware
+2018-10-08 19:40:56,384 INFO 11362 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 19:40:56,397 INFO 11362 [egg:core] dump config after load, 8ms
+2018-10-08 19:40:56,420 INFO 11362 [egg-watcher:application] watcher start success
+2018-10-08 19:40:56,428 INFO 11362 [egg:core] dump config after ready, 5ms
+2018-10-08 20:11:19,996 INFO 11676 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 20:11:20,045 INFO 11676 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 20:11:20,045 INFO 11676 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 20:11:20,119 INFO 11676 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 20:11:20,122 INFO 11676 [egg-security] use csrf middleware
+2018-10-08 20:11:20,123 INFO 11676 [egg-security] use methodnoallow middleware
+2018-10-08 20:11:20,124 INFO 11676 [egg-security] use noopen middleware
+2018-10-08 20:11:20,125 INFO 11676 [egg-security] use nosniff middleware
+2018-10-08 20:11:20,125 INFO 11676 [egg-security] use xssProtection middleware
+2018-10-08 20:11:20,126 INFO 11676 [egg-security] use xframe middleware
+2018-10-08 20:11:20,126 INFO 11676 [egg-security] use dta middleware
+2018-10-08 20:11:20,126 INFO 11676 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 20:11:20,142 INFO 11676 [egg:core] dump config after load, 10ms
+2018-10-08 20:11:20,153 INFO 11676 [egg-watcher:application] watcher start success
+2018-10-08 20:11:20,159 INFO 11676 [egg:core] dump config after ready, 4ms
+2018-10-08 20:11:20,876 INFO 11677 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 20:11:20,914 INFO 11677 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 20:11:20,914 INFO 11677 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 20:11:20,962 INFO 11677 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 20:11:20,966 INFO 11677 [egg-security] use csrf middleware
+2018-10-08 20:11:20,968 INFO 11677 [egg-security] use methodnoallow middleware
+2018-10-08 20:11:20,968 INFO 11677 [egg-security] use noopen middleware
+2018-10-08 20:11:20,969 INFO 11677 [egg-security] use nosniff middleware
+2018-10-08 20:11:20,969 INFO 11677 [egg-security] use xssProtection middleware
+2018-10-08 20:11:20,970 INFO 11677 [egg-security] use xframe middleware
+2018-10-08 20:11:20,970 INFO 11677 [egg-security] use dta middleware
+2018-10-08 20:11:20,970 INFO 11677 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 20:11:20,980 INFO 11677 [egg:core] dump config after load, 4ms
+2018-10-08 20:11:20,996 INFO 11677 [egg-watcher:application] watcher start success
+2018-10-08 20:11:21,470 INFO 11678 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 20:11:21,508 INFO 11678 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 20:11:21,509 INFO 11678 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 20:11:21,558 INFO 11678 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 20:11:21,560 INFO 11678 [egg-security] use csrf middleware
+2018-10-08 20:11:21,561 INFO 11678 [egg-security] use methodnoallow middleware
+2018-10-08 20:11:21,561 INFO 11678 [egg-security] use noopen middleware
+2018-10-08 20:11:21,562 INFO 11678 [egg-security] use nosniff middleware
+2018-10-08 20:11:21,562 INFO 11678 [egg-security] use xssProtection middleware
+2018-10-08 20:11:21,562 INFO 11678 [egg-security] use xframe middleware
+2018-10-08 20:11:21,563 INFO 11678 [egg-security] use dta middleware
+2018-10-08 20:11:21,563 INFO 11678 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 20:11:21,572 INFO 11678 [egg:core] dump config after load, 5ms
+2018-10-08 20:11:21,586 INFO 11678 [egg-watcher:application] watcher start success
+2018-10-08 20:11:21,591 INFO 11678 [egg:core] dump config after ready, 3ms
+2018-10-08 20:11:22,054 INFO 11679 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 20:11:22,095 INFO 11679 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 20:11:22,095 INFO 11679 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 20:11:22,137 INFO 11679 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 20:11:22,139 INFO 11679 [egg-security] use csrf middleware
+2018-10-08 20:11:22,140 INFO 11679 [egg-security] use methodnoallow middleware
+2018-10-08 20:11:22,140 INFO 11679 [egg-security] use noopen middleware
+2018-10-08 20:11:22,141 INFO 11679 [egg-security] use nosniff middleware
+2018-10-08 20:11:22,141 INFO 11679 [egg-security] use xssProtection middleware
+2018-10-08 20:11:22,141 INFO 11679 [egg-security] use xframe middleware
+2018-10-08 20:11:22,142 INFO 11679 [egg-security] use dta middleware
+2018-10-08 20:11:22,142 INFO 11679 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 20:11:22,151 INFO 11679 [egg:core] dump config after load, 5ms
+2018-10-08 20:11:22,163 INFO 11679 [egg-watcher:application] watcher start success
+2018-10-08 20:11:22,169 INFO 11679 [egg:core] dump config after ready, 4ms
+2018-10-08 20:11:27,107 INFO 11690 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 20:11:27,147 INFO 11690 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 20:11:27,147 INFO 11690 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 20:11:27,199 INFO 11690 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 20:11:27,202 INFO 11690 [egg-security] use csrf middleware
+2018-10-08 20:11:27,202 INFO 11690 [egg-security] use methodnoallow middleware
+2018-10-08 20:11:27,203 INFO 11690 [egg-security] use noopen middleware
+2018-10-08 20:11:27,203 INFO 11690 [egg-security] use nosniff middleware
+2018-10-08 20:11:27,203 INFO 11690 [egg-security] use xssProtection middleware
+2018-10-08 20:11:27,204 INFO 11690 [egg-security] use xframe middleware
+2018-10-08 20:11:27,204 INFO 11690 [egg-security] use dta middleware
+2018-10-08 20:11:27,204 INFO 11690 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 20:11:27,215 INFO 11690 [egg:core] dump config after load, 6ms
+2018-10-08 20:11:27,227 INFO 11690 [egg-watcher:application] watcher start success
+2018-10-08 20:11:27,236 INFO 11690 [egg:core] dump config after ready, 5ms
+2018-10-08 20:11:28,047 INFO 11691 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 20:11:28,085 INFO 11691 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 20:11:28,085 INFO 11691 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 20:11:28,134 INFO 11691 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 20:11:28,137 INFO 11691 [egg-security] use csrf middleware
+2018-10-08 20:11:28,138 INFO 11691 [egg-security] use methodnoallow middleware
+2018-10-08 20:11:28,138 INFO 11691 [egg-security] use noopen middleware
+2018-10-08 20:11:28,139 INFO 11691 [egg-security] use nosniff middleware
+2018-10-08 20:11:28,139 INFO 11691 [egg-security] use xssProtection middleware
+2018-10-08 20:11:28,139 INFO 11691 [egg-security] use xframe middleware
+2018-10-08 20:11:28,140 INFO 11691 [egg-security] use dta middleware
+2018-10-08 20:11:28,140 INFO 11691 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 20:11:28,156 INFO 11691 [egg:core] dump config after load, 11ms
+2018-10-08 20:11:28,173 INFO 11691 [egg-watcher:application] watcher start success
+2018-10-08 20:11:28,408 INFO 11692 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-08 20:11:28,448 INFO 11692 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-08 20:11:28,448 INFO 11692 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-08 20:11:28,500 INFO 11692 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-08 20:11:28,505 INFO 11692 [egg-security] use csrf middleware
+2018-10-08 20:11:28,506 INFO 11692 [egg-security] use methodnoallow middleware
+2018-10-08 20:11:28,506 INFO 11692 [egg-security] use noopen middleware
+2018-10-08 20:11:28,506 INFO 11692 [egg-security] use nosniff middleware
+2018-10-08 20:11:28,507 INFO 11692 [egg-security] use xssProtection middleware
+2018-10-08 20:11:28,507 INFO 11692 [egg-security] use xframe middleware
+2018-10-08 20:11:28,507 INFO 11692 [egg-security] use dta middleware
+2018-10-08 20:11:28,507 INFO 11692 [egg-security] compose 7 middlewares into one security middleware
+2018-10-08 20:11:28,517 INFO 11692 [egg:core] dump config after load, 5ms
+2018-10-08 20:11:28,531 INFO 11692 [egg-watcher:application] watcher start success
+2018-10-08 20:11:28,542 INFO 11692 [egg:core] dump config after ready, 7ms
+2018-10-13 20:32:54,770 INFO 6494 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-13 20:32:54,803 INFO 6494 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-13 20:32:54,803 INFO 6494 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-13 20:32:54,880 INFO 6494 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-13 20:32:54,883 INFO 6494 [egg-security] use csrf middleware
+2018-10-13 20:32:54,884 INFO 6494 [egg-security] use methodnoallow middleware
+2018-10-13 20:32:54,885 INFO 6494 [egg-security] use noopen middleware
+2018-10-13 20:32:54,886 INFO 6494 [egg-security] use nosniff middleware
+2018-10-13 20:32:54,886 INFO 6494 [egg-security] use xssProtection middleware
+2018-10-13 20:32:54,887 INFO 6494 [egg-security] use xframe middleware
+2018-10-13 20:32:54,888 INFO 6494 [egg-security] use dta middleware
+2018-10-13 20:32:54,888 INFO 6494 [egg-security] compose 7 middlewares into one security middleware
+2018-10-13 20:32:54,900 INFO 6494 [egg:core] dump config after load, 5ms
+2018-10-13 20:32:54,916 INFO 6494 [egg-watcher:application] watcher start success
+2018-10-13 20:32:54,921 INFO 6494 [egg:core] dump config after ready, 3ms
+2018-10-13 20:39:49,194 INFO 6724 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-13 20:39:49,262 INFO 6724 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-13 20:39:49,262 INFO 6724 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-13 20:39:49,355 INFO 6724 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-13 20:39:49,358 INFO 6724 [egg-security] use csrf middleware
+2018-10-13 20:39:49,359 INFO 6724 [egg-security] use methodnoallow middleware
+2018-10-13 20:39:49,361 INFO 6724 [egg-security] use noopen middleware
+2018-10-13 20:39:49,362 INFO 6724 [egg-security] use nosniff middleware
+2018-10-13 20:39:49,363 INFO 6724 [egg-security] use xssProtection middleware
+2018-10-13 20:39:49,364 INFO 6724 [egg-security] use xframe middleware
+2018-10-13 20:39:49,364 INFO 6724 [egg-security] use dta middleware
+2018-10-13 20:39:49,364 INFO 6724 [egg-security] compose 7 middlewares into one security middleware
+2018-10-13 20:39:49,384 INFO 6724 [egg:core] dump config after load, 12ms
+2018-10-13 20:39:49,397 INFO 6724 [egg-watcher:application] watcher start success
+2018-10-13 20:39:49,406 INFO 6724 [egg:core] dump config after ready, 7ms
+2018-10-13 20:40:12,197 INFO 6746 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-13 20:40:12,242 INFO 6746 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-13 20:40:12,242 INFO 6746 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-13 20:40:12,299 INFO 6746 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-13 20:40:12,303 INFO 6746 [egg-security] use csrf middleware
+2018-10-13 20:40:12,304 INFO 6746 [egg-security] use methodnoallow middleware
+2018-10-13 20:40:12,304 INFO 6746 [egg-security] use noopen middleware
+2018-10-13 20:40:12,306 INFO 6746 [egg-security] use nosniff middleware
+2018-10-13 20:40:12,306 INFO 6746 [egg-security] use xssProtection middleware
+2018-10-13 20:40:12,307 INFO 6746 [egg-security] use xframe middleware
+2018-10-13 20:40:12,308 INFO 6746 [egg-security] use dta middleware
+2018-10-13 20:40:12,308 INFO 6746 [egg-security] compose 7 middlewares into one security middleware
+2018-10-13 20:40:12,330 INFO 6746 [egg:core] dump config after load, 10ms
+2018-10-13 20:40:12,343 INFO 6746 [egg-watcher:application] watcher start success
+2018-10-13 20:40:12,352 INFO 6746 [egg:core] dump config after ready, 6ms
+2018-10-13 20:40:13,006 INFO 6747 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-13 20:40:13,041 INFO 6747 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-13 20:40:13,041 INFO 6747 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-13 20:40:13,087 INFO 6747 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-13 20:40:13,089 INFO 6747 [egg-security] use csrf middleware
+2018-10-13 20:40:13,090 INFO 6747 [egg-security] use methodnoallow middleware
+2018-10-13 20:40:13,090 INFO 6747 [egg-security] use noopen middleware
+2018-10-13 20:40:13,091 INFO 6747 [egg-security] use nosniff middleware
+2018-10-13 20:40:13,091 INFO 6747 [egg-security] use xssProtection middleware
+2018-10-13 20:40:13,091 INFO 6747 [egg-security] use xframe middleware
+2018-10-13 20:40:13,091 INFO 6747 [egg-security] use dta middleware
+2018-10-13 20:40:13,091 INFO 6747 [egg-security] compose 7 middlewares into one security middleware
+2018-10-13 20:40:13,100 INFO 6747 [egg:core] dump config after load, 4ms
+2018-10-13 20:40:13,110 INFO 6747 [egg-watcher:application] watcher start success
+2018-10-13 20:40:13,118 INFO 6747 [egg:core] dump config after ready, 6ms
+2018-10-13 20:40:49,791 INFO 6755 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-13 20:40:49,831 INFO 6755 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-13 20:40:49,831 INFO 6755 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-13 20:40:49,875 INFO 6755 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-13 20:40:49,877 INFO 6755 [egg-security] use csrf middleware
+2018-10-13 20:40:49,877 INFO 6755 [egg-security] use methodnoallow middleware
+2018-10-13 20:40:49,878 INFO 6755 [egg-security] use noopen middleware
+2018-10-13 20:40:49,878 INFO 6755 [egg-security] use nosniff middleware
+2018-10-13 20:40:49,878 INFO 6755 [egg-security] use xssProtection middleware
+2018-10-13 20:40:49,879 INFO 6755 [egg-security] use xframe middleware
+2018-10-13 20:40:49,879 INFO 6755 [egg-security] use dta middleware
+2018-10-13 20:40:49,879 INFO 6755 [egg-security] compose 7 middlewares into one security middleware
+2018-10-13 20:40:49,893 INFO 6755 [egg:core] dump config after load, 8ms
+2018-10-13 20:40:49,906 INFO 6755 [egg-watcher:application] watcher start success
+2018-10-13 20:40:49,912 INFO 6755 [egg:core] dump config after ready, 4ms
+2018-10-13 20:40:51,599 INFO 6757 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-13 20:40:51,652 INFO 6757 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-13 20:40:51,652 INFO 6757 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-13 20:40:51,697 INFO 6757 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-13 20:40:51,700 INFO 6757 [egg-security] use csrf middleware
+2018-10-13 20:40:51,701 INFO 6757 [egg-security] use methodnoallow middleware
+2018-10-13 20:40:51,701 INFO 6757 [egg-security] use noopen middleware
+2018-10-13 20:40:51,702 INFO 6757 [egg-security] use nosniff middleware
+2018-10-13 20:40:51,702 INFO 6757 [egg-security] use xssProtection middleware
+2018-10-13 20:40:51,702 INFO 6757 [egg-security] use xframe middleware
+2018-10-13 20:40:51,703 INFO 6757 [egg-security] use dta middleware
+2018-10-13 20:40:51,703 INFO 6757 [egg-security] compose 7 middlewares into one security middleware
+2018-10-13 20:40:51,713 INFO 6757 [egg:core] dump config after load, 5ms
+2018-10-13 20:40:51,726 INFO 6757 [egg-watcher:application] watcher start success
+2018-10-13 20:40:50,728 INFO 6756 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-13 20:40:50,765 INFO 6756 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-13 20:40:50,765 INFO 6756 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-13 20:40:50,818 INFO 6756 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-13 20:40:50,820 INFO 6756 [egg-security] use csrf middleware
+2018-10-13 20:40:50,821 INFO 6756 [egg-security] use methodnoallow middleware
+2018-10-13 20:40:50,821 INFO 6756 [egg-security] use noopen middleware
+2018-10-13 20:40:50,822 INFO 6756 [egg-security] use nosniff middleware
+2018-10-13 20:40:50,822 INFO 6756 [egg-security] use xssProtection middleware
+2018-10-13 20:40:50,823 INFO 6756 [egg-security] use xframe middleware
+2018-10-13 20:40:50,823 INFO 6756 [egg-security] use dta middleware
+2018-10-13 20:40:50,823 INFO 6756 [egg-security] compose 7 middlewares into one security middleware
+2018-10-13 20:40:50,834 INFO 6756 [egg:core] dump config after load, 5ms
+2018-10-13 20:40:50,845 INFO 6756 [egg-watcher:application] watcher start success
+2018-10-13 20:40:50,851 INFO 6756 [egg:core] dump config after ready, 4ms
+2018-10-13 20:40:51,935 INFO 6758 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-13 20:40:51,970 INFO 6758 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-13 20:40:51,970 INFO 6758 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-13 20:40:52,013 INFO 6758 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-13 20:40:52,016 INFO 6758 [egg-security] use csrf middleware
+2018-10-13 20:40:52,016 INFO 6758 [egg-security] use methodnoallow middleware
+2018-10-13 20:40:52,017 INFO 6758 [egg-security] use noopen middleware
+2018-10-13 20:40:52,017 INFO 6758 [egg-security] use nosniff middleware
+2018-10-13 20:40:52,018 INFO 6758 [egg-security] use xssProtection middleware
+2018-10-13 20:40:52,018 INFO 6758 [egg-security] use xframe middleware
+2018-10-13 20:40:52,018 INFO 6758 [egg-security] use dta middleware
+2018-10-13 20:40:52,018 INFO 6758 [egg-security] compose 7 middlewares into one security middleware
+2018-10-13 20:40:52,028 INFO 6758 [egg:core] dump config after load, 4ms
+2018-10-13 20:40:52,038 INFO 6758 [egg-watcher:application] watcher start success
+2018-10-13 20:40:52,044 INFO 6758 [egg:core] dump config after ready, 4ms
+2018-10-13 20:40:52,395 INFO 6759 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-13 20:40:52,439 INFO 6759 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-13 20:40:52,439 INFO 6759 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-13 20:40:52,489 INFO 6759 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-13 20:40:52,491 INFO 6759 [egg-security] use csrf middleware
+2018-10-13 20:40:52,491 INFO 6759 [egg-security] use methodnoallow middleware
+2018-10-13 20:40:52,492 INFO 6759 [egg-security] use noopen middleware
+2018-10-13 20:40:52,492 INFO 6759 [egg-security] use nosniff middleware
+2018-10-13 20:40:52,493 INFO 6759 [egg-security] use xssProtection middleware
+2018-10-13 20:40:52,493 INFO 6759 [egg-security] use xframe middleware
+2018-10-13 20:40:52,493 INFO 6759 [egg-security] use dta middleware
+2018-10-13 20:40:52,493 INFO 6759 [egg-security] compose 7 middlewares into one security middleware
+2018-10-13 20:40:52,504 INFO 6759 [egg:core] dump config after load, 4ms
+2018-10-13 20:40:52,516 INFO 6759 [egg-watcher:application] watcher start success
+2018-10-13 20:40:52,521 INFO 6759 [egg:core] dump config after ready, 3ms
+2018-10-13 20:41:19,272 INFO 6771 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-13 20:41:19,307 INFO 6771 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-13 20:41:19,308 INFO 6771 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-13 20:41:19,352 INFO 6771 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-13 20:41:19,354 INFO 6771 [egg-security] use csrf middleware
+2018-10-13 20:41:19,355 INFO 6771 [egg-security] use methodnoallow middleware
+2018-10-13 20:41:19,355 INFO 6771 [egg-security] use noopen middleware
+2018-10-13 20:41:19,355 INFO 6771 [egg-security] use nosniff middleware
+2018-10-13 20:41:19,356 INFO 6771 [egg-security] use xssProtection middleware
+2018-10-13 20:41:19,356 INFO 6771 [egg-security] use xframe middleware
+2018-10-13 20:41:19,356 INFO 6771 [egg-security] use dta middleware
+2018-10-13 20:41:19,356 INFO 6771 [egg-security] compose 7 middlewares into one security middleware
+2018-10-13 20:41:19,365 INFO 6771 [egg:core] dump config after load, 4ms
+2018-10-13 20:41:19,378 INFO 6771 [egg-watcher:application] watcher start success
+2018-10-13 20:41:19,384 INFO 6771 [egg:core] dump config after ready, 5ms
+2018-10-13 20:41:20,165 INFO 6772 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-13 20:41:20,265 INFO 6772 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-13 20:41:20,265 INFO 6772 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-13 20:41:20,318 INFO 6772 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-13 20:41:20,320 INFO 6772 [egg-security] use csrf middleware
+2018-10-13 20:41:20,321 INFO 6772 [egg-security] use methodnoallow middleware
+2018-10-13 20:41:20,321 INFO 6772 [egg-security] use noopen middleware
+2018-10-13 20:41:20,322 INFO 6772 [egg-security] use nosniff middleware
+2018-10-13 20:41:20,322 INFO 6772 [egg-security] use xssProtection middleware
+2018-10-13 20:41:20,323 INFO 6772 [egg-security] use xframe middleware
+2018-10-13 20:41:20,323 INFO 6772 [egg-security] use dta middleware
+2018-10-13 20:41:20,323 INFO 6772 [egg-security] compose 7 middlewares into one security middleware
+2018-10-13 20:41:20,334 INFO 6772 [egg:core] dump config after load, 5ms
+2018-10-13 20:41:20,349 INFO 6772 [egg-watcher:application] watcher start success
+2018-10-13 20:41:20,553 INFO 6773 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-13 20:41:20,589 INFO 6773 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-13 20:41:20,589 INFO 6773 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-13 20:41:20,637 INFO 6773 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-13 20:41:20,639 INFO 6773 [egg-security] use csrf middleware
+2018-10-13 20:41:20,640 INFO 6773 [egg-security] use methodnoallow middleware
+2018-10-13 20:41:20,640 INFO 6773 [egg-security] use noopen middleware
+2018-10-13 20:41:20,641 INFO 6773 [egg-security] use nosniff middleware
+2018-10-13 20:41:20,641 INFO 6773 [egg-security] use xssProtection middleware
+2018-10-13 20:41:20,641 INFO 6773 [egg-security] use xframe middleware
+2018-10-13 20:41:20,642 INFO 6773 [egg-security] use dta middleware
+2018-10-13 20:41:20,642 INFO 6773 [egg-security] compose 7 middlewares into one security middleware
+2018-10-13 20:41:20,658 INFO 6773 [egg:core] dump config after load, 11ms
+2018-10-13 20:41:20,674 INFO 6773 [egg-watcher:application] watcher start success
+2018-10-13 20:41:20,686 INFO 6773 [egg:core] dump config after ready, 7ms
+2018-10-13 20:41:21,161 INFO 6774 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2018-10-13 20:41:21,217 INFO 6774 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2018-10-13 20:41:21,217 INFO 6774 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2018-10-13 20:41:21,300 INFO 6774 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2018-10-13 20:41:21,305 INFO 6774 [egg-security] use csrf middleware
+2018-10-13 20:41:21,306 INFO 6774 [egg-security] use methodnoallow middleware
+2018-10-13 20:41:21,306 INFO 6774 [egg-security] use noopen middleware
+2018-10-13 20:41:21,307 INFO 6774 [egg-security] use nosniff middleware
+2018-10-13 20:41:21,308 INFO 6774 [egg-security] use xssProtection middleware
+2018-10-13 20:41:21,308 INFO 6774 [egg-security] use xframe middleware
+2018-10-13 20:41:21,309 INFO 6774 [egg-security] use dta middleware
+2018-10-13 20:41:21,309 INFO 6774 [egg-security] compose 7 middlewares into one security middleware
+2018-10-13 20:41:21,326 INFO 6774 [egg:core] dump config after load, 7ms
+2018-10-13 20:41:21,349 INFO 6774 [egg-watcher:application] watcher start success
+2018-10-13 20:41:21,366 INFO 6774 [egg:core] dump config after ready, 13ms
+2018-10-13 20:41:34,458 INFO 6774 [egg-view-nunjucks] loading templates from ["/Users/dingyang/Documents/dingyang/github/eggApp/app/view"]

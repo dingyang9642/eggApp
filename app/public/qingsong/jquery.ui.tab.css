@@ -1,0 +1,44 @@
+.ui-tabs {
+   
+}
+.ui-tabs .ui-tabs-nav {
+    margin: 0;
+}
+.ui-tabs .ui-tabs-nav li {
+    border-bottom: 0 none !important;
+    float: left;
+    list-style: none outside none;
+    margin: 0 0.2em 1px 0;
+    padding: 0;
+    white-space: nowrap;
+}
+.ui-tabs .ui-tabs-nav li a {
+    float: left;
+    padding: 0em 0.5em;
+    text-decoration: none;
+	color:#2776cd;
+}
+.ui-tabs .ui-tabs-nav li a:hover{text-decoration:underline;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+    margin-bottom: 0;
+    padding-bottom: 1px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+    cursor: text;
+}
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
+    cursor: pointer;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a {color:#ff551a; font-weight:700; text-decoration:none;}
+.ui-tabs .ui-tabs-panel {
+    background: none repeat scroll 0 0 transparent;
+    display: block;
+    padding: 1em 1.4em;
+}
+.ui-tabs .ui-tabs-hide {
+    display: none !important;
+}
+
+.tabs-content-item{border:1px solid #ccc; margin:10px 10px 0 0; height:57px; }
+.tabs-content-item  div{padding:10px 0 0 0;}
+.tabs-content-item  div.first{padding:0 0 10px 0; border-bottom:1px dashed #ccc ;}
