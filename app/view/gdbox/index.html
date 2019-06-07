@@ -26,9 +26,8 @@
     <div class="container">
         <ul class="docs-nav">
             <li><strong>概述</strong></li>
-            <li><a href="#welcome" class="cc-active">欢迎</a></li>
-            <li><a href="#benefits" class="cc-active">优势</a></li>
             <li><a href="#features" class="cc-active">特性</a></li>
+            <li><a href="#definition" class="cc-active">名词解释</a></li>
             <li><a href="#license" class="cc-active">授权</a></li>
             <li class="separator"></li>
             <li><strong>gDBox.Map</strong></li>
@@ -100,28 +99,66 @@
         </ul>
         <div class="docs-content">
             <h2>概述</h2>
-            <span>...</span>
-            <h3 id="welcome">欢迎</h3>
-            <span>...</span>
-            <h3 id="benefits">优势</h3>
-            <span>...</span>
+            <span class="title-desc">
+                在前端开发过程中难免遇到针对图片的缩放平移；以及在图片上进行矢量数据、文本、标注的展示；
+                如果你有上面的任何需求，恭喜你，找到组织了....在此背景下，gDBox.js诞生了
+            </span>
             <h3 id="features">特性</h3>
             <ul>
-                <li>...</li>
+                <li>多类型要素展示：图片/矢量/文本/标注</li>
+                <li>高效率绘图：canvas矢量数据绘制</li>
                 <li>...</li>
             </ul>
+            <h3 id="definition">名词解释</h3>
+            <span>...</span>
             <h3 id="license">授权</h3>
             <span>...</span>
 
             <hr>
             <h2>gDBox.Map</h2>
-            <span>...</span>
             <h3 id="gdbox_gmap_new">实例</h3>
-            <pre class="prettyprint">
-                &lt;script&gt;
-                    script:code:part
-                &lt;/script&gt;
-            </pre>
+<pre class="prettyprint">
+// js: 伪代码
+const gMap = new gDBox.Map(containerId, options);
+// js: demo
+const gMap = new gDBox.Map('map', {zoom: 640, cx: 0, cy: 0, zoomMax: 650 * 10, zoomMin: 650 / 10});
+</pre>
+            <h4>params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>containerId</td><td>string</td>
+                    <td>是</td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td>options</td><td>object</td>
+                    <td>是</td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td>options.zoom</td><td>number</td>
+                    <td>是</td><td></td><td>初始缩放级别</td>
+                </tr>
+                <tr>
+                    <td>options.cx</td><td>number</td>
+                    <td>是</td><td></td><td>初始横坐标</td>
+                </tr>
+                <tr>
+                    <td>options.cy</td><td>number</td>
+                    <td>是</td><td></td><td>初始纵坐标</td>
+                </tr>
+                <tr>
+                    <td>options.zoomMax</td><td>number</td>
+                    <td>否</td><td>无极</td><td>缩放最大级别</td>
+                </tr>
+                <tr>
+                    <td>options.zoomMin</td><td>number</td>
+                    <td>否</td><td>无极</td><td>缩放最小级别</td>
+                </tr>
+            </table>
             <h3 id="gdbox_gmap_events">事件</h3>
             <span>...</span>
             <h3 id="gdbox_gmap_shortkey">快捷键</h3>
@@ -254,14 +291,6 @@
     </div>
 </div>
 </section>
-<section class="vibrant centered">
-    <div>
-    <h4>补充中...</h4>
-    </div>
-</section>
-<footer>
-    <div></div>
-</footer>
 </div>
 <script src="/public/gdbox/js/jquery.min.js"></script>
 <script src="/public/gdbox/js/layout.js"></script>
