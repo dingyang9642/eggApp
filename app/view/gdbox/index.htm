@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Free Documentation HTML Template</title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="/public/gdbox/css/style.css">
+        <link rel="stylesheet" href="/public/gdbox/css/prettify.css">
+    </head>
+<body>
+<div class="wrapper">
+<nav>
+    <div class="pull-left">
+        <h1><a href="javascript:"><span>gDBox使用文档</span></a></h1>
+    </div>
+</nav>
+<header>
+    <div class="container">
+        <h2 class="lone-header">欢迎使用</h2>
+    </div>
+</header>
+<section>
+    <div class="container">
+        <ul class="docs-nav">
+            <li><strong>概述</strong></li>
+            <li><a href="#welcome" class="cc-active">欢迎</a></li>
+            <li><a href="#benefits" class="cc-active">优势</a></li>
+            <li><a href="#features" class="cc-active">特性</a></li>
+            <li><a href="#license" class="cc-active">授权</a></li>
+            <li class="separator"></li>
+            <li><strong>gDBox.Map</strong></li>
+            <li><a href="#gdbox_gmap_new" class="cc-active">实例</a></li>
+            <li><a href="#gdbox_gmap_events" class="cc-active">事件</a></li>
+            <li><a href="#gdbox_gmap_shortkey" class="cc-active">快捷键</a></li>
+            <li><a href="#gdbox_gmap_addLayer" class="cc-active">addLayer</a></li>
+            <li><a href="#gdbox_gmap_removeLayer" class="cc-active">removeLayer</a></li>
+            <li><a href="#gdbox_gmap_getAllLayers" class="cc-active">getAllLayers</a></li>
+            <li><a href="#gdbox_gmap_getZoom" class="cc-active">getZoom</a></li>
+            <li><a href="#gdbox_gmap_setZoom" class="cc-active">setZoom</a></li>
+            <li><a href="#gdbox_gmap_zoomIn" class="cc-active">zoomIn</a></li>
+            <li><a href="#gdbox_gmap_zoomOut" class="cc-active">zoomOut</a></li>
+            <li><a href="#gdbox_gmap_setMode" class="cc-active">setMode</a></li>
+            <li><a href="#gdbox_gmap_getMode" class="cc-active">getMode</a></li>
+            <li><a href="#gdbox_gmap_setCenter" class="cc-active">setCenter</a></li>
+            <li><a href="#gdbox_gmap_centerAndZoom" class="cc-active">centerAndZoom</a></li>
+            <li><a href="#gdbox_gmap_getCenter" class="cc-active">getCenter</a></li>
+            <li><a href="#gdbox_gmap_getScreenCenter" class="cc-active">getScreenCenter</a></li>
+            <li><a href="#gdbox_gmap_resize" class="cc-active">resize</a></li>
+            <li><a href="#gdbox_gmap_destroy" class="cc-active">destroy</a></li>
+            <li class="separator"></li>
+            <li><strong>gDBox.Layer.Image</strong></li>
+            <li><a href="#gdbox_layer_image_new" class="cc-active">实例</a></li>
+            <li class="separator"></li>
+            <li><strong>gDBox.Layer.Feature</strong></li>
+            <li><a href="#gdbox_layer_feature_new" class="cc-active">实例</a></li>
+            <li><a href="#gdbox_addFeature" class="cc-active">addFeature</a></li>
+            <li><a href="#gdbox_getFeatureById" class="cc-active">getFeatureById</a></li>
+            <li><a href="#gdbox_removeAllFeatures" class="cc-active">removeAllFeatures</a></li>
+            <li><a href="#gdbox_removeFeature" class="cc-active">removeFeature</a></li>
+            <li><a href="#gdbox_removeFeatureById" class="cc-active">removeFeatureById</a></li>
+            <li><a href="#gdbox_removeFeaturesByIds" class="cc-active">removeFeaturesByIds</a></li>
+            <li><a href="#gdbox_removeFeaturesByProperty" class="cc-active">removeFeaturesByProperty</a></li>
+            <li><a href="#gdbox_getAllFeatures" class="cc-active">getAllFeatures</a></li>
+            <li class="separator"></li>
+            <li><strong>gDBox.Layer.Marker</strong></li>
+            <li><a href="#gdbox_layer_marker_new" class="cc-active">实例</a></li>
+            <li><a href="#gdbox_addMarker" class="cc-active">addMarker</a></li>
+            <li><a href="#gdbox_removeMarker" class="cc-active">removeMarker</a></li>
+            <li><a href="#gdbox_removeMarkerById" class="cc-active">removeMarkerById</a></li>
+            <li><a href="#gdbox_removeMarkersByIds" class="cc-active">removeMarkersByIds</a></li>
+            <li><a href="#gdbox_getAllMarkers" class="cc-active">getAllMarkers</a></li>
+            <li><a href="#gdbox_getMarkerById" class="cc-active">getMarkerById</a></li>
+            <li><a href="#gdbox_addMarkers" class="cc-active">addMarkers</a></li>
+            <li><a href="#gdbox_removeMarkers" class="cc-active">removeMarkers</a></li>
+            <li><a href="#gdbox_removeAllMarkers" class="cc-active">removeAllMarkers</a></li>
+            <li class="separator"></li>
+            <li><strong>gDBox.Layer.Text</strong></li>
+            <li><a href="#gdbox_layer_text_new" class="cc-active">实例</a></li>
+            <li><a href="#gdbox_addText" class="cc-active">addText</a></li>
+            <li><a href="#gdbox_removeText" class="cc-active">removeText</a></li>
+            <li><a href="#gdbox_getTextById" class="cc-active">getTextById</a></li>
+            <li><a href="#gdbox_removeTextById" class="cc-active">removeTextById</a></li>
+            <li><a href="#gdbox_removeTextsByIds" class="cc-active">removeTextsByIds</a></li>
+            <li><a href="#gdbox_addTexts" class="cc-active">addTexts</a></li>
+            <li><a href="#gdbox_removeTexts" class="cc-active">removeTexts</a></li>
+            <li><a href="#gdbox_getAllTexts" class="cc-active">getAllTexts</a></li>
+            <li><a href="#gdbox_removeAllTexts" class="cc-active">removeAllTexts</a></li>
+            <li class="separator"></li>
+            <li><strong>gDBox.Style</strong></li>
+            <li><a href="#gdbox_style" class="cc-active">实例</a></li>
+            <li class="separator"></li>
+            <li><strong>gDBox.Util</strong></li>
+            <li><a href="#gdbox_worldToScreen" class="cc-active">worldToScreen</a></li>
+            <li><a href="#gdbox_screenToWorld" class="cc-active">screenToWorld</a></li>
+            <li><a href="#gdbox_colorRgb" class="cc-active">colorRgb</a></li>
+            <li><a href="#gdbox_getBounds" class="cc-active">getBounds</a></li>
+        </ul>
+        <div class="docs-content">
+            <h2>概述</h2>
+            <span>...</span>
+            <h3 id="welcome">欢迎</h3>
+            <span>...</span>
+            <h3 id="benefits">优势</h3>
+            <span>...</span>
+            <h3 id="features">特性</h3>
+            <ul>
+                <li>...</li>
+                <li>...</li>
+            </ul>
+            <h3 id="license">授权</h3>
+            <span>...</span>
+
+            <hr>
+            <h2>gDBox.Map</h2>
+            <span>...</span>
+            <h3 id="gdbox_gmap_new">实例</h3>
+            <pre class="prettyprint">
+                &lt;script&gt;
+                    script:code:part
+                &lt;/script&gt;
+            </pre>
+            <h3 id="gdbox_gmap_events">事件</h3>
+            <span>...</span>
+            <h3 id="gdbox_gmap_shortkey">快捷键</h3>
+            <span>...</span>
+            <h3 id="gdbox_gmap_addLayer">addLayer</h3>
+            <span>...</span>
+            <h3 id="gdbox_gmap_removeLayer">removeLayer</h3>
+            <span>...</span>
+            <h3 id="gdbox_gmap_getAllLayers">getAllLayers</h3>
+            <span>...</span>
+            <h3 id="gdbox_gmap_getZoom">getZoom</h3>
+            <span>...</span>
+            <h3 id="gdbox_gmap_setZoom">setZoom</h3>
+            <span>...</span>
+            <h3 id="gdbox_gmap_zoomIn">zoomIn</h3>
+            <span>...</span>
+            <h3 id="gdbox_gmap_zoomOut">zoomOut</h3>
+            <span>...</span>
+            <h3 id="gdbox_gmap_setMode">setMode</h3>
+            <span>...</span>
+            <h3 id="gdbox_gmap_getMode">getMode</h3>
+            <span>...</span>
+            <h3 id="gdbox_gmap_setCenter">setCenter</h3>
+            <span>...</span>
+            <h3 id="gdbox_gmap_centerAndZoom">centerAndZoom</h3>
+            <span>...</span>
+            <h3 id="gdbox_gmap_getCenter">getCenter</h3>
+            <span>...</span>
+            <h3 id="gdbox_gmap_getScreenCenter">getScreenCenter</h3>
+            <span>...</span>
+            <h3 id="gdbox_gmap_resize">resize</h3>
+            <span>...</span>
+            <h3 id="gdbox_gmap_destroy">destroy</h3>
+            <span>...</span>
+
+            <hr>
+            <h2>gDBox.Layer.Image</h2>
+            <span>...</span>
+            <h3 id="gdbox_layer_image_new">实例</h3>
+            <span>...</span>
+
+            <hr>
+            <h2>gDBox.Layer.Feature</h2>
+            <span>...</span>
+            <h3 id="gdbox_layer_feature_new">实例</h3>
+            <span>...</span>
+            <h3 id="gdbox_addFeature">addFeature</h3>
+            <span>...</span>
+            <h3 id="gdbox_getFeatureById">getFeatureById</h3>
+            <span>...</span>
+            <h3 id="gdbox_removeAllFeatures">removeAllFeatures</h3>
+            <span>...</span>
+            <h3 id="gdbox_removeFeature">removeFeature</h3>
+            <span>...</span>
+            <h3 id="gdbox_removeFeatureById">removeFeatureById</h3>
+            <span>...</span>
+            <h3 id="gdbox_removeFeaturesByIds">removeFeaturesByIds</h3>
+            <span>...</span>
+            <h3 id="gdbox_removeFeaturesByProperty">removeFeaturesByProperty</h3>
+            <span>...</span>
+            <h3 id="gdbox_getAllFeatures">getAllFeatures</h3>
+            <span>...</span>
+
+            <hr>
+            <h2>gDBox.Layer.Marker</h2>
+            <span>...</span>
+            <h3 id="gdbox_layer_marker_new">实例</h3>
+            <span>...</span>
+            <h3 id="gdbox_addMarker">addMarker</h3>
+            <span>...</span>
+            <h3 id="gdbox_removeMarker">removeMarker</h3>
+            <span>...</span>
+            <h3 id="gdbox_removeMarkerById">removeMarkerById</h3>
+            <span>...</span>
+            <h3 id="gdbox_removeMarkersByIds">removeMarkersByIds</h3>
+            <span>...</span>
+            <h3 id="gdbox_getAllMarkers">getAllMarkers</h3>
+            <span>...</span>
+            <h3 id="gdbox_getMarkerById">getMarkerById</h3>
+            <span>...</span>
+            <h3 id="gdbox_addMarkers">addMarkers</h3>
+            <span>...</span>
+            <h3 id="gdbox_removeMarkers">removeMarkers</h3>
+            <span>...</span>
+            <h3 id="gdbox_removeAllMarkers">removeAllMarkers</h3>
+            <span>...</span>
+
+            <hr>
+            <h2>gDBox.Layer.Text</h2>
+            <span>...</span>
+            <h3 id="gdbox_layer_text_new">实例</h3>
+            <span>...</span>
+            <h3 id="gdbox_addText">addText</h3>
+            <span>...</span>
+            <h3 id="gdbox_removeText">removeText</h3>
+            <span>...</span>
+            <h3 id="gdbox_getTextById">getTextById</h3>
+            <span>...</span>
+            <h3 id="gdbox_removeTextById">removeTextById</h3>
+            <span>...</span>
+            <h3 id="gdbox_removeTextsByIds">removeTextsByIds</h3>
+            <span>...</span>
+            <h3 id="gdbox_addTexts">addTexts</h3>
+            <span>...</span>
+            <h3 id="gdbox_removeTexts">removeTexts</h3>
+            <span>...</span>
+            <h3 id="gdbox_getAllTexts">getAllTexts</h3>
+            <span>...</span>
+            <h3 id="gdbox_removeAllTexts">removeAllTexts</h3>
+            <span>...</span>
+
+            <hr>
+            <h2>gDBox.Style</h2>
+            <span>...</span>
+            <h3 id="gdbox_style">实例</h3>
+            <span>...</span>
+
+            <hr>
+            <h2>gDBox.Util</h2>
+            <span>...</span>
+            <h3 id="gdbox_worldToScreen">worldToScreen</h3>
+            <span>...</span>
+            <h3 id="gdbox_screenToWorld">screenToWorld</h3>
+            <span>...</span>
+            <h3 id="gdbox_colorRgb">colorRgb</h3>
+            <span>...</span>
+            <h3 id="gdbox_getBounds">getBounds</h3>
+            <span>...</span>
+        </div>
+    </div>
+</div>
+</section>
+<section class="vibrant centered">
+    <div>
+    <h4>补充中...</h4>
+    </div>
+</section>
+<footer>
+    <div></div>
+</footer>
+</div>
+<script src="/public/gdbox/js/jquery.min.js"></script>
+<script src="/public/gdbox/js/layout.js"></script>
+</body>
+</html>

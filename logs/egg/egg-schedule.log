@@ -12,3 +12,5 @@
 2018-10-08 19:00:40,793 INFO 9885 [Timer] /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-10-09 00:00:01.000
 2018-10-13 20:32:54,933 INFO 6493 [Timer] /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-10-14 00:00:00.000
 2018-10-13 20:32:54,934 INFO 6493 [Timer] /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-10-14 00:00:01.000
+2018-12-14 16:45:23,206 INFO 8661 [Timer] /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2018-12-15 00:00:00.000
+2018-12-14 16:45:23,207 INFO 8661 [Timer] /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-12-15 00:00:01.000
