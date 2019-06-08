@@ -64,6 +64,13 @@
             <li><a href="#gdbox_removeFeaturesByProperty" class="cc-active">removeFeaturesByProperty</a></li>
             <li><a href="#gdbox_getAllFeatures" class="cc-active">getAllFeatures</a></li>
             <li class="separator"></li>
+            <li><strong>gDBox.Feature.Polygon</strong></li>
+            <li><a href="#gdbox_feature_polygon_new" class="cc-active">实例</a></li>
+            <li><a href="#gdbox_feature_polygon_show" class="cc-active">show</a></li>
+            <li><a href="#gdbox_feature_polygon_hide" class="cc-active">hide</a></li>
+            <li><a href="#gdbox_feature_polygon_update" class="cc-active">update</a></li>
+            <li><a href="#gdbox_feature_polygon_pointInFeature" class="cc-active">pointInFeature</a></li>
+            <li class="separator"></li>
             <li><strong>gDBox.Layer.Marker</strong></li>
             <li><a href="#gdbox_layer_marker_new" class="cc-active">实例</a></li>
             <li><a href="#gdbox_addMarker" class="cc-active">addMarker</a></li>
@@ -76,6 +83,12 @@
             <li><a href="#gdbox_removeMarkers" class="cc-active">removeMarkers</a></li>
             <li><a href="#gdbox_removeAllMarkers" class="cc-active">removeAllMarkers</a></li>
             <li class="separator"></li>
+            <li><strong>gDBox.Marker</strong></li>
+            <li><a href="#gdbox_marker_new" class="cc-active">实例</a></li>
+            <li><a href="#gdbox_marker_update" class="cc-active">update</a></li>
+            <li><a href="#gdbox_marker_regEvent" class="cc-active">regEvent</a></li>
+            <li><a href="#gdbox_marker_showInfo" class="cc-active">showInfo</a></li>
+            <li class="separator"></li>
             <li><strong>gDBox.Layer.Text</strong></li>
             <li><a href="#gdbox_layer_text_new" class="cc-active">实例</a></li>
             <li><a href="#gdbox_addText" class="cc-active">addText</a></li>
@@ -87,6 +100,14 @@
             <li><a href="#gdbox_removeTexts" class="cc-active">removeTexts</a></li>
             <li><a href="#gdbox_getAllTexts" class="cc-active">getAllTexts</a></li>
             <li><a href="#gdbox_removeAllTexts" class="cc-active">removeAllTexts</a></li>
+            <li class="separator"></li>
+            <li><strong>gDBox.Text</strong></li>
+            <li><a href="#gdbox_text_new" class="cc-active">实例</a></li>
+            <li><a href="#gdbox_text_update" class="cc-active">update</a></li>
+            <li><a href="#gdbox_text_setText" class="cc-active">setText</a></li>
+            <li><a href="#gdbox_text_setPosition" class="cc-active">setPosition</a></li>
+            <li><a href="#gdbox_text_setSize" class="cc-active">setSize</a></li>
+            <li><a href="#gdbox_text_refresh" class="cc-active">refresh</a></li>
             <li class="separator"></li>
             <li><strong>gDBox.Style</strong></li>
             <li><a href="#gdbox_style" class="cc-active">实例</a></li>
@@ -223,6 +244,20 @@ const gMap = new gDBox.Map('map', {zoom: 640, cx: 0, cy: 0, zoomMax: 650 * 10, z
             <span>...</span>
 
             <hr>
+            <h2>gDBox.Feature.Polygon</h2>
+            <span>...</span>
+            <h3 id="gdbox_layer_feature_new">实例</h3>
+            <span>...</span>
+            <h3 id="gdbox_feature_polygon_show">show</h3>
+            <span>...</span>
+            <h3 id="gdbox_feature_polygon_hide">hide</h3>
+            <span>...</span>
+            <h3 id="gdbox_feature_polygon_update">update</h3>
+            <span>...</span>
+            <h3 id="gdbox_feature_polygon_pointInFeature">pointInFeature</h3>
+            <span>...</span>
+
+            <hr>
             <h2>gDBox.Layer.Marker</h2>
             <span>...</span>
             <h3 id="gdbox_layer_marker_new">实例</h3>
@@ -244,6 +279,18 @@ const gMap = new gDBox.Map('map', {zoom: 640, cx: 0, cy: 0, zoomMax: 650 * 10, z
             <h3 id="gdbox_removeMarkers">removeMarkers</h3>
             <span>...</span>
             <h3 id="gdbox_removeAllMarkers">removeAllMarkers</h3>
+            <span>...</span>
+
+            <hr>
+            <h2>gDBox.Marker</h2>
+            <span>...</span>
+            <h3 id="gdbox_marker_new" >实例</h3>
+            <span>...</span>
+            <h3 id="gdbox_marker_update">update</h3>
+            <span>...</span>
+            <h3 id="gdbox_marker_regEvent">regEvent</h3>
+            <span>...</span>
+            <h3 id="gdbox_marker_showInfo">showInfo</h3>
             <span>...</span>
 
             <hr>
@@ -271,6 +318,22 @@ const gMap = new gDBox.Map('map', {zoom: 640, cx: 0, cy: 0, zoomMax: 650 * 10, z
             <span>...</span>
 
             <hr>
+            <h2>gDBox.Text</h2>
+            <span>...</span>
+            <h3 id="gdbox_text_new">实例</h3>
+            <span>...</span>
+            <h3 id="gdbox_text_update">update</h3>
+            <span>...</span>
+            <h3 id="gdbox_text_setText">setText</h3>
+            <span>...</span>
+            <h3 id="gdbox_text_setPosition">setPosition</h3>
+            <span>...</span>
+            <h3 id="gdbox_text_setSize">setSize</h3>
+            <span>...</span>
+            <h3 id="gdbox_text_refresh">refresh</h3>
+            <span>...</span>
+
+            <hr>
             <h2>gDBox.Style</h2>
             <span>...</span>
             <h3 id="gdbox_style">实例</h3>
@@ -294,5 +357,14 @@ const gMap = new gDBox.Map('map', {zoom: 640, cx: 0, cy: 0, zoomMax: 650 * 10, z
 </div>
 <script src="/public/gdbox/js/jquery.min.js"></script>
 <script src="/public/gdbox/js/layout.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?b13f8c8b80f29406d4bd21b98f268578";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
 </body>
 </html>
