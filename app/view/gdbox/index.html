@@ -30,6 +30,9 @@
             <li><a href="#definition" class="cc-active">名词解释</a></li>
             <li><a href="#license" class="cc-active">授权</a></li>
             <li class="separator"></li>
+            <li><strong>示例一览</strong></li>
+            <li><a href="#exapmle_imgs" class="cc-active">效果图</a></li>
+            <li class="separator"></li>
             <li><strong>gDBox.Map</strong></li>
             <li><a href="#gdbox_gmap_new" class="cc-active">实例</a></li>
             <li><a href="#gdbox_gmap_events" class="cc-active">事件</a></li>
@@ -106,8 +109,6 @@
             <li><a href="#gdbox_text_update" class="cc-active">update</a></li>
             <li><a href="#gdbox_text_setText" class="cc-active">setText</a></li>
             <li><a href="#gdbox_text_setPosition" class="cc-active">setPosition</a></li>
-            <li><a href="#gdbox_text_setSize" class="cc-active">setSize</a></li>
-            <li><a href="#gdbox_text_refresh" class="cc-active">refresh</a></li>
             <li class="separator"></li>
             <li><strong>gDBox.Style</strong></li>
             <li><a href="#gdbox_style" class="cc-active">实例</a></li>
@@ -115,7 +116,6 @@
             <li><strong>gDBox.Util</strong></li>
             <li><a href="#gdbox_worldToScreen" class="cc-active">worldToScreen</a></li>
             <li><a href="#gdbox_screenToWorld" class="cc-active">screenToWorld</a></li>
-            <li><a href="#gdbox_colorRgb" class="cc-active">colorRgb</a></li>
             <li><a href="#gdbox_getBounds" class="cc-active">getBounds</a></li>
         </ul>
         <div class="docs-content">
@@ -131,20 +131,41 @@
                 <li>...</li>
             </ul>
             <h3 id="definition">名词解释</h3>
-            <span>...</span>
+            <span class="title-desc">zoom：</span><br/>
+            <span class="title-desc">实际坐标系：</span><br/>
+            <span class="title-desc">屏幕标注系：</span><br/>
+            <span class="title-desc">...</span>
             <h3 id="license">授权</h3>
             <span>...</span>
+
+            <hr>
+            <h2>示例一览</h2>
+            <h3 id="exapmle_imgs">效果图</h3>
+            <img src="/public/gdbox/img/poly.png" style="display: inline-block; width: 48%;">
+            <img src="/public/gdbox/img/rect.png" style="display: inline-block; width: 48%;">
+            <img src="/public/gdbox/img/marker.png" style="display: inline-block; width: 48%;">
+            <img src="/public/gdbox/img/text.png" style="display: inline-block; width: 48%;">
+            <h3 id="exapmle_imgs">示例地址</h3>
+            <a href="/gdbox/demo/drawPolygon" target="_blank" rel="noopener noreferrer">多边形>></a><br/>
+            <a href="/gdbox/demo/drawRect" target="_blank" rel="noopener noreferrer">矩形>></a><br/>
+            <a href="/gdbox/demo/editRect" target="_blank" rel="noopener noreferrer">复杂编辑>></a><br/>
+            <a href="/gdbox/demo/feature" target="_blank" rel="noopener noreferrer">要素>></a><br/>
+            <a href="/gdbox/demo/hover" target="_blank" rel="noopener noreferrer">悬浮>></a><br/>
+            <a href="/gdbox/demo/img" target="_blank" rel="noopener noreferrer">图片>></a><br/>
+            <a href="/gdbox/demo/marker" target="_blank" rel="noopener noreferrer">标注>></a><br/>
+            <a href="/gdbox/demo/text" target="_blank" rel="noopener noreferrer">文本>></a>
+        
 
             <hr>
             <h2>gDBox.Map</h2>
             <h3 id="gdbox_gmap_new">实例</h3>
 <pre class="prettyprint">
 // js: 伪代码
-const gMap = new gDBox.Map(containerId, options);
-// js: demo
+const gMap = new gDBox.Map(containerId, config);
+// js: demo【gMap将作为后续使用的容器实例，不再进行重复实例操作】
 const gMap = new gDBox.Map('map', {zoom: 640, cx: 0, cy: 0, zoomMax: 650 * 10, zoomMin: 650 / 10});
 </pre>
-            <h4>params:</h4>
+            <h4>Params:</h4>
             <table border="1">
                 <tr>
                     <th>参数</th><th>类型</th>
@@ -156,200 +177,1140 @@ const gMap = new gDBox.Map('map', {zoom: 640, cx: 0, cy: 0, zoomMax: 650 * 10, z
                     <td>是</td><td></td><td></td>
                 </tr>
                 <tr>
-                    <td>options</td><td>object</td>
+                    <td>config</td><td>Config</td>
                     <td>是</td><td></td><td></td>
                 </tr>
+            </table>
+            <h4>Config:</h4>
+            <table border="1">
                 <tr>
-                    <td>options.zoom</td><td>number</td>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>zoom</td><td>number</td>
                     <td>是</td><td></td><td>初始缩放级别</td>
                 </tr>
                 <tr>
-                    <td>options.cx</td><td>number</td>
+                    <td>cx</td><td>number</td>
                     <td>是</td><td></td><td>初始横坐标</td>
                 </tr>
                 <tr>
-                    <td>options.cy</td><td>number</td>
+                    <td>cy</td><td>number</td>
                     <td>是</td><td></td><td>初始纵坐标</td>
                 </tr>
                 <tr>
-                    <td>options.zoomMax</td><td>number</td>
+                    <td>zoomMax</td><td>number</td>
                     <td>否</td><td>无极</td><td>缩放最大级别</td>
                 </tr>
                 <tr>
-                    <td>options.zoomMin</td><td>number</td>
+                    <td>zoomMin</td><td>number</td>
                     <td>否</td><td>无极</td><td>缩放最小级别</td>
                 </tr>
             </table>
             <h3 id="gdbox_gmap_events">事件</h3>
-            <span>...</span>
+            <span class="title-desc">gDBox.Map支持各类事件监听。</span>
+<pre class="prettyprint">
+// js: 伪代码
+gMap.events.on(eventType, callback);
+// js: demo
+gMap.events.on('mouseDown', xy => {console.log('xy');});
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>类别</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>eventType</td><td>string</td>
+                    <td>是</td><td>见下</td><td></td>
+                </tr>
+                <tr>
+                    <td>callback</td><td>function</td>
+                    <td>否</td><td>
+                        mouseDown：wxy => {}<br/>
+                        mouseMove：wxy => {}<br/>
+                        geometryEditing：(type, feature, newPoints) => {}<br/>
+                        geometryEditDone：(type, feature, newPoints) => {}<br/>
+                        geometryDrawDone：(type, points) => {}<br/>
+                        featureHover：feature => {}<br/>
+                        featureSelected：feature => {}<br/>
+                        featureStatusReset：() => {}
+                    </td><td></td>
+                </tr>
+            </table>
             <h3 id="gdbox_gmap_shortkey">快捷键</h3>
-            <span>...</span>
+            <table border="1">
+                <tr>
+                    <th>键盘组合</th><th>作用</th>
+                    <th>应用模式</th><th>其他</th>
+                </tr>
+                <tr>
+                    <td>ctrl_z</td><td>绘制过程中撤销</td>
+                    <td>drawRect、drawPolygon</td><td></td>
+                </tr>
+                <tr>
+                    <td>shift</td><td>多边形绘制模式按下shift键进行选择操作</td>
+                    <td>drawPolygon</td><td></td>
+                </tr>
+                <tr>
+                    <td>shift</td><td>多边形绘制模式按下shift键进行选中图形顶点delete操作</td>
+                    <td>drawPolygon</td><td></td>
+                </tr>
+            </table>
             <h3 id="gdbox_gmap_addLayer">addLayer</h3>
-            <span>...</span>
+            <span class="title-desc">给gMap实例上添加图层。</span>
+<pre class="prettyprint">
+// js: 伪代码
+const gFeatureLayer = new gDBox.Layer.Feature(layerId, config); // 请参考gDBox.Feature.Layer【此处不做赘述】
+gMap.addLayer(gFeatureLayer); // 图层添加
+</pre>
             <h3 id="gdbox_gmap_removeLayer">removeLayer</h3>
-            <span>...</span>
+            <span class="title-desc">给gMap实例上移除图层。</span>
+<pre class="prettyprint">
+// js: 伪代码
+const gFeatureLayer = new gDBox.Layer.Feature(layerId, config); // 请参考gDBox.Feature.Layer【此处不做赘述】
+gMap.addLayer(gFeatureLayer); // 图层添加
+gMap.removeLayer(gFeatureLayer); // 图层移除
+</pre>
             <h3 id="gdbox_gmap_getAllLayers">getAllLayers</h3>
-            <span>...</span>
+            <span class="title-desc">获取gMap实例上所有图层。</span>
+<pre class="prettyprint">
+// js: 代码
+gMap.getAllLayers(); // 返回[](layer)
+</pre>
             <h3 id="gdbox_gmap_getZoom">getZoom</h3>
-            <span>...</span>
+            <span class="title-desc">获取gMap实例当前缩放zoom值。</span>
+<pre class="prettyprint">
+// js: 代码
+gMap.getZoom();
+</pre>
             <h3 id="gdbox_gmap_setZoom">setZoom</h3>
-            <span>...</span>
+            <span class="title-desc">设置gMap实例zoom值。</span>
+<pre class="prettyprint">
+// js: 代码
+gMap.setZoom(zoom);
+</pre>
+<h4>Params:</h4>
+<table border="1">
+    <tr>
+        <th>参数</th><th>类型</th>
+        <th>是否必须</th><th>默认</th>
+        <th>其他</th>
+    </tr>
+    <tr>
+        <td>zoom</td><td>number</td>
+        <td>是</td><td></td><td></td>
+    </tr>
+</table>
             <h3 id="gdbox_gmap_zoomIn">zoomIn</h3>
-            <span>...</span>
+            <span class="title-desc">gMap实例放大。</span>
+<pre class="prettyprint">
+// js: 代码
+gMap.zoomIn(num);
+</pre>
+<h4>Params:</h4>
+<table border="1">
+    <tr>
+        <th>参数</th><th>类型</th>
+        <th>是否必须</th><th>默认</th>
+        <th>其他</th>
+    </tr>
+    <tr>
+        <td>num</td><td>number</td>
+        <td>否</td><td>6</td><td>越大代表缩放的范围越大</td>
+    </tr>
+</table>
             <h3 id="gdbox_gmap_zoomOut">zoomOut</h3>
-            <span>...</span>
+            <span class="title-desc">gMap实例缩小。</span>
+<pre class="prettyprint">
+// js: 代码
+gMap.zoomOut(num);
+</pre>
+<h4>Params:</h4>
+<table border="1">
+    <tr>
+        <th>参数</th><th>类型</th>
+        <th>是否必须</th><th>默认</th>
+        <th>其他</th>
+    </tr>
+    <tr>
+        <td>num</td><td>number</td>
+        <td>否</td><td>6</td><td>越大代表缩放的范围越大</td>
+    </tr>
+</table>
             <h3 id="gdbox_gmap_setMode">setMode</h3>
-            <span>...</span>
+            <span class="title-desc">gMap实例设置当前模式，同时可设置当前style样式。</span>
+<pre class="prettyprint">
+// js: 代码
+gMap.setMode(mode[, gStyle]);
+</pre>
+<h4>Params:</h4>
+<table border="1">
+    <tr>
+        <th>参数</th><th>类型</th>
+        <th>是否必须</th><th>默认</th>
+        <th>其他</th>
+    </tr>
+    <tr>
+        <td>mode</td><td>string</td>
+        <td>是</td><td>
+            'map': 浏览模式<br/>
+            'drawRect': 矩形绘制<br/>
+            'drawPolygon': 多边形绘制
+        </td><td>模式设置</td>
+    </tr>
+    <tr>
+        <td>gStyle</td><td>gDBox.Style</td>
+        <td>否</td><td></td><td>参考gDBox.Style</td>
+    </tr>
+</table>
             <h3 id="gdbox_gmap_getMode">getMode</h3>
-            <span>...</span>
+            <span class="title-desc">获取gMap实例当前模式。</span>
+<pre class="prettyprint">
+// js: 代码
+gMap.getMode();
+</pre>
             <h3 id="gdbox_gmap_setCenter">setCenter</h3>
-            <span>...</span>
+            <span class="title-desc">gMap实例设置中心点坐标。</span>
+<pre class="prettyprint">
+// js: 代码
+gMap.setCenter(cx, cy);
+</pre>
+<h4>Params:</h4>
+<table border="1">
+    <tr>
+        <th>参数</th><th>类型</th>
+        <th>是否必须</th><th>默认</th>
+        <th>其他</th>
+    </tr>
+    <tr>
+        <td>cx</td><td>number</td>
+        <td>是</td><td></td><td>横坐标</td>
+    </tr>
+    <tr>
+        <td>cy</td><td>number</td>
+        <td>是</td><td></td><td>纵坐标</td>
+    </tr>
+</table>
             <h3 id="gdbox_gmap_centerAndZoom">centerAndZoom</h3>
-            <span>...</span>
+            <span class="title-desc">gMap实例设置中心点坐标并且缩放至指定值。</span>
+<pre class="prettyprint">
+// js: 代码
+gMap.centerAndZoom(center, zoom);
+</pre>
+<h4>Params:</h4>
+<table border="1">
+    <tr>
+        <th>参数</th><th>类型</th>
+        <th>是否必须</th><th>默认</th>
+        <th>其他</th>
+    </tr>
+    <tr>
+        <td>center</td><td>object</td>
+        <td>是</td><td></td><td>如：{x: 0, y: 0}</td>
+    </tr>
+    <tr>
+        <td>zoom</td><td>number</td>
+        <td>是</td><td></td><td>缩放值</td>
+    </tr>
+</table>
             <h3 id="gdbox_gmap_getCenter">getCenter</h3>
-            <span>...</span>
+            <span class="title-desc">获取中心点。</span>
+<pre class="prettyprint">
+// js: 代码
+gMap.getCenter();
+</pre>
             <h3 id="gdbox_gmap_getScreenCenter">getScreenCenter</h3>
-            <span>...</span>
+            <span class="title-desc">获取屏幕中心点坐标。</span>
+<pre class="prettyprint">
+// js: 代码
+gMap.getScreenCenter();
+</pre>
             <h3 id="gdbox_gmap_resize">resize</h3>
-            <span>...</span>
+            <span class="title-desc">gMap实例resize。</span>
+<pre class="prettyprint">
+// js: 代码
+gMap.resize(w, h);
+</pre>
+<h4>Params:</h4>
+<table border="1">
+    <tr>
+        <th>参数</th><th>类型</th>
+        <th>是否必须</th><th>默认</th>
+        <th>其他</th>
+    </tr>
+    <tr>
+        <td>w</td><td>number</td>
+        <td>是</td><td></td><td></td>
+    </tr>
+    <tr>
+        <td>h</td><td>number</td>
+        <td>是</td><td></td><td></td>
+    </tr>
+</table>
             <h3 id="gdbox_gmap_destroy">destroy</h3>
-            <span>...</span>
+            <span class="title-desc">gMap实例销毁。</span>
+<pre class="prettyprint">
+// js: 代码
+gMap.destroy();
+</pre>
 
             <hr>
             <h2>gDBox.Layer.Image</h2>
-            <span>...</span>
+            图像图层
             <h3 id="gdbox_layer_image_new">实例</h3>
-            <span>...</span>
+<pre class="prettyprint">
+// js: 代码
+const imageLayer = new gDBox.Layer.Image(layerId, src, size, config);
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>layerId</td><td>string</td>
+                    <td>是</td><td></td><td>图层id</td>
+                </tr>
+                <tr>
+                    <td>src</td><td>string</td>
+                    <td>是</td><td></td><td>图片地址</td>
+                </tr>
+                <tr>
+                    <td>size</td><td>object</td>
+                    <td>是</td><td></td><td>图片大小，如{w: 100, h: 100}</td>
+                </tr>
+                <tr>
+                    <td>config</td><td>Config</td>
+                    <td>否</td><td></td><td></td>
+                </tr>
+            </table>
+            <h4>Config:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>opacity</td><td>number</td>
+                    <td>是</td><td></td><td>透明度</td>
+                </tr>
+                <tr>
+                    <td>zIndex</td><td>number</td>
+                    <td>是</td><td></td><td></td>
+                </tr>
+            </table>
 
             <hr>
             <h2>gDBox.Layer.Feature</h2>
-            <span>...</span>
             <h3 id="gdbox_layer_feature_new">实例</h3>
-            <span>...</span>
+            矢量图层
+<pre class="prettyprint">
+// js: 代码
+const featureLayer = new gDBox.Layer.Feature(layerId, config);
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>layerId</td><td>string</td>
+                    <td>是</td><td></td><td>图层id</td>
+                </tr>
+                <tr>
+                    <td>config</td><td>Config</td>
+                    <td>否</td><td></td><td></td>
+                </tr>
+            </table>
+            <h4>Config:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>opacity</td><td>number</td>
+                    <td>是</td><td></td><td>透明度</td>
+                </tr>
+                <tr>
+                    <td>zIndex</td><td>number</td>
+                    <td>是</td><td></td><td></td>
+                </tr>
+            </table>
             <h3 id="gdbox_addFeature">addFeature</h3>
-            <span>...</span>
+            <span class="title-desc">添加矢量要素。</span>
+<pre class="prettyprint">
+const featureLayer = new gDBox.Layer.Feature(layerId, config);
+const feature = new gDBox.Feature.Polygon(featureId, points, data, gStyle); // 参考gDBox.Feature.Polygon【此处不再赘述】
+
+gFeatureLayer.addFeature(feature);
+</pre>
             <h3 id="gdbox_getFeatureById">getFeatureById</h3>
-            <span>...</span>
+            <span class="title-desc">通过要素id获取指定要素。</span>
+<pre class="prettyprint">
+const featureLayer = new gDBox.Layer.Feature(layerId, config);
+const feature = new gDBox.Feature.Polygon(featureId, points, data, gStyle); // 参考gDBox.Feature.Polygon【此处不再赘述】
+gFeatureLayer.addFeature(feature);
+
+const fea = gFeatureLayer.getFeatureById(featureId);
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>featureId</td><td>string</td>
+                    <td>是</td><td></td><td>要素id</td>
+                </tr>
+            </table>
             <h3 id="gdbox_removeAllFeatures">removeAllFeatures</h3>
-            <span>...</span>
+            <span class="title-desc">删除当前要素层上所有要素。</span>
+<pre class="prettyprint">
+const featureLayer = new gDBox.Layer.Feature(layerId, config);
+const feature = new gDBox.Feature.Polygon(featureId, points, data, gStyle); // 参考gDBox.Feature.Polygon【此处不再赘述】
+gFeatureLayer.addFeature(feature);
+
+gFeatureLayer.removeAllFeatures();
+</pre>
             <h3 id="gdbox_removeFeature">removeFeature</h3>
-            <span>...</span>
+            <span class="title-desc">删除要素。</span>
+<pre class="prettyprint">
+const featureLayer = new gDBox.Layer.Feature(layerId, config);
+const feature = new gDBox.Feature.Polygon(featureId, points, data, gStyle); // 参考gDBox.Feature.Polygon【此处不再赘述】
+gFeatureLayer.addFeature(feature);
+
+gFeatureLayer.removeFeature(feature);
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>feature</td><td>gDBox.Feature.xxx</td>
+                    <td>是</td><td></td><td>要素</td>
+                </tr>
+            </table>
             <h3 id="gdbox_removeFeatureById">removeFeatureById</h3>
-            <span>...</span>
+            <span class="title-desc">通过要素id删除指定要素。</span>
+<pre class="prettyprint">
+const featureLayer = new gDBox.Layer.Feature(layerId, config);
+const feature = new gDBox.Feature.Polygon(featureId, points, data, gStyle); // 参考gDBox.Feature.Polygon【此处不再赘述】
+gFeatureLayer.addFeature(feature);
+
+gFeatureLayer.removeFeatureById(featureId);
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>featureId</td><td>string</td>
+                    <td>是</td><td></td><td>要素id</td>
+                </tr>
+            </table>
             <h3 id="gdbox_removeFeaturesByIds">removeFeaturesByIds</h3>
-            <span>...</span>
+            <span class="title-desc">通过要素id集合删除指定要素集合。</span>
+<pre class="prettyprint">
+const featureLayer = new gDBox.Layer.Feature(layerId, config);
+const feature = new gDBox.Feature.Polygon(featureId, points, data, gStyle); // 参考gDBox.Feature.Polygon【此处不再赘述】
+gFeatureLayer.addFeature(feature);
+
+const featureIds = [featureId];
+gFeatureLayer.removeFeaturesByIds(featureIds);
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>featureIds</td><td>array</td>
+                    <td>是</td><td></td><td>要素id集合</td>
+                </tr>
+            </table>
             <h3 id="gdbox_removeFeaturesByProperty">removeFeaturesByProperty</h3>
-            <span>...</span>
+            <span class="title-desc">通过要素属性数据删除要素。</span>
+<pre class="prettyprint">
+const featureLayer = new gDBox.Layer.Feature(layerId, config);
+const feature = new gDBox.Feature.Polygon(featureId, points, {name: '中国'}, gStyle); // 参考gDBox.Feature.Polygon【此处不再赘述】
+gFeatureLayer.addFeature(feature);
+
+const properties = [{key: 'name', value: '中国'}];
+gFeatureLayer.removeFeaturesByProperty(properties);
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>properties</td><td>array</td>
+                    <td>是</td><td></td><td>带删除要素的属性数据集合</td>
+                </tr>
+            </table>
             <h3 id="gdbox_getAllFeatures">getAllFeatures</h3>
-            <span>...</span>
+            <span class="title-desc">返回当前要素层上所有要素。</span>
+<pre class="prettyprint">
+const featureLayer = new gDBox.Layer.Feature(layerId, config);
+const feature = new gDBox.Feature.Polygon(featureId, points, data, gStyle); // 参考gDBox.Feature.Polygon【此处不再赘述】
+gFeatureLayer.addFeature(feature);
+
+const allFeatures = gFeatureLayer.getAllFeatures(); // 返回所有要素数据
+</pre>
 
             <hr>
             <h2>gDBox.Feature.Polygon</h2>
-            <span>...</span>
+            <span>要素数据：多边形</span>
             <h3 id="gdbox_layer_feature_new">实例</h3>
-            <span>...</span>
+            <span class="title-desc">多边形要素实例。</span>
+<pre class="prettyprint">
+const featureLayer = new gDBox.Layer.Feature(layerId, config);
+const feature = new gDBox.Feature.Polygon(featureId, points, data, gStyle);
+
+gFeatureLayer.addFeature(feature);
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>featureId</td><td>string</td>
+                    <td>是</td><td></td><td>要素id</td>
+                </tr>
+                <tr>
+                    <td>points</td><td>array</td>
+                    <td>是</td><td></td><td>要素空间数据，如[{x: y:}, {x: y:}, {x: y:}]，长度不能低于3个</td>
+                </tr>
+                <tr>
+                    <td>data</td><td>object</td>
+                    <td>是</td><td></td><td>要素属性数据，可通过实例.data属性获取</td>
+                </tr>
+                <tr>
+                    <td>gStyle</td><td>gDBox.style</td>
+                    <td>是</td><td></td><td>要素样式</td>
+                </tr>
+            </table>
             <h3 id="gdbox_feature_polygon_show">show</h3>
-            <span>...</span>
+            <span class="title-desc">多边形要素显示。</span>
+<pre class="prettyprint">
+const featureLayer = new gDBox.Layer.Feature(layerId, config);
+const feature = new gDBox.Feature.Polygon(featureId, points, data, gStyle);
+gFeatureLayer.addFeature(feature);
+feature.hide();
+
+feature.show();
+</pre>
             <h3 id="gdbox_feature_polygon_hide">hide</h3>
-            <span>...</span>
+            <span class="title-desc">多边形要素隐藏。</span>
+<pre class="prettyprint">
+const featureLayer = new gDBox.Layer.Feature(layerId, config);
+const feature = new gDBox.Feature.Polygon(featureId, points, data, gStyle);
+gFeatureLayer.addFeature(feature);
+
+feature.hide();
+</pre>
             <h3 id="gdbox_feature_polygon_update">update</h3>
-            <span>...</span>
+            <span class="title-desc">多边形要素更新。</span>
+<pre class="prettyprint">
+const featureLayer = new gDBox.Layer.Feature(layerId, config);
+const feature = new gDBox.Feature.Polygon(featureId, points, data, gStyle);
+gFeatureLayer.addFeature(feature);
+
+feature.update(options);
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>options</td><td>Options</td>
+                    <td>是</td><td></td><td>待更新数据</td>
+                </tr>
+            </table>
+            <h4>Options:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>points</td><td>array</td>
+                    <td>否</td><td></td><td>待更新空间数据</td>
+                </tr>
+                <tr>
+                    <td>data</td><td>object</td>
+                    <td>否</td><td></td><td>待更新属性数据</td>
+                </tr>
+                <tr>
+                    <td>style</td><td>gDBox.Style</td>
+                    <td>否</td><td></td><td>待更新样式数据</td>
+                </tr>
+            </table>
             <h3 id="gdbox_feature_polygon_pointInFeature">pointInFeature</h3>
-            <span>...</span>
+            <span class="title-desc">判断点是否在当前要素内。</span>
+<pre class="prettyprint">
+const featureLayer = new gDBox.Layer.Feature(layerId, config);
+const feature = new gDBox.Feature.Polygon(featureId, points, data, gStyle);
+gFeatureLayer.addFeature(feature);
+
+feature.pointInFeature(wxy); // return false;
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>wxy</td><td>object</td>
+                    <td>是</td><td></td><td>如{x: , y: }</td>
+                </tr>
+            </table>
 
             <hr>
             <h2>gDBox.Layer.Marker</h2>
-            <span>...</span>
             <h3 id="gdbox_layer_marker_new">实例</h3>
-            <span>...</span>
+            <span class="title-desc">marker标注层为系统内置图层，可通过gMap.mLayer进行获取。</span>
             <h3 id="gdbox_addMarker">addMarker</h3>
-            <span>...</span>
+            <span class="title-desc">添加标注对象。</span>
+<pre class="prettyprint">
+const marker = new gDBox.Marker(markerId, config); // 参考gDBox.Marker【此处不再赘述】
+
+gMap.mLayer.addMarker(marker);
+</pre>
             <h3 id="gdbox_removeMarker">removeMarker</h3>
-            <span>...</span>
+            <span class="title-desc">删除标注。</span>
+<pre class="prettyprint">
+const marker = new gDBox.Marker(markerId, config); // 参考gDBox.Marker【此处不再赘述】
+gMap.mLayer.addMarker(marker);
+
+gMap.mLayer.removeMarker(marker);
+</pre>
             <h3 id="gdbox_removeMarkerById">removeMarkerById</h3>
-            <span>...</span>
+            <span class="title-desc">通过标注id删除指定标注。</span>
+<pre class="prettyprint">
+const marker = new gDBox.Marker(markerId, config); // 参考gDBox.Marker【此处不再赘述】
+gMap.mLayer.addMarker(marker);
+
+gMap.mLayer.removeMarkerById(markerId);
+</pre>
             <h3 id="gdbox_removeMarkersByIds">removeMarkersByIds</h3>
-            <span>...</span>
+            <span class="title-desc">通过标注id集合删除指定标注集合。</span>
+<pre class="prettyprint">
+const marker = new gDBox.Marker(markerId, config); // 参考gDBox.Marker【此处不再赘述】
+gMap.mLayer.addMarker(marker);
+gMap.mLayer.removeMarkerById(markerId);
+const markerIds = [markerId];
+
+gMap.mLayer.removeMarkersByIds(markerIds);
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>markerIds</td><td>array</td>
+                    <td>是</td><td></td><td>标注id集合</td>
+                </tr>
+            </table>
             <h3 id="gdbox_getAllMarkers">getAllMarkers</h3>
-            <span>...</span>
+            <span class="title-desc">返回当前标注层上所有标注对象。</span>
+<pre class="prettyprint">
+const marker = new gDBox.Marker(markerId, config); // 参考gDBox.Marker【此处不再赘述】
+gMap.mLayer.addMarker(marker);
+gMap.mLayer.removeMarkerById(markerId);
+
+const allMarkers = gMap.mLayer.getAllMarkers(); // 返回所有标注数据
+</pre>
             <h3 id="gdbox_getMarkerById">getMarkerById</h3>
-            <span>...</span>
+            <span class="title-desc">通过标注id获取指定标注对象。</span>
+<pre class="prettyprint">
+const marker = new gDBox.Marker(markerId, config); // 参考gDBox.Marker【此处不再赘述】
+gMap.mLayer.addMarker(marker);
+gMap.mLayer.removeMarkerById(markerId);
+
+const mar = gMap.mLayer.getMarkerById(markerId);
+</pre>
             <h3 id="gdbox_addMarkers">addMarkers</h3>
-            <span>...</span>
+            <span class="title-desc">添加标注对象集合。</span>
+<pre class="prettyprint">
+const marker = new gDBox.Marker(markerId, config); // 参考gDBox.Marker【此处不再赘述】
+const marker2 = new gDBox.Marker(markerId2, config2); // 参考gDBox.Marker【此处不再赘述】
+
+gMap.mLayer.addMarkers([marker, marker2]);
+</pre>
             <h3 id="gdbox_removeMarkers">removeMarkers</h3>
-            <span>...</span>
+            <span class="title-desc">移除标注对象集合。</span>
+<pre class="prettyprint">
+const marker = new gDBox.Marker(markerId, config); // 参考gDBox.Marker【此处不再赘述】
+const marker2 = new gDBox.Marker(markerId2, config2); // 参考gDBox.Marker【此处不再赘述】
+gMap.mLayer.addMarkers([marker, marker2]);
+
+gMap.mLayer.removeMarkers([marker, marker2]);
+</pre>
             <h3 id="gdbox_removeAllMarkers">removeAllMarkers</h3>
-            <span>...</span>
+            <span class="title-desc">删除当前标注层上所有标注对象。</span>
+<pre class="prettyprint">
+const marker = new gDBox.Marker(markerId, config); // 参考gDBox.Marker【此处不再赘述】
+const marker2 = new gDBox.Marker(markerId2, config2); // 参考gDBox.Marker【此处不再赘述】
+gMap.mLayer.addMarkers([marker, marker2]);
+
+gMap.mLayer.removeAllMarkers();
+</pre>
 
             <hr>
             <h2>gDBox.Marker</h2>
-            <span>...</span>
             <h3 id="gdbox_marker_new" >实例</h3>
-            <span>...</span>
+            <span class="title-desc">实例标注对象。</span>
+<pre class="prettyprint">
+const marker = new gDBox.Marker(markerId, config);
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>markerId</td><td>string</td>
+                    <td>是</td><td></td><td>标注id</td>
+                </tr>
+                <tr>
+                    <td>config</td><td>Config</td>
+                    <td>是</td><td></td><td></td>
+                </tr>
+            </table>
+            <h4>Config:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>src</td><td>string</td>
+                    <td>是</td><td></td><td>标注图标地址</td>
+                </tr>
+                <tr>
+                    <td>x</td><td>number</td>
+                    <td>是</td><td></td><td>标注位置</td>
+                </tr>
+                <tr>
+                    <td>y</td><td>number</td>
+                    <td>是</td><td></td><td>标注位置</td>
+                </tr>
+                <tr>
+                    <td>offset</td><td>object</td>
+                    <td>是</td><td></td><td>标注图标展示偏移量，如{x:, y:}</td>
+                </tr>
+            </table>
             <h3 id="gdbox_marker_update">update</h3>
-            <span>...</span>
+            <span class="title-desc">标注对象更新。</span>
+<pre class="prettyprint">
+const marker = new gDBox.Marker(markerId, config);
+
+marker.update(options);
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>options</td><td>Options</td>
+                    <td>是</td><td></td><td>待更新数据</td>
+                </tr>
+            </table>
+            <h4>Options:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>src</td><td>string</td>
+                    <td>否</td><td></td><td>待更新图标src</td>
+                </tr>
+                <tr>
+                    <td>x</td><td>number</td>
+                    <td>否</td><td></td><td>待更新标注位置</td>
+                </tr>
+                <tr>
+                    <td>y</td><td>number</td>
+                    <td>否</td><td></td><td>待更新标注位置</td>
+                </tr>
+                <tr>
+                    <td>offset</td><td>object</td>
+                    <td>否</td><td></td><td>待更新标注图标展示偏移量，如{x:, y:}</td>
+                </tr>
+            </table>
             <h3 id="gdbox_marker_regEvent">regEvent</h3>
-            <span>...</span>
+            <span class="title-desc">标注对象事件注册，目前仅支持click事件。</span>
+<pre class="prettyprint">
+const marker = new gDBox.Marker(markerId, config);
+
+marker.regEvent('click', function () {
+    gMap.mLayer.removeMarker(this); // this指向当前标注对象
+});
+</pre>
             <h3 id="gdbox_marker_showInfo">showInfo</h3>
-            <span>...</span>
+            <span>todo...</span>
 
             <hr>
             <h2>gDBox.Layer.Text</h2>
-            <span>...</span>
             <h3 id="gdbox_layer_text_new">实例</h3>
-            <span>...</span>
+            <span class="title-desc">文本图层</span>
+<pre class="prettyprint">
+// js: 代码
+const textLayer = new gDBox.Layer.Text(layerId, config);
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>layerId</td><td>string</td>
+                    <td>是</td><td></td><td>图层id</td>
+                </tr>
+                <tr>
+                    <td>config</td><td>Config</td>
+                    <td>否</td><td></td><td></td>
+                </tr>
+            </table>
+            <h4>Config:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>opacity</td><td>number</td>
+                    <td>是</td><td></td><td>透明度</td>
+                </tr>
+                <tr>
+                    <td>zIndex</td><td>number</td>
+                    <td>是</td><td></td><td></td>
+                </tr>
+            </table>
             <h3 id="gdbox_addText">addText</h3>
-            <span>...</span>
+            <span class="title-desc">添加文本对象</span>
+<pre class="prettyprint">
+// js: 代码
+const textLayer = new gDBox.Layer.Text(layerId, config);
+const text = new gDBox.Text(textId, config, gStyle); // 参考gDBox.Text【此处不做赘述】
+
+textLayer.addText(text);
+</pre>
             <h3 id="gdbox_removeText">removeText</h3>
-            <span>...</span>
+            <span class="title-desc">删除文本。</span>
+<pre class="prettyprint">
+const textLayer = new gDBox.Layer.Text(layerId, config);
+const text = new gDBox.Text(textId, config, gStyle); // 参考gDBox.Text【此处不做赘述】
+textLayer.addText(text);
+
+textLayer.removeText(text);
+</pre>
             <h3 id="gdbox_getTextById">getTextById</h3>
-            <span>...</span>
+            <span class="title-desc">通过文本id获取指定文本对象。</span>
+<pre class="prettyprint">
+const textLayer = new gDBox.Layer.Text(layerId, config);
+const text = new gDBox.Text(textId, config, gStyle); // 参考gDBox.Text【此处不做赘述】
+textLayer.addText(text);
+
+textLayer.getTextById(textId);
+</pre>
             <h3 id="gdbox_removeTextById">removeTextById</h3>
-            <span>...</span>
+            <span class="title-desc">通过文本id删除指定文本。</span>
+<pre class="prettyprint">
+const textLayer = new gDBox.Layer.Text(layerId, config);
+const text = new gDBox.Text(textId, config, gStyle); // 参考gDBox.Text【此处不做赘述】
+textLayer.addText(text);
+
+textLayer.removeTextById(textId);
+</pre>
             <h3 id="gdbox_removeTextsByIds">removeTextsByIds</h3>
-            <span>...</span>
+            <span class="title-desc">通过文本id集合删除指定文本集合。</span>
+<pre class="prettyprint">
+const textLayer = new gDBox.Layer.Text(layerId, config);
+const text = new gDBox.Text(textId, config, gStyle); // 参考gDBox.Text【此处不做赘述】
+textLayer.addText(text);
+
+textLayer.removeTextsByIds([textId]);
+</pre>
             <h3 id="gdbox_addTexts">addTexts</h3>
-            <span>...</span>
+            <span class="title-desc">添加文本对象集合。</span>
+<pre class="prettyprint">
+const text = new gDBox.Text(textId, config, gStyle); // 参考gDBox.Text【此处不做赘述】
+const text2 = new gDBox.Text(textId2, config, gStyle); // 参考gDBox.Text【此处不做赘述】
+
+textLayer.addTexts([text, text2]);
+</pre>
             <h3 id="gdbox_removeTexts">removeTexts</h3>
-            <span>...</span>
+            <span class="title-desc">删除文本对象集合。</span>
+<pre class="prettyprint">
+const text = new gDBox.Text(textId, config, gStyle); // 参考gDBox.Text【此处不做赘述】
+const text2 = new gDBox.Text(textId2, config, gStyle); // 参考gDBox.Text【此处不做赘述】
+textLayer.addTexts([text, text2]);
+
+textLayer.removeTexts([text, text2]);
+</pre>
             <h3 id="gdbox_getAllTexts">getAllTexts</h3>
-            <span>...</span>
+            <span class="title-desc">返回当前文本层上所有文本对象。</span>
+<pre class="prettyprint">
+const text = new gDBox.Text(textId, config, gStyle); // 参考gDBox.Text【此处不做赘述】
+const text2 = new gDBox.Text(textId2, config, gStyle); // 参考gDBox.Text【此处不做赘述】
+textLayer.addTexts([text, text2]);
+
+const allTexts = textLayer.getAllTexts(); // 返回所有文本数据
+</pre>
             <h3 id="gdbox_removeAllTexts">removeAllTexts</h3>
-            <span>...</span>
+            <span class="title-desc">删除当前文本层上所有文本对象。</span>
+<pre class="prettyprint">
+const text = new gDBox.Text(textId, config, gStyle); // 参考gDBox.Text【此处不做赘述】
+const text2 = new gDBox.Text(textId2, config, gStyle); // 参考gDBox.Text【此处不做赘述】
+textLayer.addTexts([text, text2]);
+
+textLayer.removeAllTexts();
+</pre>
 
             <hr>
             <h2>gDBox.Text</h2>
-            <span>...</span>
             <h3 id="gdbox_text_new">实例</h3>
-            <span>...</span>
+            <span class="title-desc">实例文本对象。</span>
+<pre class="prettyprint">
+const text = new gDBox.Text(textId, config, gStyle);
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>textId</td><td>string</td>
+                    <td>是</td><td></td><td>文本id</td>
+                </tr>
+                <tr>
+                    <td>config</td><td>Config</td>
+                    <td>是</td><td></td><td>文本配置信息</td>
+                </tr>
+                <tr>
+                    <td>gStyle</td><td>gDBox.Style</td>
+                    <td>是</td><td></td><td>文本样式</td>
+                </tr>
+            </table>
+            <h4>Config:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>text</td><td>string</td>
+                    <td>是</td><td></td><td>显示文本</td>
+                </tr>
+                <tr>
+                    <td>pos</td><td>object</td>
+                    <td>是</td><td></td><td>标注位置，如{x: , y:}</td>
+                </tr>
+                <tr>
+                    <td>offset</td><td>object</td>
+                    <td>是</td><td></td><td>偏移量，如{x: , y:}</td>
+                </tr>
+                <tr>
+                    <td>width</td><td>number</td>
+                    <td>是</td><td></td><td>最大文本展示宽【待后续升级可能更改名称】</td>
+                </tr>
+            </table>
             <h3 id="gdbox_text_update">update</h3>
-            <span>...</span>
+            <span class="title-desc">更新文本对象。</span>
+<pre class="prettyprint">
+const text = new gDBox.Text(textId, config, gStyle);
+
+text.update(options);
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>options</td><td>Options</td>
+                    <td>是</td><td></td><td>待更新数据</td>
+                </tr>
+            </table>
+            <h4>Options:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>text</td><td>string</td>
+                    <td>是</td><td></td><td>待更新文本</td>
+                </tr>
+                <tr>
+                    <td>pos</td><td>object</td>
+                    <td>是</td><td></td><td>待更新标注位置，如{x: , y:}</td>
+                </tr>
+                <tr>
+                    <td>offset</td><td>object</td>
+                    <td>是</td><td></td><td>待更新偏移量，如{x: , y:}</td>
+                </tr>
+                <tr>
+                    <td>width</td><td>number</td>
+                    <td>是</td><td></td><td>待更新最大文本展示宽【待后续升级可能更改名称】</td>
+                </tr>
+            </table>
             <h3 id="gdbox_text_setText">setText</h3>
-            <span>...</span>
+            <span class="title-desc">设置文本内容。</span>
+<pre class="prettyprint">
+const text = new gDBox.Text(textId, config, gStyle);
+
+text.setText('new-text');
+</pre>
             <h3 id="gdbox_text_setPosition">setPosition</h3>
-            <span>...</span>
-            <h3 id="gdbox_text_setSize">setSize</h3>
-            <span>...</span>
-            <h3 id="gdbox_text_refresh">refresh</h3>
-            <span>...</span>
+            <span class="title-desc">设置文本位置。</span>
+<pre class="prettyprint">
+const text = new gDBox.Text(textId, config, gStyle);
+
+text.setPosition(x, y);
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>x</td><td>number</td>
+                    <td>是</td><td></td><td>待更新位置</td>
+                </tr>
+                <tr>
+                    <td>y</td><td>number</td>
+                    <td>是</td><td></td><td>待更新位置</td>
+                </tr>
+            </table>
 
             <hr>
             <h2>gDBox.Style</h2>
-            <span>...</span>
             <h3 id="gdbox_style">实例</h3>
-            <span>...</span>
+            <span class="title-desc">设置样式对象。</span>
+<pre class="prettyprint">
+const gTextStyle = new gDBox.Style(config);
+</pre>
+            <h4>Params:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>config</td><td>Config</td>
+                    <td>是</td><td></td><td>样式配置参数</td>
+                </tr>
+            </table>
+            <h4>Config:</h4>
+            <table border="1">
+                <tr>
+                    <th>参数</th><th>类型</th>
+                    <th>是否必须</th><th>默认</th>
+                    <th>其他</th>
+                </tr>
+                <tr>
+                    <td>strokeColor</td><td>string</td>
+                    <td>否</td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td>opacity</td><td>string</td>
+                    <td>否</td><td></td><td>透明度：0-1</td>
+                </tr>
+                <tr>
+                    <td>lineWeight</td><td>string</td>
+                    <td>否</td><td></td><td>宽度</td>
+                </tr>
+                <tr>
+                    <td>fillColor</td><td>string</td>
+                    <td>否</td><td></td><td>填充色</td>
+                </tr>
+                <tr>
+                    <td>lineDash</td><td>boolean</td>
+                    <td>否</td><td></td><td>是否虚线</td>
+                </tr>
+                <tr>
+                    <td>其他待拓展</td><td></td>
+                    <td></td><td></td><td></td>
+                </tr>
+            </table>
 
             <hr>
             <h2>gDBox.Util</h2>
-            <span>...</span>
+            <span class="title-desc">相关工具库。</span>
             <h3 id="gdbox_worldToScreen">worldToScreen</h3>
-            <span>...</span>
+            <span class="title-desc">实际坐标转屏幕坐标。</span>
+<pre class="prettyprint">
+const sxy = gDBox.Util.worldToScreen(gMap, x, y);
+</pre>
             <h3 id="gdbox_screenToWorld">screenToWorld</h3>
-            <span>...</span>
-            <h3 id="gdbox_colorRgb">colorRgb</h3>
-            <span>...</span>
+            <span class="title-desc">屏幕坐标转实际坐标。</span>
+<pre class="prettyprint">
+const wxy = gDBox.Util.screenToWorld(gMap, x, y);
+</pre>
             <h3 id="gdbox_getBounds">getBounds</h3>
-            <span>...</span>
+            <span class="title-desc">屏幕坐标转实际坐标。</span>
+<pre class="prettyprint">
+const bounds = gDBox.Util.getBounds(points); // [left_top_point, right_top_point, left_bottom_point, right_bottom_point]
+</pre>
         </div>
     </div>
 </div>
