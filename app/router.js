@@ -10,8 +10,7 @@ module.exports = app => {
     router.get('/qingsong', controller.qingsong.detail);
     router.get('/lottery/forecast', controller.lottery.forecast);
     router.get('/gdbox', controller.gdbox.doc);
-    router.get('/gdbox/demo/drawPolygon', controller.gdbox.drawPolygon);
-    router.get('/gdbox/demo/drawRect', controller.gdbox.drawRect);
+    router.get('/gdbox/demo/drawFeature', controller.gdbox.drawFeature);
     router.get('/gdbox/demo/editRect', controller.gdbox.editRect);
     router.get('/gdbox/demo/feature', controller.gdbox.feature);
     router.get('/gdbox/demo/hover', controller.gdbox.hover);

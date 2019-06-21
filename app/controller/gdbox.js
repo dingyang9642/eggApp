@@ -6,13 +6,9 @@ class GdboxController extends Controller {
         const ctx = this.ctx;
         await ctx.render('gdbox/index.html', {});
     }
-    async drawRect() {
+    async drawFeature() {
         const ctx = this.ctx;
-        await ctx.render('gdbox/demo/drawRect/index.html', {});
-    }
-    async drawPolygon() {
-        const ctx = this.ctx;
-        await ctx.render('gdbox/demo/drawPolygon/index.html', {});
+        await ctx.render('gdbox/demo/drawFeature/index.html', {});
     }
     async editRect() {
         const ctx = this.ctx;

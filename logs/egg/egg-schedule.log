@@ -16,3 +16,7 @@
 2018-12-14 16:45:23,207 INFO 8661 [Timer] /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2018-12-15 00:00:01.000
 2019-06-09 18:38:42,836 INFO 13461 [Timer] /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2019-06-10 00:00:00.000
 2019-06-09 18:38:42,836 INFO 13461 [Timer] /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2019-06-10 00:00:01.000
+2019-06-21 17:47:23,973 INFO 12948 [Timer] /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2019-06-22 00:00:00.000
+2019-06-21 17:47:23,974 INFO 12948 [Timer] /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2019-06-22 00:00:01.000
+2019-06-21 17:54:07,444 INFO 13259 [Timer] /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute at 2019-06-22 00:00:00.000
+2019-06-21 17:54:07,445 INFO 13259 [Timer] /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute at 2019-06-22 00:00:01.000

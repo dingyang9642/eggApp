@@ -29,39 +29,65 @@
             -khtml-user-select:none;/*早期浏览器*/
             user-select:none;
         }
+        .command-btn {
+            display: inline-block;
+            margin: 0 20px;
+            margin-top: 10px;
+            font-size: 13px;
+            padding: 5px 10px;
+            border: 1px solid #aaa;
+        }
 	</style>
 </head>
 <body>
 	<div id="map"></div>
-    <div>按下shift键执行图形选择</div>
-    <div>在图形选中状态下，按下shift键捕捉图形顶点单击删除</div>
+    <div id="drawRect" class="command-btn" style="background-color: #3377ff;" onclick="setMode('drawRect')">绘制矩形</div>
+    <div id="drawPolygon" class="command-btn" onclick="setMode('drawPolygon')">绘制多边形</div>
+    <div id="pan" class="command-btn" onclick="setMode('pan')">平移</div>
     <script>
+        function setMode(mode) {
+            gMap && gMap.setMode(mode);
+            document.getElementById('drawRect').style.backgroundColor = '#eee';
+            document.getElementById('drawPolygon').style.backgroundColor = '#eee';
+            document.getElementById('pan').style.backgroundColor = '#eee';
+
+            document.getElementById(mode).style.backgroundColor = '#3377ff';
+        }
         // 常用样式声明
-        const gFetureStyle = new gDBox.Style({strokeColor: '#0000FF'});
+        const gFetureStyle = new gDBox.Style({strokeColor: '#0000FF', fillColor: '#FF0000', opacity: 0.3, lineWeight: 1});
 
         // 容器对象声明
         let gMap = new gDBox.Map('map', {zoom: 1080, cx: 0, cy: 0, zoomMax: 650 * 10, zoomMin: 650 / 10});
 
         // 设置当前操作模式为‘drawRect’
-        gMap.setMode('drawPolygon', gFetureStyle);
+        gMap.setMode('drawRect');
 
         // 图片层实例\添加
         let gImageLayer = new gDBox.Layer.Image('img', '/public/gdbox/demo/imgs/demo.jpeg', {w: 1080, h: 720}, {zIndex: 1});
         gMap.addLayer(gImageLayer);
 
         // 矢量层实例\添加
-        let gFeatureLayer = new gDBox.Layer.Feature('featureLayer', {zIndex: 2, transparent: true});
+        let gFeatureLayer = new gDBox.Layer.Feature('featureLayer', {zIndex: 2, transparent: false});
         gMap.addLayer(gFeatureLayer);
 
         gMap.events.on('geometryDrawDone', function (type, points) {
             // 生成元素唯一标志（时间戳）
             const timestamp = new Date().getTime();
             // 元素添加展示
-            let fea = new gDBox.Feature.Polygon(`feature-${timestamp}`, points, {
-                name: '中国'
-            }, gFetureStyle);
-            gFeatureLayer.addFeature(fea);
+            if (type === 'rect') {
+                let fea = new gDBox.Feature.Rect(`feature-${timestamp}`, points, {
+                    name: '中国'
+                }, gFetureStyle);
+                gFeatureLayer.addFeature(fea);
+            }
+            else if (type === 'polygon') {
+                let fea = new gDBox.Feature.Polygon(`feature-${timestamp}`, points, {
+                    name: '中国'
+                }, gFetureStyle);
+                gFeatureLayer.addFeature(fea);
+            }
         });
+
         gMap.events.on('geometryEditDone', (type, activeFeature, points) => {
             activeFeature.update({points});
             activeFeature.show();

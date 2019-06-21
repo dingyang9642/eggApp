@@ -49,7 +49,7 @@
             // 生成元素唯一标志（时间戳）
             const timestamp = new Date().getTime();
             // 元素添加展示
-            let fea = new gDBox.Feature.Polygon(`feature-${timestamp}`, points, {
+            let fea = new gDBox.Feature.Rect(`feature-${timestamp}`, points, {
                 name: '中国'
             }, gFetureStyle);
             gFeatureLayer.addFeature(fea);

@@ -3612,3 +3612,51 @@
 2019-06-09 19:11:39,110 INFO 15134 [egg-watcher:application] watcher start success
 2019-06-09 19:11:39,123 INFO 15134 [egg:core] dump config after ready, 7ms
 2019-06-09 19:14:25,293 INFO 15134 [egg-view-nunjucks] loading templates from ["/Users/dingyang/Documents/dingyang/github/eggApp/app/view"]
+2019-06-21 17:47:23,805 INFO 12954 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-06-21 17:47:23,838 INFO 12954 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-06-21 17:47:23,838 INFO 12954 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-06-21 17:47:23,913 INFO 12954 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2019-06-21 17:47:23,916 INFO 12954 [egg-security] use csrf middleware
+2019-06-21 17:47:23,917 INFO 12954 [egg-security] use methodnoallow middleware
+2019-06-21 17:47:23,918 INFO 12954 [egg-security] use noopen middleware
+2019-06-21 17:47:23,919 INFO 12954 [egg-security] use nosniff middleware
+2019-06-21 17:47:23,920 INFO 12954 [egg-security] use xssProtection middleware
+2019-06-21 17:47:23,921 INFO 12954 [egg-security] use xframe middleware
+2019-06-21 17:47:23,921 INFO 12954 [egg-security] use dta middleware
+2019-06-21 17:47:23,921 INFO 12954 [egg-security] compose 7 middlewares into one security middleware
+2019-06-21 17:47:23,934 INFO 12954 [egg:core] dump config after load, 5ms
+2019-06-21 17:47:23,950 INFO 12954 [egg-watcher:application] watcher start success
+2019-06-21 17:47:23,962 INFO 12954 [egg:core] dump config after ready, 10ms
+2019-06-21 17:47:39,578 INFO 12954 [egg-view-nunjucks] loading templates from ["/Users/dingyang/Documents/dingyang/github/eggApp/app/view"]
+2019-06-21 17:54:07,307 INFO 13260 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-06-21 17:54:07,349 INFO 13260 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-06-21 17:54:07,349 INFO 13260 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-06-21 17:54:07,401 INFO 13260 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2019-06-21 17:54:07,403 INFO 13260 [egg-security] use csrf middleware
+2019-06-21 17:54:07,404 INFO 13260 [egg-security] use methodnoallow middleware
+2019-06-21 17:54:07,404 INFO 13260 [egg-security] use noopen middleware
+2019-06-21 17:54:07,405 INFO 13260 [egg-security] use nosniff middleware
+2019-06-21 17:54:07,405 INFO 13260 [egg-security] use xssProtection middleware
+2019-06-21 17:54:07,406 INFO 13260 [egg-security] use xframe middleware
+2019-06-21 17:54:07,406 INFO 13260 [egg-security] use dta middleware
+2019-06-21 17:54:07,406 INFO 13260 [egg-security] compose 7 middlewares into one security middleware
+2019-06-21 17:54:07,417 INFO 13260 [egg:core] dump config after load, 4ms
+2019-06-21 17:54:07,430 INFO 13260 [egg-watcher:application] watcher start success
+2019-06-21 17:54:07,436 INFO 13260 [egg:core] dump config after ready, 4ms
+2019-06-21 17:54:08,751 INFO 13260 [egg-view-nunjucks] loading templates from ["/Users/dingyang/Documents/dingyang/github/eggApp/app/view"]
+2019-06-21 17:54:23,312 INFO 13273 [egg:logger] init all loggers with options: {"dir":"/Users/dingyang/Documents/dingyang/github/eggApp/logs/egg","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"type":"application"}
+2019-06-21 17:54:23,359 INFO 13273 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/clean_log.js
+2019-06-21 17:54:23,359 INFO 13273 [egg-schedule]: register schedule /Users/dingyang/Documents/dingyang/github/eggApp/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2019-06-21 17:54:23,453 INFO 13273 [egg-static] starting static serve /public/ -> /Users/dingyang/Documents/dingyang/github/eggApp/app/public
+2019-06-21 17:54:23,464 INFO 13273 [egg-security] use csrf middleware
+2019-06-21 17:54:23,465 INFO 13273 [egg-security] use methodnoallow middleware
+2019-06-21 17:54:23,465 INFO 13273 [egg-security] use noopen middleware
+2019-06-21 17:54:23,466 INFO 13273 [egg-security] use nosniff middleware
+2019-06-21 17:54:23,467 INFO 13273 [egg-security] use xssProtection middleware
+2019-06-21 17:54:23,468 INFO 13273 [egg-security] use xframe middleware
+2019-06-21 17:54:23,469 INFO 13273 [egg-security] use dta middleware
+2019-06-21 17:54:23,469 INFO 13273 [egg-security] compose 7 middlewares into one security middleware
+2019-06-21 17:54:23,501 INFO 13273 [egg:core] dump config after load, 10ms
+2019-06-21 17:54:23,518 INFO 13273 [egg-watcher:application] watcher start success
+2019-06-21 17:54:23,524 INFO 13273 [egg:core] dump config after ready, 4ms
+2019-06-21 17:58:51,510 INFO 13273 [egg-view-nunjucks] loading templates from ["/Users/dingyang/Documents/dingyang/github/eggApp/app/view"]
