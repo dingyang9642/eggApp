@@ -24,18 +24,49 @@
         	position: relative;
         	cursor: pointer;
         }
+		#eagle-map {
+        	position: relative;
+        }
 	</style>
 </head>
 <body>
 	<div id="map"></div>
+	<div id="eagle-map"></div>
 	<span>说明：可进行图片平移，滑轮缩放</span>
     <script>
         // 容器对象声明
         let gMap = new gDBox.Map('map', {zoom: 1080, cx: 0, cy: 0, zoomMax: 650 * 10, zoomMin: 650 / 10});
 
         // 图片层实例\添加
-        let gImageLayer = new gDBox.Layer.Image('img', '/public/gdbox/demo/imgs/demo.jpeg', {w: 1080, h: 720}, {zIndex: 1});
+        let gImageLayer = new gDBox.Layer.Image('img', '/public/gdbox/demo/imgs/demo.jpeg', {w: 1080, h: 720}, {
+			zIndex: 1,
+			grid: {
+                rowCount: 3, // 行数
+                columnCount: 3, // 列数
+                color: 'blue' // 边框颜色
+            }
+		});
         gMap.addLayer(gImageLayer);
+
+
+		const eagleControl = new gDBox.Control.EagleMap(
+			'eagle-control-id',
+			{
+                container: 'eagle-map', // 自定义缩略图控件展示位置
+                // postion: {right: 10, bottom: 10}, // 当存在container时，此参数不需要传
+                image: {src: '/public/gdbox/demo/imgs/demo.jpeg', width: 1080, height: 720},
+                grid: {
+                    rowCount: 3,
+                    columnCount: 3,
+                    color: 'blue'
+                },
+                size: {
+                    width: 350,
+                    height: 250
+                }
+			}
+		);
+		gMap.addControl(eagleControl);
     </script>
 </body>
 </html>

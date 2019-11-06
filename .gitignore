@@ -1,5 +1,6 @@
 output
 node_modules
+logs
 run
 .svn
 .idea/*
