@@ -15,7 +15,7 @@
 	<script src='../../../jslib/gMap.js'></script>
 	<script src='../../../jslib/gLayer.js'></script>-->
 
-	<script src='/public/gdbox/demo/gDBox.pkg.min.js'></script>
+	<script src='/public/gdbox/demo/AILabel.pkg.min.js'></script>
 	<style>
         #map {
         	width: 500px;
@@ -30,21 +30,21 @@
 	<div id="map"></div>
     <script>
         // 常用样式声明
-        const gTextStyle = new gDBox.Style({fontColor: '#0000FF', strokeColor: '#0000FF', opacity: 0});
+        const gTextStyle = new AILabel.Style({fontColor: '#0000FF', strokeColor: '#0000FF', opacity: 0});
 
         // 容器对象声明
-        let gMap = new gDBox.Map('map', {zoom: 1080, cx: 0, cy: 0, zoomMax: 650 * 10, zoomMin: 650 / 10});
+        let gMap = new AILabel.Map('map', {zoom: 1080, cx: 0, cy: 0, zoomMax: 650 * 10, zoomMin: 650 / 10});
 
         // 图片层实例\添加
-        let gImageLayer = new gDBox.Layer.Image('img', '/public/gdbox/demo/imgs/demo.jpeg', {w: 1080, h: 720}, {zIndex: 1});
+        let gImageLayer = new AILabel.Layer.Image('img', '/public/gdbox/demo/imgs/demo.jpeg', {w: 1080, h: 720}, {zIndex: 1});
         gMap.addLayer(gImageLayer);
 
         // 文本层实例\添加
-        let gTextLayer = new gDBox.Layer.Text('textLayer', {zIndex: 2});
+        let gTextLayer = new AILabel.Layer.Text('textLayer', {zIndex: 2});
         gMap.addLayer(gTextLayer);
 
         // 文本实例\添加
-        const text = new gDBox.Text('id', {
+        const text = new AILabel.Text('id', {
             pos: {x: 100, y: 100},
             offset: {x: 0, y: 0},
             width: 100, // maxwidth

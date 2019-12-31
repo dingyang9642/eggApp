@@ -4,7 +4,7 @@ const Controller = require('egg').Controller;
 class GdboxController extends Controller {
     async doc() {
         const ctx = this.ctx;
-        await ctx.render('gdbox/index.html', {});
+        await ctx.redirect('https://dingyang9642.github.io/AILabel/#/');
     }
     async drawFeature() {
         const ctx = this.ctx;

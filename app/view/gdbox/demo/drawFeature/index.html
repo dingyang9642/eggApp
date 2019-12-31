@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+    <title>Document</title>
 
-	<!--<script src='../../../jslib/gClass.js'></script>
+	<!-- <script src='../../../jslib/gClass.js'></script>
 	<script src='../../../jslib/gConfig.js'></script>
 	<script src='../../../jslib/gUtil.js'></script>
 	<script src='../../../jslib/gGraph.js'></script>
@@ -13,12 +13,13 @@
     <script src='../../../jslib/gStyle.js'></script>
     <script src="../../../jslib/gEdit.js"></script>
 	<script src='../../../jslib/gMap.js'></script>
-	<script src='../../../jslib/gLayer.js'></script>-->
+    <script src='../../../jslib/gLayer.js'></script>
+    <script src='../../../jslib/gControl.js'></script> -->
 
-	<script src='/public/gdbox/demo/gDBox.pkg.min.js'></script>
+	<script src='/public/gdbox/demo/AILabel.pkg.min.js'></script>
 	<style>
         #map {
-        	width: 700px;
+        	width: 100%;
         	height: 500px;
         	border: 1px solid red;
         	position: relative;
@@ -41,56 +42,190 @@
 </head>
 <body>
 	<div id="map"></div>
-    <div id="drawRect" class="command-btn" style="background-color: #3377ff;" onclick="setMode('drawRect')">绘制矩形</div>
+    <div id="drawRect" class="command-btn" onclick="setMode('drawRect')">绘制矩形</div>
     <div id="drawPolygon" class="command-btn" onclick="setMode('drawPolygon')">绘制多边形</div>
+    <div id="drawMask" class="command-btn" style="background-color: #3377ff;" onclick="setMode('drawMask', '#FF0000', 10)">掩膜:红色:10</div>
+    <div id="drawMask2" class="command-btn" onclick="setMode('drawMask2', '#0000FF', 20)">掩膜:蓝色:20</div>
+    <div id="drawMask3" class="command-btn" onclick="setMode('drawMask3', '#9370DB', 30)">掩膜:紫色:30</div>
+    <div id="clearMask" class="command-btn" onclick="setMode('clearMask')">掩膜:擦除</div>
+    <div id="drawPoint" class="command-btn" onclick="setMode('drawPoint')">绘制点</div>
+    <div id="drawPolyline" class="command-btn" onclick="setMode('drawPolyline', '#0000FF', 10)">绘制多段线:蓝色:10</div>
+    <div id="drawPolyline2" class="command-btn" onclick="setMode('drawPolyline2', '#9370DB', 20)">绘制多段线:紫色:20</div>
     <div id="pan" class="command-btn" onclick="setMode('pan')">平移</div>
     <script>
-        function setMode(mode) {
-            gMap && gMap.setMode(mode);
-            document.getElementById('drawRect').style.backgroundColor = '#eee';
-            document.getElementById('drawPolygon').style.backgroundColor = '#eee';
-            document.getElementById('pan').style.backgroundColor = '#eee';
+
+        const mappingStyles = {
+            drawRect: {
+                drawStyle: {strokeColor: '#FF0000', opacity: 1, lineWeight: 1},
+                featureStyle: {strokeColor: '#FF0000', fillColor: '#0000FF', opacity: .3, lineWeight: 1}
+            },
+            drawPolygon: {
+                drawStyle: {strokeColor: '#00FF00', opacity: 1, lineWeight: 1},
+                featureStyle: {strokeColor: '#FF0000', fillColor: '#00FF00', opacity: .3, lineWeight: 1}
+            },
+            drawMask: {
+                drawStyle: {strokeColor: '#FF0000', fillColor: '#0000FF', opacity: 1, lineWeight: 1},
+                featureStyle: {}
+            },
+            clearMask: {
+                drawStyle: {lineWeight: 20},
+                featureStyle: {}
+            },
+            drawPoint: {
+                drawStyle: {pointRadius: 5},
+                featureStyle: {strokeColor: '#0000FF', fillColor: '#8B008B', opacity: 1, pointRadius: 5}
+            },
+            drawPolyline: {
+                drawStyle: {strokeColor: '#FF0000', fillColor: '#0000FF', opacity: 1, lineWeight: 10},
+                featureStyle: {strokeColor: '#0000FF', fillColor: '#FF0000', opacity: 1, lineWeight: 10}
+            },
+            pan: {
+                drawStyle: {},
+                featureStyle: {}
+            }
+        };
+        // 设置当前操作模式为‘drawRect’
+        function setMode(mode, color, size) {
+            const preCurrentMode = mode.indexOf('drawMask') === 0 ? 'drawMask' : mode;
+            const currentMode = preCurrentMode.indexOf('drawPolyline') === 0 ? 'drawPolyline' : preCurrentMode;
+            const drawStyle = mappingStyles[currentMode].drawStyle;
+            if (color) {
+                if (currentMode === 'drawPolyline') {
+                    drawStyle.strokeColor = color;
+                }
+                else {
+                    drawStyle.fillColor = color;
+                }
+            }
+            if (size) {
+                drawStyle.lineWeight = size;
+            }
+
+            gMap && gMap.setMode(currentMode, new AILabel.Style(drawStyle));
+
+            document.getElementById('drawRect').style.backgroundColor = '#fff';
+            document.getElementById('drawPolygon').style.backgroundColor = '#fff';
+            document.getElementById('drawMask').style.backgroundColor = '#fff';
+            document.getElementById('drawMask2').style.backgroundColor = '#fff';
+            document.getElementById('drawMask3').style.backgroundColor = '#fff';
+            document.getElementById('drawMask3').style.backgroundColor = '#fff';
+            document.getElementById('clearMask').style.backgroundColor = '#fff';
+            document.getElementById('drawPoint').style.backgroundColor = '#fff';
+            document.getElementById('drawPolyline').style.backgroundColor = '#fff';
+            document.getElementById('drawPolyline2').style.backgroundColor = '#fff';
+            document.getElementById('pan').style.backgroundColor = '#fff';
 
             document.getElementById(mode).style.backgroundColor = '#3377ff';
         }
-        // 常用样式声明
-        const gFetureStyle = new gDBox.Style({strokeColor: '#0000FF', fillColor: '#FF0000', opacity: 0.3, lineWeight: 1});
 
         // 容器对象声明
-        let gMap = new gDBox.Map('map', {zoom: 1080, cx: 0, cy: 0, zoomMax: 650 * 10, zoomMin: 650 / 10});
+        let gMap = new AILabel.Map('map', {zoom: 1080, cx: 0, cy: 0, zoomMax: 650 * 10, zoomMin: 650 / 10, autoPan: true, drawZoom: true});
 
-        // 设置当前操作模式为‘drawRect’
-        gMap.setMode('drawRect');
+        setMode('drawRect');
+        gMap.setMaskBounds(-540, 540, -360, 360); // 设置涂抹区域
 
         // 图片层实例\添加
-        let gImageLayer = new gDBox.Layer.Image('img', '/public/gdbox/demo/imgs/demo.jpeg', {w: 1080, h: 720}, {zIndex: 1});
+        let gImageLayer = new AILabel.Layer.Image('img', '/public/gdbox/demo/imgs/demo.jpeg', {w: 1080, h: 720}, {zIndex: 1, grid: {rowCount: 3, columnCount: 3}});
         gMap.addLayer(gImageLayer);
 
         // 矢量层实例\添加
-        let gFeatureLayer = new gDBox.Layer.Feature('featureLayer', {zIndex: 2, transparent: false});
+        let gFeatureLayer = new AILabel.Layer.Feature('featureLayer', {zIndex: 3, transparent: false});
         gMap.addLayer(gFeatureLayer);
 
-        gMap.events.on('geometryDrawDone', function (type, points) {
+        // 掩膜层实例\添加
+        let gMaskLayer = new AILabel.Layer.Mask('maskLayer', {zIndex: 2});
+        gMap.addLayer(gMaskLayer);
+
+        gMap.events.on('geometryDrawDone', function (type, points, options) {
             // 生成元素唯一标志（时间戳）
             const timestamp = new Date().getTime();
+            const cMode = gMap.getMode();
+            console.log('--points--', points, options);
+            const featureStyle = mappingStyles[cMode].featureStyle;
             // 元素添加展示
-            if (type === 'rect') {
-                let fea = new gDBox.Feature.Rect(`feature-${timestamp}`, points, {
+            if (type === 'point') {
+                const {radius = 5} = options || {};
+                let fea = new AILabel.Feature.Point(`feature-${timestamp}`, points, {
                     name: '中国'
-                }, gFetureStyle);
+                }, featureStyle);
+                gFeatureLayer.addFeature(fea);
+            }
+            if (type === 'rect') {
+                let fea = new AILabel.Feature.Rect(`feature-${timestamp}`, points, {
+                    name: '中国'
+                }, featureStyle);
                 gFeatureLayer.addFeature(fea);
             }
             else if (type === 'polygon') {
-                let fea = new gDBox.Feature.Polygon(`feature-${timestamp}`, points, {
+                let fea = new AILabel.Feature.Polygon(`feature-${timestamp}`, points, {
                     name: '中国'
-                }, gFetureStyle);
+                }, featureStyle);
                 gFeatureLayer.addFeature(fea);
             }
+            else if (type === 'polyline') {
+                const {width = 5} = options || {};
+                let fea = new AILabel.Feature.Polyline(`feature-${timestamp}`, points, {
+                    name: '中国'
+                }, featureStyle, {width});
+                gFeatureLayer.addFeature(fea);
+            }
+            else if (type === 'mask') {
+                gMaskLayer.addMasks(points);
+            }
+        });
+        gMap.events.on('featureHover', function (feature, evt, wxy) {
+            // console.log('feature, evt, wxy', feature, evt, wxy);
         });
 
+        const gTextStyle = new AILabel.Style({fontColor: '#FF0000', fontSize: 20, strokeColor: '#0000FF', opacity: 0});
+
+        // 文本层实例\添加
+        let gTextLayer = new AILabel.Layer.Text('textLayer', {zIndex: 2});
+        gMap.addLayer(gTextLayer);
+
+        // 文本实例\添加
+        const text = new AILabel.Text('id', {
+            pos: {x: -50, y: 50},
+            offset: {x: 0, y: 0},
+            width: 200,
+            maxWidth: 300,
+            text: '我和我的祖国'
+        }, gTextStyle);
+        gTextLayer.addText(text);
+
+        // marker对象实例\添加
+        const marker = new AILabel.Marker('name-中国', {
+            src: '/public/gdbox/demo/imgs/marker.png',
+            x: 0,
+            y: 0,
+            offset: {x: -32, y: -32},
+        });
+        // 注册监听事件删除标注
+        marker.regEvent('click', function () {
+            gMap.mLayer.removeMarker(this);
+        });
+        gMap.mLayer.addMarker(marker);
+
         gMap.events.on('geometryEditDone', (type, activeFeature, points) => {
-            activeFeature.update({points});
-            activeFeature.show();
+            if (type === 'rect' || type === 'polygon' || type === 'polyline') {
+                activeFeature.update({points});
+                // activeFeature.show();
+            }
+            else if (type === 'mask') {
+                for (let i = 0, len = activeFeature.length; i < len; i++) {
+                    const {layerId, masks} = activeFeature[i];
+                    console.log('newmasks', masks);
+                    const maskLayer = gMap.getLayerById(layerId);
+                    maskLayer && maskLayer.addMasks(masks, true);
+                    console.log('maskLayer', maskLayer);
+                }
+            }
+        });
+        // 目前此事件钩子只针对point类型数据
+        gMap.events.on('geometryRemove', (type, removeFeature) => {
+            if (type === 'point') {
+                gFeatureLayer.removeFeatureById(removeFeature.id);
+            }
         });
     </script>
 </body>

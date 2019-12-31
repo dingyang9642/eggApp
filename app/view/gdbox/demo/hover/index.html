@@ -15,7 +15,7 @@
 	<script src='../../../jslib/gMap.js'></script>
 	<script src='../../../jslib/gLayer.js'></script>-->
 
-	<script src='/public/gdbox/demo/gDBox.pkg.min.js'></script>
+	<script src='/public/gdbox/demo/AILabel.pkg.min.js'></script>
 	<style>
         #map {
         	width: 500px;
@@ -32,22 +32,22 @@
 	<div>鼠标滑入矢量要素‘高亮突出’，滑出取消高亮</div>
 	<script>
         // 常用样式声明
-        const gFetureStyle = new gDBox.Style({strokeColor: '#0000FF', lineDash: true, lineWeight: 2});
-        const gFetureHoverStyle = new gDBox.Style({strokeColor: '#FF0000', lineDash: false, lineWeight: 2});
+        const gFetureStyle = new AILabel.Style({strokeColor: '#0000FF', lineDash: true, lineWeight: 2});
+        const gFetureHoverStyle = new AILabel.Style({strokeColor: '#FF0000', lineDash: false, lineWeight: 2});
 
         // 容器对象声明
-        let gMap = new gDBox.Map('map', {zoom: 1080, cx: 0, cy: 0, zoomMax: 650 * 10, zoomMin: 650 / 10});
+        let gMap = new AILabel.Map('map', {zoom: 1080, cx: 0, cy: 0, zoomMax: 650 * 10, zoomMin: 650 / 10});
 
         // 图片层实例\添加
-        let gImageLayer = new gDBox.Layer.Image('img', '/public/gdbox/demo/imgs/demo.jpeg', {w: 1080, h: 720}, {zIndex: 1});
+        let gImageLayer = new AILabel.Layer.Image('img', '/public/gdbox/demo/imgs/demo.jpeg', {w: 1080, h: 720}, {zIndex: 1});
         gMap.addLayer(gImageLayer);
 
         // 矢量层实例\添加
-        let gFeatureLayer = new gDBox.Layer.Feature('featureLayer', {zIndex: 2, transparent: true});
+        let gFeatureLayer = new AILabel.Layer.Feature('featureLayer', {zIndex: 2, transparent: true});
         gMap.addLayer(gFeatureLayer);
 
         // 矢量要素实例\添加
-        const fea = new gDBox.Feature.Polygon('110', [
+        const fea = new AILabel.Feature.Polygon('110', [
             {x: 10, y: 10},
             {x: 50, y: 10},
             {x: 40, y: 50},

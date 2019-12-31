@@ -15,7 +15,7 @@
 	<script src='../../jslib/gMap.js'></script>
 	<script src='../../jslib/gLayer.js'></script>-->
 
-	<script src='/public/gdbox/demo/gDBox.pkg.min.js'></script>
+	<script src='/public/gdbox/demo/AILabel.pkg.min.js'></script>
 	<style>
         #map {
         	width: 500px;
@@ -31,16 +31,16 @@
 	<span>说明：点击marker执行删除</span>
     <script>
         // 容器对象声明
-        let gMap = new gDBox.Map('map', {zoom: 1080, cx: 0, cy: 0, zoomMax: 650 * 10, zoomMin: 650 / 10});
+        let gMap = new AILabel.Map('map', {zoom: 1080, cx: 0, cy: 0, zoomMax: 650 * 10, zoomMin: 650 / 10});
 
         // 图片层实例\添加
-        let gImageLayer = new gDBox.Layer.Image('img', '/public/gdbox/demo/imgs/demo.jpeg', {w: 1080, h: 720}, {zIndex: 1});
+        let gImageLayer = new AILabel.Layer.Image('img', '/public/gdbox/demo/imgs/demo.jpeg', {w: 1080, h: 720}, {zIndex: 1});
         gMap.addLayer(gImageLayer);
 
         // 不需要声明markerLayer标注图层，有且只有一个markerLayer，可通过gMap.mLayer来获取
 
         // marker对象实例\添加
-        const marker = new gDBox.Marker('name-中国', {
+        const marker = new AILabel.Marker('name-中国', {
             src: '/public/gdbox/demo/imgs/marker.png',
             x: 0,
             y: 0,
